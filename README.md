@@ -24,7 +24,7 @@ http://build.fhir.org/ig/Healthedata1/IG-Template
 
 (GitHub will automatically trigger a new build whenever you commit changes.)
 
-Debugging info about the build: http://build.fhir.org/ig/Healthedata1/IG-Template/debug.tgz)
+For a build log, see: http://build.fhir.org/:org/:repo/build.log
 
 ## Setup instructions
 
