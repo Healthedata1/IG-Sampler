@@ -20,11 +20,11 @@ And the Jekyll templates and static pages to go with them...
 
 ### Rendered IG-Template at
 
-http://build.fhir.org/ig/Healthedata1/IG-Template
+http://build.fhir.org/ig/Healthedata1/case-reporting/index.html
 
 (GitHub will automatically trigger a new build whenever you commit changes.)
 
-For a build log, see: http://build.fhir.org/ig/Healthedata1/IG-Template/build.log
+For a build log, see: http://build.fhir.org/ig/Healthedata1/case-reporting/build.log
 
 ## Setup instructions
 
