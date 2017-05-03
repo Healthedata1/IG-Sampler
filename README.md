@@ -1,15 +1,30 @@
 # IG-Template  
 Authors:  Eric Haas, Brett Marquard
 
-A template for building an FHIR Implemenation Guide(IG) using the IG publisher and profile spreadsheets.  This is based on the design of the [Argonaut](http://www.fhir.org/guides/argonaut/r2/) and [US-Core](http://hl7.org/fhir/us/core/) IGs.    See the [FHIR IG publisher documentation](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation)  for how to set up your local environment.  
+A template for building an FHIR Implemenation Guide(IG) using the IG publisher and profile spreadsheets.  This is based on the design of the [Argonaut](http://www.fhir.org/guides/argonaut/r2/) and [US-Core](http://hl7.org/fhir/us/core/) IGs.    See the [FHIR IG publisher documentation](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation)  for how to set up your local environment. 
+
+Shows how to create:
+
+- Profiles
+- Extensions ( complex and simple )
+- CodeSystems
+- ValueSets
+- SearchParameters
+- Operations ?
+- Logical Models [todo]
+- ConformanceStatements
+
+And the Jekyll templates and static pages to go with them...
+
+
 
 ### Rendered IG-Template at
 
-http://build.fhir.org/ig/Healthedata1/IG-Template
+http://build.fhir.org/ig/Healthedata1/IG-Template/index.html
 
 (GitHub will automatically trigger a new build whenever you commit changes.)
 
-Debugging info about the build: http://build.fhir.org/ig/Healthedata1/IG-Template/debug.tgz)
+For a build log, see: http://build.fhir.org/ig/Healthedata1/IG-Template/build.log
 
 ## Setup instructions
 
