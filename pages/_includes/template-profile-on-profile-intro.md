@@ -1,6 +1,8 @@
-{{site.data.structuredefinitions.[id].name}}.md  file
+{{site.data.structuredefinitions.template-profile-on-profile.name}}.md  file
 
-## id  =  template-profile-on-profile
+## Conformance resource variables defined [here](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Jekyll)
+
+id  =  template-profile-on-profile
 
  - index : a local id for the structure: {% raw %} {{site.data.structuredefinitions.[id].index}} {%  endraw %} = {{site.data.structuredefinitions.template-profile-on-profile.index}}
  - url : full canonical url for the structure: {% raw %} {{site.data.structuredefinitions.[id].url}} {%  endraw %} = {{site.data.structuredefinitions.template-profile-on-profile.url}}
