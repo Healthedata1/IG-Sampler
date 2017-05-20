@@ -33,29 +33,37 @@ Figure 1 is a picture of a cat to show how to insert an image using markdown.
 
 ### Jekyll Site Variables
 
-These are the site variables defined [here](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Jekyll)
+These are the site variables defined [here](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Jekyll):
 
-dependency url - e.g. "uscore" : Base url of a dependency implementation Guide (defined in ig.json) -  {% raw %} {{ site.data.fhir.uscore }} {% endraw %}= {{site.data.fhir.uscore}}
+- IG Business version specification (defined in ig.json)- {% raw %}{{ site.data.fhir.ig.version }} {% endraw %} = {{site.data.fhir.ig.version}}
 
-igName : Title of the implementation Guide (defined in ig.xml) -  {% raw %} {{ site.data.fhir.igName }} {% endraw %}= {{site.data.fhir.igName}}
+- IG status (defined in ig.xml)- {% raw %}{{ site.data.fhir.ig.status }} {% endraw %} = {{site.data.fhir.ig.status}}
 
-path : path to the main FHIR specification (defined in ig.json)-  {% raw %} {{ site.data.fhir.path }} {% endraw %}= {{site.data.fhir.path}}
+- Whether is experimental IG (defined in ig.xml) - {% raw %}{{ site.data.fhir.ig.experimental }} {% endraw %} = {{site.data.fhir.ig.experimental}}
 
-canonical : canonical path to this specification (defined in ig.json)-  {% raw %} {{ site.data.fhir.canonical }} {% endraw %} = {{ site.data.fhir.canonical }}
+- IG Publisher name (defined in ig.xml) - {% raw %}{{ site.data.fhir.ig.publisher }} {% endraw %} = {{site.data.fhir.ig.publisher}}
 
-errorCount : number of errors in the build file (not including HTML validation errors) -  {% raw %} {{ site.data.fhir.errorCount }} {% endraw %} = {{ site.data.fhir.errorCount }}
+- dependency url - e.g. "uscore" : Base url of a dependency implementation Guide (defined in ig.json) -  {% raw %} {{ site.data.fhir.uscore }} {% endraw %}= {{site.data.fhir.uscore}}
 
-version : version of FHIR -  {% raw %} {{ site.data.fhir.version }} {% endraw %} = {{ site.data.fhir.version }}
+- igName : Title of the implementation Guide (defined in ig.xml) -  {% raw %} {{ site.data.fhir.igName }} {% endraw %}= {{site.data.fhir.igName}}
 
-revision : revision of FHIR -  {% raw %} {{ site.data.fhir.revision }} {% endraw %} = {{ site.data.fhir.revision }}
+- path : path to the main FHIR specification (defined in ig.json)-  {% raw %} {{ site.data.fhir.path }} {% endraw %}= {{site.data.fhir.path}}
 
-versionFull : version-revision -  {% raw %} {{ site.data.fhir.versionFull }} {% endraw %} = {{ site.data.fhir.versionFull }}
+- canonical : canonical path to this specification (defined in ig.json)-  {% raw %} {{ site.data.fhir.canonical }} {% endraw %} = {{ site.data.fhir.canonical }}
 
-totalFiles : total number of files found by the build -  {% raw %} {{ site.data.fhir.totalFiles }} {% endraw %} = {{ site.data.fhir.totalFiles }}
+- errorCount : number of errors in the build file (not including HTML validation errors) -  {% raw %} {{ site.data.fhir.errorCount }} {% endraw %} = {{ site.data.fhir.errorCount }}
 
-processedFiles : number of files genrated by the build -  {% raw %} {{ site.data.fhir.processedFiles }} {% endraw %} = {{ site.data.fhir.processedFiles }}
+- version : version of FHIR -  {% raw %} {{ site.data.fhir.version }} {% endraw %} = {{ site.data.fhir.version }}
 
-genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -  {% raw %} {{ site.data.fhir.genDate }} {% endraw %} = {{ site.data.fhir.genDate }}
+- revision : revision of FHIR -  {% raw %} {{ site.data.fhir.revision }} {% endraw %} = {{ site.data.fhir.revision }}
+
+- versionFull : version-revision -  {% raw %} {{ site.data.fhir.versionFull }} {% endraw %} = {{ site.data.fhir.versionFull }}
+
+- totalFiles : total number of files found by the build -  {% raw %} {{ site.data.fhir.totalFiles }} {% endraw %} = {{ site.data.fhir.totalFiles }}
+
+- processedFiles : number of files genrated by the build -  {% raw %} {{ site.data.fhir.processedFiles }} {% endraw %} = {{ site.data.fhir.processedFiles }}
+
+- genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -  {% raw %} {{ site.data.fhir.genDate }} {% endraw %} = {{ site.data.fhir.genDate }}
 
 
 ### Introduction
