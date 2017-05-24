@@ -4,15 +4,16 @@ level: 2
 active: terminology
 ---
 
-{% include header.html %}
 
-<!-- segment-breadcrumb -->
+{% include header.html %}
 
 {% include container-start.html %}
 
-  <!-- ============CONTENT CONTENT=============== -->
+<!-- ============BreadCrumb=============== -->
 
+{% include breadcrumbs.html %}
 
+<!-- ============CONTENT CONTENT=============== -->
 
 {% include {{[type]}}-{{[id]}}-summary.xhtml %}
 {% include {{[type]}}-{{[id]}}-xref.xhtml %}
