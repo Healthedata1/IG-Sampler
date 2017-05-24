@@ -28,5 +28,12 @@
       /
       <span class="breadcrumb-item active">{{ page.path | remove: '.html'}}</span>
     {% endif %}
+    {% if page.active == 'mappings' and  page.level == 2 %}
+      <a class="breadcrumb-item" href="index.html">Home</a>
+      /
+      <a class="breadcrumb-item" href="structuremaps.html">Mappings</a>
+      /
+      <span class="breadcrumb-item active">{{ page.path | remove: '.html'}}</span>
+    {% endif %}
 
 </nav>

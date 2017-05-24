@@ -24,7 +24,7 @@ dir='/Users/ehaas/Documents/FHIR/IG-Template/'  # change to the local path name
 
 ''' this is the definitions file skeleton you need to modify as needed see ig publisher documenentation at  f http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation or more information. Note it includes the US-Core as a dependencyList'''
 
-igpy = {"paths":{"temp":"temp","specification":"http://build.fhir.org","qa":"qa","txCache":"txCache","output":"output","pages":"pages","resources":["resources","examples"]},"extraTemplates":["mappings"],"defaults":{"StructureDefinition":{"template-base":"sd.html","template-defns":"sd-definitions.html","template-mappings":"sd-mappings.html"},"CapabilityStatement":{"template-base":"capst.html"},"CodeSystem":{"template-base":"codesys.html"},"ConceptMap":{"template-base":"cm.html"},"Any":{"template-format":"format.html","template-base":"base.html"},"ValueSet":{"template-base":"vs.html"}},"source":"ig.xml","canonicalBase":"http://www.fhir.org/guides/ig-template","tool":"jekyll","sct-edition":"http://snomed.info/sct/731000124108","dependencyList":[{"name":"uscore","location":"http://hl7.org/fhir/us/core/"}],"spreadsheets":[],"resources":{},"fixed-business-version" : "0.0.0"}
+igpy = {"paths":{"temp":"temp","specification":"http://build.fhir.org","qa":"qa","txCache":"txCache","output":"output","pages":"pages","resources":["resources","examples"]},"extraTemplates":["mappings"],"defaults":{"StructureDefinition":{"template-base":"sd.html","template-defns":"sd-definitions.html","template-mappings":"sd-mappings.html"},"CapabilityStatement":{"template-base":"capst.html"},"CodeSystem":{"template-base":"codesys.html"},"ConceptMap":{"template-base":"cm.html"},"StructureMap":{"template-base":"sm.html"},"Any":{"template-format":"format.html","template-base":"base.html"},"ValueSet":{"template-base":"vs.html"}},"source":"ig.xml","canonicalBase":"http://www.fhir.org/guides/ig-template","tool":"jekyll","sct-edition":"http://snomed.info/sct/731000124108","dependencyList":[{"name":"uscore","location":"http://hl7.org/fhir/us/core/"}],"spreadsheets":[],"resources":{},"fixed-business-version" : "0.0.0","gen-examples":"true","do-transforms":"true"}
 
 logging.info('create the ig.xml file template as string')
 
@@ -44,13 +44,17 @@ operations = []
 
 searches = []
 
-#if valueset in spreadsheet is a codesystem - these need to be manually listed here
+#if codesystems in spreadsheet is a codesystem - these need to be manually listed here
 
 codesystems = ['blah-codes']
 
 #if valueset in spreadsheet is not a codesystem - these need to be manually listed
 
 valuesets = []
+
+#if structuremaps in spreadsheet is not a codesystem - these need to be manually listed
+
+structuremaps = ['Foo']
 
 # ====================== this is all the same for all IGs ===================
 
@@ -180,6 +184,9 @@ def main():
     # add spreadsheet valuesets
     for valueset in valuesets:
        update_igjson('ValueSet', valueset, 'base')
+    # add spreadsheet structuremaps
+    for structuremap in structuremaps:
+       update_igjson('StructureMap', structuremap, 'base')
 
     examples = os.listdir(
         dir + 'examples')  # get all the examples in the examples directory assuming are in json or xml
