@@ -25,10 +25,8 @@ active: profiles
 
 <h3><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}<a name="SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}"> </a></span>{{[type]}}-{{[id]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}"><img src="target.png"/></a></h3>
 
-
 <!-- introductiontext here-->
 <a name="introduction"> </a>
-
 
 {% capture my-include %}{% include {{[id]}}-intro.md %}{% endcapture %}{{ my-include | markdownify }}
 
@@ -40,7 +38,6 @@ active: profiles
 -->
 <!--  try build generated templates
 <h5>Example: <a href="{{[title]}}.example.html">{{[title]}} Example</a></h5> -->
-
 
 
 <a name="profile"> </a>
