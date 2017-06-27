@@ -1,7 +1,7 @@
 #! /usr/bin/env python3.
 
 # create ig definition file with all value sets in the /resources directory
-import json, os, sys, logging, re
+import json, os, sys, logging, re, csv
 from lxml import etree
 #logging.disable(logging.CRITICAL)
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %(message)s')
@@ -9,28 +9,85 @@ logging.info('Start of program')
 logging.info('The logging module is working.')
 # create the ig.json file template as dictoinary
 
-
-'''
-ig_template = open(dir +'ig-template.json')  #ig-template  lack spreadsheet and valueset information
-igjson = ig_template.read() # convert to strings
-igpy =json.loads(igjson)  # convert to py dict format
-'''
-
 logging.info('create the ig.json file template as dictionary')
 
 # globals
 
-dir='/Users/ehaas/Documents/FHIR/IG-Template/'  # change to the local path name
-
 ''' this is the definitions file skeleton you need to modify as needed see ig publisher documenentation at  f http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation or more information. Note it includes the US-Core as a dependencyList'''
 
-igpy = {"paths":{"temp":"temp","specification":"http://build.fhir.org","qa":"qa","txCache":"txCache","output":"output","pages":"pages","resources":["resources","examples"]},"extraTemplates":["mappings"],"defaults":{"StructureDefinition":{"template-base":"sd.html","template-defns":"sd-definitions.html","template-mappings":"sd-mappings.html"},"CapabilityStatement":{"template-base":"capst.html"},"CodeSystem":{"template-base":"codesys.html"},"ConceptMap":{"template-base":"cm.html"},"StructureMap":{"template-base":"sm.html"},"Any":{"template-format":"format.html","template-base":"base.html"},"ValueSet":{"template-base":"vs.html"}},"source":"ig.xml","canonicalBase":"http://www.fhir.org/guides/ig-template","tool":"jekyll","sct-edition":"http://snomed.info/sct/731000124108","dependencyList":[{"name":"uscore","location":"http://hl7.org/fhir/us/core/"}],"spreadsheets":[],"resources":{},"fixed-business-version" : "0.0.0","gen-examples":"true","do-transforms":"true"}
+igpy = {
+  "broken-links": "warning",
+  "canonicalBase": "http://www.fhir.org/guides/ig-template",
+  "defaults": {
+      "Any": {
+          "template-base": "base.html",
+          "template-format": "format.html"
+      },
+      "CapabilityStatement": {
+          "template-base": "capst.html"
+      },
+      "CodeSystem": {
+          "template-base": "codesys.html"
+      },
+      "ConceptMap": {
+          "template-base": "cm.html"
+      },
+      "OperationDefinition": {
+          "template-base": "op.html"
+      },
+      "StructureDefinition": {
+          "template-base": "sd.html",
+          "template-defns": "sd-definitions.html",
+          "template-mappings": "sd-mappings.html"
+      },
+      "ValueSet": {
+          "template-base": "vs.html"
+      }
+  },
+  "dependencyList": [
+      {
+          "location": "http://hl7.org/fhir/us/core/stu1/",
+          "name": "uscore",
+          "source": "resources"
+      }
+  ],
+  "do-transforms": "false",
+  "extraTemplates": [
+      "mappings"
+  ],
+  "fixed-business-version": "0.0.0",
+  "gen-examples": "false",
+  "jurisdiction": "US",
+  "no-inactive-codes": "false",
+  "paths": {
+      "output": "output",
+      "pages": [],
+      "qa": "qa",
+      "resources": [],
+      "specification": "http://build.fhir.org",
+      "temp": "temp",
+      "txCache": "txCache"
+  },
+  "resources": {},
+  "sct-edition": "http://snomed.info/sct/731000124108",
+  "source": "ig.xml",
+  "special-urls": [],
+  "spreadsheets": [],
+  "tool": "jekyll",
+  "version": "3.1.0",
+  "working-dir": "/Users/ehaas/Documents/FHIR/IG-Template/",
+  "title": "Implementation Guide Template",
+  "status": "draft",
+  "publisher": "Health eData Inc"
+}
 
 logging.info('create the ig.xml file template as string')
 
-''' this is the ig.xml file skeleton may need to modify as needed see ig publisher documenentation at  f http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation or more information. '''
+''' this is the ig.xml file skeleton may need to modify as needed see ig publisher documenentation at  f http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation or more information. The Cap Case words are variables that are replaced by variables in the definitions file'''
 
-igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="http://www.fhir.org/guides/ig-template/ImplementationGuide/ig"/><name value="Implementation Guide Template"/><status value="draft"/><experimental value="true"/><publisher value="FHIR Project"/><package><name value="base"/></package><page><source value="index.html"/><title value="IG Templage Homepage"/><kind value="page"/></page></ImplementationGuide>'''
+igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="BASE/ImplementationGuide/ig"/><name value="TITLE"/><status value="STATUS"/><experimental value="true"/><publisher value="PUBLISHER"/><package><name value="base"/></package><page><source value="index.html"/><title value="TITLE Homepage"/><kind value="page"/></page></ImplementationGuide>'''
+
+dir = igpy['working-dir']  # change to the local path name
 
 # extension in spreadsheet - these need to be manually listed here needs to be named same as SD files
 
@@ -59,7 +116,54 @@ structuremaps = ['Foo']
 # ====================== this is all the same for all IGs ===================
 
 # Function definitions here
-def update_sd(i,type,logical):
+
+def init_igpy():
+    # read  non array csv file
+    with open('definitions.csv') as defnfile:  # grab a CSV file and make a dict file 'reader
+        reader = csv.DictReader(defnfile, dialect='excel')
+        for row in reader:  # each row equal row of csv file as a dict
+            for row_key in row.keys():  # get keys in row
+                logging.info('row_key: ' + row_key)
+                try: # deal with nested elements first
+                    row_key0 = row_key.split(".")[0]
+                    row_key1 = row_key.split(".")[1]
+                    # deal with lists first : append csv element to dict value
+                    for itemz in row[row_key].split('|'):
+                        igpy[row_key0][row_key1].append(itemz)
+                        logging.info('updating ig.json with this: { "' + row_key0 + '" { "' + row_key1 + '": ["' + itemz + '",...] } }')
+
+                except IndexError: # unnested dict elements
+                    # deal with lists first : append csv element to dict value
+                    try:  # deal with lists first : append csv element to dict value
+                        igpy[row_key].append(row[row_key])
+                    except AttributeError:  # simple key value pairs
+                        igpy[row_key] = row[row_key]  # add/replace csv element to existing dict file
+                    logging.info('updating ig.json with this:  { "' + row_key + '": "' + row[row_key] + '" }')
+                except AttributeError: # nested dict elements
+                    # todo - deal with nested list elements
+                    igpy[row_key0][row_key1] = row[row_key] # add/replace csv element to existing dict fil
+                    logging.info('updating ig.json with this: { "' + row_key0 + '" { "' + row_key1 + '": "' + row[row_key] + '" } }')
+                except TypeError: # unnested list of objects
+                    for (item,itemz) in enumerate(row[row_key].split('|')):  # loop over list of dependencies
+                        try:
+                            igpy[row_key0][item][row_key1]=itemz # create an object for each item in cell
+                        except IndexError:
+                            igpy[row_key0].append({row_key1:itemz}) # create an object for each item in cell
+                        logging.info('updating ig.json with this: { "' + row_key0 + '"[' + str(item) + ']' +':{ "' + row_key1 + '": "' + itemz + '",... }')
+
+def init_igxml():
+    global igxml
+    logging.info('replace variables in igxml with definitions file value: ' + 'Title: = ' + igpy['title'])
+    igxml = igxml.replace('TITLE', igpy['title'])
+    logging.info('replace variables in igxml with defintions file value: ' + 'Status: = ' + igpy['status'])
+    igxml = igxml.replace('STATUS', igpy['status'])
+    logging.info('replace variables in igxml with defintions file value: ' + 'Base: = ' + igpy['canonicalBase'])
+    igxml = igxml.replace('BASE', igpy['canonicalBase'])
+    logging.info('replace variables in igxml with defintions file value: ' + 'Publisher: = ' + igpy['publisher'])
+    igxml = igxml.replace('PUBLISHER', igpy['publisher'])
+    return(igxml)
+
+def update_sd(i, type, logical):
     namespaces = {'o': 'urn:schemas-microsoft-com:office:office',
                   'x': 'urn:schemas-microsoft-com:office:excel',
                   'ss': 'urn:schemas-microsoft-com:office:spreadsheet', }
@@ -134,9 +238,9 @@ def get_file(e):
     logging.info('load example xml file ' + dir + 'examples/' + e)
     return ex_file
 
-
-
 def main():
+    init_igpy() # read CSV file and update the configuration data
+    init_igxml() # add title, publisher etc to ig.xml
     resources = os.listdir(dir + 'resources')  # get all the files in the resource directory
     for i in range(len(resources)):  # run through all the files looking for spreadsheets and valuesets
         if 'spreadsheet' in resources[i]: # for spreadsheets  append to the igpy[spreadsheet] array.
