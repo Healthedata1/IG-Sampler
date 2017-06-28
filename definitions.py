@@ -44,13 +44,7 @@ igpy = {
           "template-base": "vs.html"
       }
   },
-  "dependencyList": [
-      {
-          "location": "http://hl7.org/fhir/us/core/stu1/",
-          "name": "uscore",
-          "source": "resources"
-      }
-  ],
+  "dependencyList": [{}],
   "do-transforms": "false",
   "extraTemplates": [
       "mappings"
@@ -94,27 +88,6 @@ igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG pu
 
 dir = igpy['working-dir']  # change to the local path name
 
-# extension in spreadsheet - these need to be manually listed here needs to be named same as SD files to do add to config files and insert in code
-
-extensions =  igpy['extensions']   #['template-blah','template-complex']
-
-# search in spreadsheet - these need to be manually listed here
-
-searches = igpy['searches']
-
-#if codesystems in spreadsheet is a codesystem - these need to be manually listed here
-
-codesystems = ['blah-codes'] #['blah-codes']
-
-#if valueset in spreadsheet is not a codesystem - these need to be manually listed
-
-valuesets = []
-
-#if structuremaps in spreadsheet is not a codesystem - these need to be manually listed
-
-structuremaps = ['Foo']
-
-# ====================== this is all the same for all IGs ===================
 
 # Function definitions here
 
