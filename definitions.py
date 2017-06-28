@@ -78,7 +78,12 @@ igpy = {
   "working-dir": "/Users/ehaas/Documents/FHIR/IG-Template/",
   "title": "Implementation Guide Template",
   "status": "draft",
-  "publisher": "Health eData Inc"
+  "publisher": "Health eData Inc",
+  "extensions": [],
+  "searches": [],
+  "codesystems": [],
+  "valuesets": [],
+  "structuremaps": []
 }
 
 logging.info('create the ig.xml file template as string')
@@ -91,19 +96,15 @@ dir = igpy['working-dir']  # change to the local path name
 
 # extension in spreadsheet - these need to be manually listed here needs to be named same as SD files to do add to config files and insert in code
 
-extensions = ['template-blah','template-complex']
-
-# operation in spreadsheet - these need to be manually listed here
-
-operations = []
+extensions =  igpy['extensions']   #['template-blah','template-complex']
 
 # search in spreadsheet - these need to be manually listed here
 
-searches = []
+searches = igpy['searches']
 
 #if codesystems in spreadsheet is a codesystem - these need to be manually listed here
 
-codesystems = ['blah-codes']
+codesystems = ['blah-codes'] #['blah-codes']
 
 #if valueset in spreadsheet is not a codesystem - these need to be manually listed
 
@@ -124,32 +125,37 @@ def init_igpy():
         for row in reader:  # each row equal row of csv file as a dict
             for row_key in row.keys():  # get keys in row
                 logging.info('row_key: ' + row_key)
-                try: # deal with nested elements first
-                    row_key0 = row_key.split(".")[0]
-                    row_key1 = row_key.split(".")[1]
-                    # deal with lists first : append csv element to dict value
-                    for itemz in row[row_key].split('|'):
-                        igpy[row_key0][row_key1].append(itemz)
-                        logging.info('updating ig.json with this: { "' + row_key0 + '" { "' + row_key1 + '": ["' + itemz + '",...] } }')
+                if row[row_key] != "":
+                    logging.info('row_key: ' + row_key)
+                    try: # deal with nested elements first
+                        row_key0 = row_key.split(".")[0]
+                        row_key1 = row_key.split(".")[1]
+                        # deal with lists first : append csv element to dict value
+                        for itemz in row[row_key].split('|'):
+                            igpy[row_key0][row_key1].append(itemz)
+                            logging.info('updating ig.json with this: { "' + row_key0 + '" { "' + row_key1 + '": ["' + itemz + '",...] } }')
 
-                except IndexError: # unnested dict elements
-                    # deal with lists first : append csv element to dict value
-                    try:  # deal with lists first : append csv element to dict value
-                        igpy[row_key].append(row[row_key])
-                    except AttributeError:  # simple key value pairs
-                        igpy[row_key] = row[row_key]  # add/replace csv element to existing dict file
-                    logging.info('updating ig.json with this:  { "' + row_key + '": "' + row[row_key] + '" }')
-                except AttributeError: # nested dict elements
-                    # todo - deal with nested list elements
-                    igpy[row_key0][row_key1] = row[row_key] # add/replace csv element to existing dict fil
-                    logging.info('updating ig.json with this: { "' + row_key0 + '" { "' + row_key1 + '": "' + row[row_key] + '" } }')
-                except TypeError: # unnested list of objects
-                    for (item,itemz) in enumerate(row[row_key].split('|')):  # loop over list of dependencies
-                        try:
-                            igpy[row_key0][item][row_key1]=itemz # create an object for each item in cell
-                        except IndexError:
-                            igpy[row_key0].append({row_key1:itemz}) # create an object for each item in cell
-                        logging.info('updating ig.json with this: { "' + row_key0 + '"[' + str(item) + ']' +':{ "' + row_key1 + '": "' + itemz + '",... }')
+                    except IndexError: # unnested dict elements
+                        # deal with lists first : append csv element to dict value
+                        for (itemz) in (row[row_key].split('|')):  # loop over list of dependencies
+                            try:  # deal with lists first : append csv element to dict value
+                                igpy[row_key].append(itemz)
+                                logging.info('updating ig.json with this:  { "' + row_key + '": [..."' + itemz + '",...] }')
+                            except AttributeError:  # simple key value pairs
+                                igpy[row_key] = itemz  # add/replace csv element to existing dict file
+                                logging.info('updating ig.json with this:  { "' + row_key + '": "' + itemz + '" }')
+                    except AttributeError: # nested dict elements
+                        # todo - deal with nested list elements
+                        igpy[row_key0][row_key1] = row[row_key] # add/replace csv element to existing dict fil
+                        logging.info('updating ig.json with this: { "' + row_key0 + '" { "' + row_key1 + '": "' + row[row_key] + '" } }')
+                    except TypeError: # unnested list of objects
+                        for (item,itemz) in enumerate(row[row_key].split('|')):  # loop over list of dependencies
+                            try:
+                                igpy[row_key0][item][row_key1]=itemz # create an object for each item in cell
+                            except IndexError:
+                                igpy[row_key0].append({row_key1:itemz}) # create an object for each item in cell
+                            logging.info('updating ig.json with this: { "' + row_key0 + '"[' + str(item) + ']' +':{ "' + row_key1 + '": "' + itemz + '",... }')
+    return
 
 def init_igxml():
     global igxml
@@ -343,26 +349,23 @@ def main():
             update_def(resources[i], 'SearchParameter', 'conformance')
 
    # add spreadsheet extensions
-    for extension in extensions:
+    for extension in igpy['extensions']:
         update_igjson('StructureDefinition', extension, 'base')
         update_igjson('StructureDefinition', extension, 'defns')
         if not os.path.exists(dir + 'pages/_includes/'+ extension + '-intro.md'):  # if intro fragment is missing then create new page fragments for extension
             make_frags(extension)
-    # add spreadsheet operations
-    for operation in operations:
-       update_igjson('OperationDefinition', operation, 'base')
     # add spreadsheet search parameters
-    for search in searches:
+    for search in igpy['searches']:
        update_igjson('SearchParameter', search, 'base')
     # add spreadsheet code systems
-    for codesystem in codesystems:
+    for codesystem in igpy['codesystems']:
        update_igjson('CodeSystem', codesystem, 'base')
        update_igjson('ValueSet', codesystem, 'base')
     # add spreadsheet valuesets
-    for valueset in valuesets:
+    for valueset in igpy['valuesets']:
        update_igjson('ValueSet', valueset, 'base')
     # add spreadsheet structuremaps
-    for structuremap in structuremaps:
+    for structuremap in igpy['structuremaps']:
        update_igjson('StructureMap', structuremap, 'base')
 
     examples = os.listdir(
