@@ -1,9 +1,0 @@
-﻿map "http://www.fhir.org/guides/ig-template/StructureMap/Foo" = "LogicalModel --> Foo Mapping"uses "http://www.fhir.org/guides/ig-template/StructureDefinition/LogicalModel" as sourcegroup LogicalModel  input source : LogicalModel as source;LogicalModel : for source make    create("Appointment") as appt  then {
-  LogicalModel.UniqueID: for source.UniqueID : string 1..1 as v  make appt.identifier as t , t.value = v
-  LogicalModel.foo: for source.foo : backboneelement 1..1 as bbe then {
-    LogicalModel.foo.bar: for bbe.bar : code 1..1 as v make appt.status = v
-    LogicalModel.foo.baz: for bbe.baz: string 0..1 as v make appt.description = v
-  }
-  LogicalModel.blah: for source.blah: string 0..1 as v make appt.slot as t, t.display= v
-
-} endgroup
