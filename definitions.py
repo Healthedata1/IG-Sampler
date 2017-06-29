@@ -13,7 +13,11 @@ logging.info('create the ig.json file template as dictionary')
 
 # globals
 
-''' this is the definitions file skeleton you need to modify as needed see ig publisher documenentation at  f http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation or more information. Note it includes the US-Core as a dependencyList'''
+dir = os.getcwd() + '/' # current dir
+logging.info('cwd = ' + dir)
+
+
+''' this is the definitions file skeleton you need to modify as needed see ig publisher documenentation at  f http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation or more information.'''
 
 igpy = {
   "broken-links": "warning",
@@ -69,7 +73,7 @@ igpy = {
   "spreadsheets": [],
   "tool": "jekyll",
   "version": "3.1.0",
-  "working-dir": "/Users/ehaas/Documents/FHIR/IG-Template/",
+  "working-dir": None,
   "title": "Implementation Guide Template",
   "status": "draft",
   "publisher": "Health eData Inc",
@@ -86,8 +90,6 @@ logging.info('create the ig.xml file template as string')
 
 igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="BASE/ImplementationGuide/ig"/><name value="TITLE"/><status value="STATUS"/><experimental value="true"/><publisher value="PUBLISHER"/><package><name value="base"/></package><page><source value="index.html"/><title value="TITLE Homepage"/><kind value="page"/></page></ImplementationGuide>'''
 
-dir = igpy['working-dir']  # change to the local path name
-
 
 # Function definitions here
 
@@ -98,6 +100,8 @@ def init_igpy():
         for row in reader:  # each row equal row of csv file as a dict
             for row_key in row.keys():  # get keys in row
                 logging.info('row_key: ' + row_key)
+                if row[row_key] == 'FALSE' or row[row_key] == 'TRUE':  # clean up excel propensity to change the string true/false to TRUE/FALSE
+                    row[row_key] = row[row_key].lower()
                 if row[row_key] != "":
                     logging.info('row_key: ' + row_key)
                     try: # deal with nested elements first
@@ -210,6 +214,7 @@ def update_sd(i, type, logical):
                   'x': 'urn:schemas-microsoft-com:office:excel',
                   'ss': 'urn:schemas-microsoft-com:office:spreadsheet', }
     igpy['spreadsheets'].append(i)
+    logging.info('cwd = ' + dir)
     logging.info('adding ' + i + ' to spreadsheets array')
     sd_file = open(dir + 'resources/' + i)  # for each spreadsheet in /resources open value and read  SD id and create and append dict struct to definiions file
     sdxml = etree.parse(sd_file)  # lxml module to parse excel xml
@@ -291,6 +296,10 @@ def get_file(e):
 def main():
     init_igpy() # read CSV file and update the configuration data
     init_igxml() # add title, publisher etc to ig.xml
+    global dir
+    if igpy['working-dir']:
+        dir = igpy['working-dir']  # change to the local path name specified in the csv file if present
+        logging.info('cwd = ' + dir)
     resources = os.listdir(dir + 'resources')  # get all the files in the resource directory
     for i in range(len(resources)):  # run through all the files looking for spreadsheets and valuesets
         if 'spreadsheet' in resources[i]: # for spreadsheets  append to the igpy[spreadsheet] array.
@@ -366,7 +375,6 @@ def main():
     ig_file.write(igxml)  # replace ig.xml with this file
     logging.info('ig.xml now looks like : ' + igxml)
     return
-
 
 #main
 
