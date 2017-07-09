@@ -88,63 +88,50 @@ logging.info('create the ig.xml file template as string')
 
 ''' this is the ig.xml file skeleton may need to modify as needed see ig publisher documenentation at  f http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation or more information. The Cap Case words are variables that are replaced by variables in the definitions file'''
 
-igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="BASE/ImplementationGuide/ig"/><name value="TITLE"/><status value="STATUS"/><experimental value="true"/><publisher value="PUBLISHER"/><package><name value="base"/></package><page><source value="index.html"/><title value="TITLE Homepage"/><kind value="page"/></page></ImplementationGuide>'''
+igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="{canonicalBase}/ImplementationGuide/ig"/><name value="{title}"/><status value="{status}"/><experimental value="true"/><publisher value="{publisher}"/><package><name value="base"/></package><page><source value="index.html"/><title value="{title} Homepage"/><kind value="page"/></page></ImplementationGuide>'''
 
 
 # Function definitions here
 
 def init_igpy():
     # read  non array csv file
-    with open('definitions.csv') as defnfile:  # grab a CSV file and make a dict file 'reader
-        reader = csv.DictReader(defnfile, dialect='excel')
-        for row in reader:  # each row equal row of csv file as a dict
-            for row_key in row.keys():  # get keys in row
-                logging.info('row_key: ' + row_key)
-                if row[row_key] == 'FALSE' or row[row_key] == 'TRUE':  # clean up excel propensity to change the string true/false to TRUE/FALSE
-                    row[row_key] = row[row_key].lower()
-                if row[row_key] != "":
-                    logging.info('row_key: ' + row_key)
-                    try: # deal with nested elements first
-                        row_key0 = row_key.split(".")[0]
-                        row_key1 = row_key.split(".")[1]
-                        # deal with lists first : append csv element to dict value
-                        for itemz in row[row_key].split('|'):
-                            igpy[row_key0][row_key1].append(itemz)
-                            logging.info('updating ig.json with this: { "' + row_key0 + '" { "' + row_key1 + '": ["' + itemz + '",...] } }')
+    with open('definitions.csv') as defnfile:  # grab a 2 column CSV file and cycle through to update igpy
+        reader = csv.reader(defnfile, dialect='excel')
+        next(defnfile)
+        for row in reader:  # each row equal row of 2 column csv file as ignoring  header
+            logging.info('k,v = {}, {}'.format(row[0],row[1]))  # row[0] = row[0] and row[1] = row[row-key]
+            if row[1] == 'FALSE' or row[1] == 'TRUE':  # clean up excel propensity to change the string true/false to TRUE/FALSE
+                row[1] = row[1].lower()
+            if row[1] != "":  # ignore blank rows
+                try: # deal with nested elements first
+                    row_key0 = row[0].split(".")[0]
+                    row_key1 = row[0].split(".")[1]
+                    # deal with lists first : append csv element to dict value
+                    for itemz in row[1].split('|'):
+                        igpy[row_key0][row_key1].append(itemz)
+                        logging.info('updating ig.json with this: { "' + row_key0 + '" { "' + row_key1 + '": ["' + itemz + '",...] } }')
 
-                    except IndexError: # unnested dict elements
-                        # deal with lists first : append csv element to dict value
-                        for (itemz) in (row[row_key].split('|')):  # loop over list of dependencies
-                            try:  # deal with lists first : append csv element to dict value
-                                igpy[row_key].append(itemz)
-                                logging.info('updating ig.json with this:  { "' + row_key + '": [..."' + itemz + '",...] }')
-                            except AttributeError:  # simple key value pairs
-                                igpy[row_key] = itemz  # add/replace csv element to existing dict file
-                                logging.info('updating ig.json with this:  { "' + row_key + '": "' + itemz + '" }')
-                    except AttributeError: # nested dict elements
-                        # todo - deal with nested list elements
-                        igpy[row_key0][row_key1] = row[row_key] # add/replace csv element to existing dict fil
-                        logging.info('updating ig.json with this: { "' + row_key0 + '" { "' + row_key1 + '": "' + row[row_key] + '" } }')
-                    except TypeError: # unnested list of objects
-                        for (item,itemz) in enumerate(row[row_key].split('|')):  # loop over list of dependencies
-                            try:
-                                igpy[row_key0][item][row_key1]=itemz # create an object for each item in cell
-                            except IndexError:
-                                igpy[row_key0].append({row_key1:itemz}) # create an object for each item in cell
-                            logging.info('updating ig.json with this: { "' + row_key0 + '"[' + str(item) + ']' +':{ "' + row_key1 + '": "' + itemz + '",... }')
+                except IndexError: # unnested dict elements
+                    # deal with lists first : append csv element to dict value
+                    for (itemz) in (row[1].split('|')):  # loop over list of dependencies
+                        try:  # deal with lists first : append csv element to dict value
+                            igpy[row[0]].append(itemz)
+                            logging.info('updating ig.json with this:  { "' + row[0] + '": [..."' + itemz + '",...] }')
+                        except AttributeError:  # simple key value pairs
+                            igpy[row[0]] = itemz  # add/replace csv element to existing dict file
+                            logging.info('updating ig.json with this:  { "' + row[0] + '": "' + itemz + '" }')
+                except AttributeError: # nested dict elements
+                    # todo - deal with nested list elements
+                    igpy[row_key0][row_key1] = row[1] # add/replace csv element to existing dict fil
+                    logging.info('updating ig.json with this: { "' + row_key0 + '" { "' + row_key1 + '": "' + row[1] + '" } }')
+                except TypeError: # unnested list of objects
+                    for (item,itemz) in enumerate(row[1].split('|')):  # loop over list of dependencies
+                        try:
+                            igpy[row_key0][item][row_key1]=itemz # create an object for each item in cell
+                        except IndexError:
+                            igpy[row_key0].append({row_key1:itemz}) # create an object for each item in cell
+                        logging.info('updating ig.json with this: { "' + row_key0 + '"[' + str(item) + ']' +':{ "' + row_key1 + '": "' + itemz + '",... }')
     return
-
-def init_igxml():
-    global igxml
-    logging.info('replace variables in igxml with definitions file value: ' + 'Title: = ' + igpy['title'])
-    igxml = igxml.replace('TITLE', igpy['title'])
-    logging.info('replace variables in igxml with defintions file value: ' + 'Status: = ' + igpy['status'])
-    igxml = igxml.replace('STATUS', igpy['status'])
-    logging.info('replace variables in igxml with defintions file value: ' + 'Base: = ' + igpy['canonicalBase'])
-    igxml = igxml.replace('BASE', igpy['canonicalBase'])
-    logging.info('replace variables in igxml with defintions file value: ' + 'Publisher: = ' + igpy['publisher'])
-    igxml = igxml.replace('PUBLISHER', igpy['publisher'])
-    return(igxml)
 
 def make_op_frag(frag_id):  # create [id].md file for new operations
 
@@ -294,12 +281,13 @@ def get_file(e):
     return ex_file
 
 def main():
-    init_igpy() # read CSV file and update the configuration data
-    init_igxml() # add title, publisher etc to ig.xml
+    init_igpy()  # read CSV file and update the configuration data
+    global igxml
+    igxml = igxml.format(**igpy)  # add title, publisher etc to ig.xml
     global dir
     if igpy['working-dir']:
         dir = igpy['working-dir']  # change to the local path name specified in the csv file if present
-        logging.info('cwd = ' + dir)
+        logging.info('cwd = {}'.format(dir))
     resources = os.listdir(dir + 'resources')  # get all the files in the resource directory
     for i in range(len(resources)):  # run through all the files looking for spreadsheets and valuesets
         if 'spreadsheet' in resources[i]: # for spreadsheets  append to the igpy[spreadsheet] array.
