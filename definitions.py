@@ -17,7 +17,7 @@ dir = os.getcwd() + '/' # current dir
 logging.info('cwd = ' + dir)
 
 
-''' this is the definitions file skeleton you need to modify as needed see ig publisher documenentation at  f http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation or more information.'''
+''' this is the definitions file skeleton you need to modify as needed see ig publisher documenentation at  f http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation or more information. NOTE the if the dependencyList is empty then a "Property error" is generated.'''
 
 igpy = {
   "broken-links": "warning",
@@ -44,6 +44,9 @@ igpy = {
           "template-defns": "sd-definitions.html",
           "template-mappings": "sd-mappings.html"
       },
+      "StructureMap": {
+          "template-base": "sm.html"
+            },
       "ValueSet": {
           "template-base": "vs.html"
       }
@@ -131,6 +134,10 @@ def init_igpy():
                         except IndexError:
                             igpy[row_key0].append({row_key1:itemz}) # create an object for each item in cell
                         logging.info('updating ig.json with this: { "' + row_key0 + '"[' + str(item) + ']' +':{ "' + row_key1 + '": "' + itemz + '",... }')
+    # check if dependencyList is empty since this will lead to error GF#
+    if igpy['dependencyList'] == [{}]:
+        logging.info("dependencyList is empty!")
+        del igpy['dependencyList']
     return
 
 def make_op_frag(frag_id):  # create [id].md file for new operations
@@ -205,14 +212,14 @@ def update_sd(i, type, logical):
     logging.info('adding ' + i + ' to spreadsheets array')
     sd_file = open(dir + 'resources/' + i)  # for each spreadsheet in /resources open value and read  SD id and create and append dict struct to definiions file
     sdxml = etree.parse(sd_file)  # lxml module to parse excel xml
-    if logical:  # Get the id from the data element row2 column "element"
-        sdid = sdxml.xpath('/ss:Workbook/ss:Worksheet[3]/ss:Table/ss:Row[2]/ss:Cell[2]/ss:Data',                       namespaces=namespaces)  # use xpath to get the id from the spreadsheet and retain case
-        temp_id = sdid[0].text # retain case
-        update_igxml('StructureDefinition','logical' , temp_id)# add to ig.xml as an SD
+    if logical:
+        sdid = sdxml.xpath('/ss:Workbook/ss:Worksheet[2]/ss:Table/ss:Row[2]/ss:Cell[2]/ss:Data',                       namespaces=namespaces)  # use xpath to get the id from the spreadsheet sheet2 "metadata" row2 column2" and retain case
+        temp_id = sdid[0].text
+        update_igxml('StructureDefinition','logical' , temp_id) # add to ig.xml as an SD
     else:
         sdid = sdxml.xpath('/ss:Workbook/ss:Worksheet[2]/ss:Table/ss:Row[11]/ss:Cell[2]/ss:Data',
-                       namespaces=namespaces)  # use xpath to get the id from the spreadsheet and lower case
-        temp_id = sdid[0].text.lower()  # use lower case
+                       namespaces=namespaces)  # use xpath to get the id from the spreadsheet sheet2 "metadata" row11  column2" and lower case
+        temp_id = sdid[0].text.lower()
     update_igjson(type, temp_id) # add base to definitions file
     update_igjson(type, temp_id, 'defns') # add base to definitions file
     if not os.path.exists(dir + 'pages/_includes/'+ temp_id + '-intro.md'):  # if intro fragment is missing then create new page fragments for extension

@@ -9,18 +9,18 @@
   <Author>Grahame</Author>
   <LastAuthor>Eric Haas</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2017-06-02T03:37:19Z</LastSaved>
+  <LastSaved>2017-07-17T23:41:41Z</LastSaved>
   <Version>12.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>16440</WindowHeight>
-  <WindowWidth>28155</WindowWidth>
-  <WindowTopX>0</WindowTopX>
-  <WindowTopY>465</WindowTopY>
-  <ActiveSheet>2</ActiveSheet>
+  <WindowHeight>6630</WindowHeight>
+  <WindowWidth>25260</WindowWidth>
+  <WindowTopX>-15</WindowTopX>
+  <WindowTopY>-15</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -78,9 +78,6 @@
   </Style>
   <Style ss:ID="s73">
    <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
-  </Style>
-  <Style ss:ID="s74" ss:Parent="s62">
-   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
   </Style>
   <Style ss:ID="s76">
    <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
@@ -859,6 +856,7 @@
    <x:Print>    </x:Print>
    <x:PageLayoutZoom>0</x:PageLayoutZoom>
    <x:Print>    </x:Print>
+   <x:Print>    </x:Print>
   </WorksheetOptions>
  </Worksheet>
  <Worksheet ss:Name="Metadata">
@@ -878,12 +876,11 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="150">
     <Cell ss:StyleID="s70"><Data ss:Type="String">logical-mapping-prefix</Data></Cell>
-    <Cell ss:StyleID="s73"><Data ss:Type="String">map &quot;http://www.fhir.org/guides/ig-template/StructureMap/Foo&quot; = &quot;LogicalModel &#45;-&gt; Foo Mapping&quot;&#13;&#13;uses &quot;http://www.fhir.org/guides/ig-template/StructureDefinition/LogicalModel&quot; as source&#13;&#13;group LogicalModel&#13;  input source : LogicalModel as source;&#13;</Data></Cell>
-    <Cell ss:StyleID="s74"/>
+    <Cell ss:Index="3" ss:StyleID="s73"><Data ss:Type="String">map &quot;http://www.fhir.org/guides/ig-template/StructureMap/Foo&quot; = &quot;LogicalModel &#45;-&gt; Foo Mapping&quot;&#13;&#13;uses &quot;http://www.fhir.org/guides/ig-template/StructureDefinition/LogicalModel&quot; as source&#13;&#13;group LogicalModel&#13;  input source : LogicalModel as source;&#13;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s70"><Data ss:Type="String">logical-mapping-suffix</Data></Cell>
-    <Cell ss:StyleID="s73"><Data ss:Type="String">} endgroup</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s73"><Data ss:Type="String">} endgroup</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:StyleID="Default">
     <Cell ss:StyleID="s76"><Data ss:Type="String">extension.uri</Data></Cell>
@@ -914,6 +911,7 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Zoom>160</Zoom>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -933,8 +931,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>2</ActiveRow>
-     <ActiveCol>2</ActiveCol>
+     <ActiveRow>6</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -979,7 +976,7 @@
     <Cell ss:StyleID="s81"><Data ss:Type="String">Type</Data><Comment ss:Author=""><ss:Data
        xmlns="http://www.w3.org/TR/REC-html40"><Font html:Face="Tahoma"
         x:Family="Swiss" html:Size="8" html:Color="#000000">Data type, resource reference, profiles, aggregations, class names, type references, etc. - see the wiki</Font></ss:Data></Comment></Cell>
-    <Cell ss:StyleID="s81"><Data ss:Type="String">Logical Mapping</Data><Comment
+    <Cell ss:StyleID="s81"><Data ss:Type="String">xLogical Mapping</Data><Comment
       ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
         html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">Data type, resource reference, profiles, aggregations, class names, type references, etc. - see the wiki</Font></ss:Data></Comment></Cell>
     <Cell ss:StyleID="s81"><Data ss:Type="String">Mapping Comments</Data><Comment
@@ -1043,7 +1040,7 @@
       ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
         html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">Not published</Font></ss:Data></Comment></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="69.9375">
+   <Row ss:AutoFitHeight="0" ss:Height="75">
     <Cell ss:StyleID="s88"/>
     <Cell ss:StyleID="s89"><Data ss:Type="String">LogicalModel</Data></Cell>
     <Cell ss:StyleID="s90"/>
@@ -2898,71 +2895,70 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Zoom>120</Zoom>
-   <Selected/>
-   <LeftColumnVisible>11</LeftColumnVisible>
+   <Zoom>140</Zoom>
+   <LeftColumnVisible>1</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>2</ActiveRow>
-     <ActiveCol>13</ActiveCol>
+     <ActiveRow>1</ActiveRow>
+     <ActiveCol>6</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
-   <x:PageLayoutZoom>0</x:PageLayoutZoom>
+   <x:PageLayoutZoom>140</x:PageLayoutZoom>
   </WorksheetOptions>
   <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
    <Range>R3C7:R3C8,R5C8</Range>
    <Condition>
-    <Value1>'Data Elements'!R[1048570]C3=&quot;0..0&quot;</Value1>
+    <Value1>'Data Elements'!R[1048566]C3=&quot;0..0&quot;</Value1>
     <Format Style='border:.5pt solid #D8D8D8;background:#F2F2F2'/>
    </Condition>
    <Condition>
-    <Value1>AND('Data Elements'!R[1048570]C[16366]&lt;&gt;&quot;&quot;,'Data Elements'!R[1048570]C1=&quot;&quot;)</Value1>
+    <Value1>AND('Data Elements'!R[1048566]C[16354]&lt;&gt;&quot;&quot;,'Data Elements'!R[1048566]C1=&quot;&quot;)</Value1>
     <Format Style='border:.5pt solid #D8D8D8;background:red'/>
    </Condition>
   </ConditionalFormatting>
   <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
    <Range>R3C7:R3C8,R5C8</Range>
    <Condition>
-    <Value1>LEFT('Data Elements'!R[1048570]C1,1)=&quot;!&quot;</Value1>
+    <Value1>LEFT('Data Elements'!R[1048566]C1,1)=&quot;!&quot;</Value1>
     <Format Style='border:.5pt solid #D8D8D8;background:#A5A5A5'/>
    </Condition>
   </ConditionalFormatting>
   <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
    <Range>R5C7</Range>
    <Condition>
-    <Value1>'Data Elements'!R[1048564]C3=&quot;0..0&quot;</Value1>
+    <Value1>'Data Elements'!R[1048556]C3=&quot;0..0&quot;</Value1>
     <Format Style='border:.5pt solid #D8D8D8;background:#F2F2F2'/>
    </Condition>
    <Condition>
-    <Value1>AND('Data Elements'!R[1048564]C[16366]&lt;&gt;&quot;&quot;,'Data Elements'!R[1048564]C1=&quot;&quot;)</Value1>
+    <Value1>AND('Data Elements'!R[1048556]C[16354]&lt;&gt;&quot;&quot;,'Data Elements'!R[1048556]C1=&quot;&quot;)</Value1>
     <Format Style='border:.5pt solid #D8D8D8;background:red'/>
    </Condition>
   </ConditionalFormatting>
   <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
    <Range>R5C7</Range>
    <Condition>
-    <Value1>LEFT('Data Elements'!R[1048564]C1,1)=&quot;!&quot;</Value1>
+    <Value1>LEFT('Data Elements'!R[1048556]C1,1)=&quot;!&quot;</Value1>
     <Format Style='border:.5pt solid #D8D8D8;background:#A5A5A5'/>
    </Condition>
   </ConditionalFormatting>
   <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
    <Range>R4C7</Range>
    <Condition>
-    <Value1>'Data Elements'!R[1048567]C3=&quot;0..0&quot;</Value1>
+    <Value1>'Data Elements'!R[1048561]C3=&quot;0..0&quot;</Value1>
     <Format Style='border:.5pt solid #D8D8D8;background:#F2F2F2'/>
    </Condition>
    <Condition>
-    <Value1>AND('Data Elements'!R[1048567]C[16366]&lt;&gt;&quot;&quot;,'Data Elements'!R[1048567]C1=&quot;&quot;)</Value1>
+    <Value1>AND('Data Elements'!R[1048561]C[16354]&lt;&gt;&quot;&quot;,'Data Elements'!R[1048561]C1=&quot;&quot;)</Value1>
     <Format Style='border:.5pt solid #D8D8D8;background:red'/>
    </Condition>
   </ConditionalFormatting>
   <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
    <Range>R4C7</Range>
    <Condition>
-    <Value1>LEFT('Data Elements'!R[1048567]C1,1)=&quot;!&quot;</Value1>
+    <Value1>LEFT('Data Elements'!R[1048561]C1,1)=&quot;!&quot;</Value1>
     <Format Style='border:.5pt solid #D8D8D8;background:#A5A5A5'/>
    </Condition>
   </ConditionalFormatting>
@@ -5771,6 +5767,7 @@
    <x:Print>    </x:Print>
    <x:PageLayoutZoom>0</x:PageLayoutZoom>
    <x:Print>    </x:Print>
+   <x:Print>    </x:Print>
   </WorksheetOptions>
  </Worksheet>
  <Worksheet ss:Name="Sheet11">
@@ -6111,6 +6108,7 @@
    <ProtectScenarios>False</ProtectScenarios>
    <x:Print>    </x:Print>
    <x:PageLayoutZoom>0</x:PageLayoutZoom>
+   <x:Print>    </x:Print>
    <x:Print>    </x:Print>
   </WorksheetOptions>
  </Worksheet>

@@ -1,6 +1,6 @@
 Configuration Parameter,Configuration Value ( use '|' for lists)
 working-dir,/Users/ehaas/Documents/FHIR/IG-Template/
-title,Implementation Guide Template
+title,IG-Template
 status,draft
 publisher,Health eData Inc
 extensions,template-blah|template-complex
@@ -22,11 +22,13 @@ jurisdiction,US
 sct-edition,http://snomed.info/sct/731000124108
 no-inactive-codes,FALSE
 broken-links,warning
-gen-examples,TRUE
-do-transforms,TRUE
+gen-examples,FALSE
+do-transforms,FALSE
 canonicalBase,http://www.fhir.org/guides/ig-template
 dependencyList.name,uscore
 dependencyList.location,http://hl7.org/fhir/us/core/stu1/
 dependencyList.source,resources
 special-urls,
+tool,jekyll
+cial-urls,
 tool,jekyll
