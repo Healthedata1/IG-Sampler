@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IG-Template</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/ig-template/ImplementationGuide/ig</pre></div>
+  </text>
+  <url value="http://www.fhir.org/guides/ig-template/ImplementationGuide/ig"/>
+  <name value="IG-Template"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Health eData Inc"/>
+  <package>
+    <name value="base"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationRequest-uscore-mo1.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/uscore-mo1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-example.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/example"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Basic-diet.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Basic/diet"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-example.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="AllergyIntolerance/example"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureMap-Foo.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureMap/Foo"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-profile-on-profile2.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/template-profile-on-profile2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-basic2.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/template-basic2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-blah.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="SearchParameter/blah"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-server.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CapabilityStatement/server"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-client.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CapabilityStatement/client"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package>
+    <name value="Identifer Free Reference Data Type"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-ifr.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="Identifer Free Reference Data Type"/>
+      <sourceReference>
+        <reference value="StructureDefinition/ifr"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package>
+    <name value="/Users/ehaas/Documents/FHIR/IG-Sampler/resources/patient-on-usprofile-spreadsheet"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-profile-on-profile.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="Template-Profile-on-Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/template-profile-on-profile"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package>
+    <name value="/Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-blah-codes.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="BlahCodes"/>
+      <sourceReference>
+        <reference value="ValueSet/blah-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-blah-codes.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="BlahCodes"/>
+      <sourceReference>
+        <reference value="CodeSystem/blah-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-blah.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="Example Extension"/>
+      <sourceReference>
+        <reference value="StructureDefinition/template-blah"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-complex.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="Complex Extension"/>
+      <sourceReference>
+        <reference value="StructureDefinition/template-complex"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-basic.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="Profile template-basic"/>
+      <sourceReference>
+        <reference value="StructureDefinition/template-basic"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <page>
+    <source value="index.html"/>
+    <title value="IG-Template Homepage"/>
+    <kind value="page"/>
+  </page>
+</ImplementationGuide>

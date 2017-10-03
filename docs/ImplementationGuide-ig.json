@@ -1,0 +1,251 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ig",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG-Template</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/ig-template/ImplementationGuide/ig</pre></div>"
+  },
+  "url": "http://www.fhir.org/guides/ig-template/ImplementationGuide/ig",
+  "name": "IG-Template",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Health eData Inc",
+  "package": [
+    {
+      "name": "base",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "MedicationRequest-uscore-mo1.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "MedicationRequest/uscore-mo1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Observation-example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Observation/example"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Basic-diet.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Basic/diet"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "AllergyIntolerance-example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "AllergyIntolerance/example"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureMap-Foo.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureMap/Foo"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-template-profile-on-profile2.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/template-profile-on-profile2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-template-basic2.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/template-basic2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-blah.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/blah"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-server.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/server"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-client.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/client"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Identifer Free Reference Data Type",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-ifr.html"
+            }
+          ],
+          "example": false,
+          "name": "Identifer Free Reference Data Type",
+          "sourceReference": {
+            "reference": "StructureDefinition/ifr"
+          }
+        }
+      ]
+    },
+    {
+      "name": "/Users/ehaas/Documents/FHIR/IG-Sampler/resources/patient-on-usprofile-spreadsheet",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-template-profile-on-profile.html"
+            }
+          ],
+          "example": false,
+          "name": "Template-Profile-on-Profile",
+          "sourceReference": {
+            "reference": "StructureDefinition/template-profile-on-profile"
+          }
+        }
+      ]
+    },
+    {
+      "name": "/Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-blah-codes.html"
+            }
+          ],
+          "example": false,
+          "name": "BlahCodes",
+          "sourceReference": {
+            "reference": "ValueSet/blah-codes"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-blah-codes.html"
+            }
+          ],
+          "example": false,
+          "name": "BlahCodes",
+          "sourceReference": {
+            "reference": "CodeSystem/blah-codes"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-template-blah.html"
+            }
+          ],
+          "example": false,
+          "name": "Example Extension",
+          "sourceReference": {
+            "reference": "StructureDefinition/template-blah"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-template-complex.html"
+            }
+          ],
+          "example": false,
+          "name": "Complex Extension",
+          "sourceReference": {
+            "reference": "StructureDefinition/template-complex"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-template-basic.html"
+            }
+          ],
+          "example": false,
+          "name": "Profile template-basic",
+          "sourceReference": {
+            "reference": "StructureDefinition/template-basic"
+          }
+        }
+      ]
+    }
+  ],
+  "page": {
+    "source": "index.html",
+    "title": "IG-Template Homepage",
+    "kind": "page"
+  }
+}

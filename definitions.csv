@@ -1,5 +1,6 @@
 Configuration Parameter,Configuration Value ( use '|' for lists)
-working-dir,/Users/ehaas/Documents/FHIR/IG-Template/
+igpublisher-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
+working-dir,/Users/ehaas/Documents/FHIR/IG-Sampler/
 title,IG-Template
 status,draft
 publisher,Health eData Inc
@@ -11,10 +12,10 @@ structuremaps,Foo
 source,ig.xml
 version,3.0.1
 fixed-business-version,0.0.0
-paths.pages,pages
-paths.resources,resources|examples
+paths.pages,pages|../IG-Sampler/pages
+paths.resources,../IG-Sampler/resources|../IG-Sampler/examples
 paths.temp,temp
-paths.output,output
+paths.output,../IG-Sampler/docs
 paths.txCache,txCache
 paths.qa,qa
 paths.specification,http://build.fhir.org
@@ -27,8 +28,6 @@ do-transforms,FALSE
 canonicalBase,http://www.fhir.org/guides/ig-template
 dependencyList.name,uscore
 dependencyList.location,http://hl7.org/fhir/us/core/stu1/
-dependencyList.source,resources
+dependencyList.source,uscore
 special-urls,
-tool,jekyll
-cial-urls,
 tool,jekyll
