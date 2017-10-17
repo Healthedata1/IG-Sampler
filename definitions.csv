@@ -12,7 +12,7 @@ structuremaps,Foo
 source,ig.xml
 version,3.0.1
 fixed-business-version,0.0.0
-paths.pages,pages|../IG-Sampler/pages
+paths.pages,pages|../IG-Sampler/pages|../IG-Sampler/pages/_includes
 paths.resources,../IG-Sampler/resources|../IG-Sampler/examples
 paths.temp,temp
 paths.output,../IG-Sampler/docs

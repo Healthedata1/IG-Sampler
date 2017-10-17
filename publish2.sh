@@ -16,4 +16,4 @@ sleep 3
 python3.5 ${path3}definitions.py
 sleep 3
 git status
-java -jar ${path2}org.hl7.fhir.igpublisher.jar -ig ${path1}ig.json -watch -tx n/a
+java -jar ${path2}org.hl7.fhir.igpublisher.jar -ig ${path1}ig.json -watch
