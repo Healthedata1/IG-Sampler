@@ -3,14 +3,14 @@
   "id": "blah-codes",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BlahCodes</h2><div><p>A bunch of example codes</p>\n</div><p>This code system http://www.fhir.org/guides/ig-template/CodeSystem/blah-codes defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>blah<a name=\"blah-codes-blah\"> </a></td><td>Blah</td><td>example code 1</td></tr><tr><td>foo<a name=\"blah-codes-foo\"> </a></td><td>Foo</td><td>example code 2</td></tr><tr><td>bar<a name=\"blah-codes-bar\"> </a></td><td>Bar</td><td>example code 3</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BlahCodes</h2><div><p>A bunch of example codes</p>\n</div><p>This code system http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>blah<a name=\"blah-codes-blah\"> </a></td><td>Blah</td><td>example code 1</td></tr><tr><td>foo<a name=\"blah-codes-foo\"> </a></td><td>Foo</td><td>example code 2</td></tr><tr><td>bar<a name=\"blah-codes-bar\"> </a></td><td>Bar</td><td>example code 3</td></tr></table></div>"
   },
-  "url": "http://www.fhir.org/guides/ig-template/CodeSystem/blah-codes",
+  "url": "http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes",
   "version": "0.0.0",
   "name": "BlahCodes",
   "status": "draft",
   "experimental": false,
-  "date": "2017-10-03T11:42:53-07:00",
+  "date": "2017-10-16T16:59:42-07:00",
   "contact": [
     {
       "telecom": [
@@ -29,14 +29,13 @@
       "coding": [
         {
           "system": "urn:iso:std:iso:3166",
-          "code": "US",
-          "display": "United States Minor Outlying Islands (the)"
+          "code": "US"
         }
       ]
     }
   ],
   "caseSensitive": true,
-  "valueSet": "http://www.fhir.org/guides/ig-template/ValueSet/blah-codes",
+  "valueSet": "http://www.fhir.org/guides/ig-sampler/ValueSet/blah-codes",
   "content": "complete",
   "concept": [
     {

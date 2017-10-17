@@ -8,13 +8,13 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BlahCodes</h2><div><p>A bunch of example codes</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/ig-template/CodeSystem/blah-codes</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BlahCodes</h2><div><p>A bunch of example codes</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes</code></a></li></ul></div>"
   },
-  "url": "http://www.fhir.org/guides/ig-template/ValueSet/blah-codes",
+  "url": "http://www.fhir.org/guides/ig-sampler/ValueSet/blah-codes",
   "version": "0.0.0",
   "name": "BlahCodes",
   "status": "draft",
-  "date": "2017-10-03T11:42:53-07:00",
+  "date": "2017-10-16T16:59:42-07:00",
   "contact": [
     {
       "telecom": [
@@ -33,8 +33,7 @@
       "coding": [
         {
           "system": "urn:iso:std:iso:3166",
-          "code": "US",
-          "display": "United States Minor Outlying Islands (the)"
+          "code": "US"
         }
       ]
     }
@@ -43,7 +42,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://www.fhir.org/guides/ig-template/CodeSystem/blah-codes"
+        "system": "http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes"
       }
     ]
   }

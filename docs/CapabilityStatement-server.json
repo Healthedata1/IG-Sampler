@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<ul><li>FHIR Version: 3.0.0</li><li>Supported formats: xml, json</li><li>Published: 2017-03-08</li><li>Published by: Health eData Inc</li></ul><p>The Section describes the expected capabilities etc....</p></div>"
   },
-  "url": "http://www.fhir.org/guides/ig-template/CapabilityStatement/server",
+  "url": "http://www.fhir.org/guides/ig-sampler/CapabilityStatement/server",
   "version": "0.0.0",
   "name": "Server",
   "status": "draft",
@@ -27,8 +27,7 @@
       "coding": [
         {
           "system": "urn:iso:std:iso:3166",
-          "code": "US",
-          "display": "United States Minor Outlying Islands (the)"
+          "code": "US"
         }
       ]
     }
@@ -42,7 +41,7 @@
   ],
   "profile": [
     {
-      "reference": "http://www.fhir.org/guides/ig-template/StructureDefinition/template-basic",
+      "reference": "http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-basic",
       "display": "StructureDefinition-template-basic"
     }
   ],

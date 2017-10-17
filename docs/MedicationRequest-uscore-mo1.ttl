@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/ig-template/MedicationRequest/uscore-mo1> a fhir:MedicationRequest;
+<http://www.fhir.org/guides/ig-sampler/MedicationRequest/uscore-mo1> a fhir:MedicationRequest;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "uscore-mo1"];
   fhir:Resource.meta [
@@ -16,7 +16,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: uscore-mo1</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Nizatidine 15 MG/ML Oral Solution [Axid] <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '582620' = 'Nizatidine 15 MG/ML Oral Solution [Axid]', given as 'Nizatidine 15 MG/ML Oral Solution [Axid]'})</span></p><p><b>subject</b>: <a href=\"Patient/example\">Amy Shaw</a></p><p><b>authoredOn</b>: Apr 5, 2008</p><h3>Requesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Agent</b></td></tr><tr><td>*</td><td>Ronald Bone, MD</td></tr></table><p><b>dosageInstruction</b>: </p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td><td><b>ExpectedSupplyDuration</b></td></tr><tr><td>*</td><td>1</td><td>480 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span></td><td>30 days<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code d = 'd')</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: uscore-mo1</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Nizatidine 15 MG/ML Oral Solution [Axid] <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '582620' = '582620', given as 'Nizatidine 15 MG/ML Oral Solution [Axid]'})</span></p><p><b>subject</b>: <a href=\"Patient/example\">Amy Shaw</a></p><p><b>authoredOn</b>: Apr 5, 2008</p><h3>Requesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Agent</b></td></tr><tr><td>*</td><td>Ronald Bone, MD</td></tr></table><p><b>dosageInstruction</b>: </p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td><td><b>ExpectedSupplyDuration</b></td></tr><tr><td>*</td><td>1</td><td>480 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span></td><td>30 days<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code d = 'd')</span></td></tr></table></div>"
   ];
   fhir:MedicationRequest.status [ fhir:value "active"];
   fhir:MedicationRequest.intent [ fhir:value "order"];
@@ -30,7 +30,7 @@
      fhir:CodeableConcept.text [ fhir:value "Nizatidine 15 MG/ML Oral Solution [Axid]" ]
   ];
   fhir:MedicationRequest.subject [
-     fhir:link <http://www.fhir.org/guides/ig-template/Patient/example>;
+     fhir:link <http://www.fhir.org/guides/ig-sampler/Patient/example>;
      fhir:Reference.reference [ fhir:value "Patient/example" ];
      fhir:Reference.display [ fhir:value "Amy Shaw" ]
   ];
@@ -69,7 +69,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://www.fhir.org/guides/ig-template/MedicationRequest/uscore-mo1.ttl> a owl:Ontology;
+<http://www.fhir.org/guides/ig-sampler/MedicationRequest/uscore-mo1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

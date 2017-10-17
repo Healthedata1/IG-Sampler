@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
 <ul><li>FHIR Version: 3.0.0</li><li>Supported formats: xml, json</li><li>Published: 2017-03-08</li><li>Published by: Health eData Inc</li></ul><p>The Section describes the expected capabilities etc....</p></div>
   </text>
-  <url value="http://www.fhir.org/guides/ig-template/CapabilityStatement/client"/>
+  <url value="http://www.fhir.org/guides/ig-sampler/CapabilityStatement/client"/>
   <version value="0.0.0"/>
   <name value="Client"/>
   <status value="draft"/>
@@ -23,7 +23,6 @@
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="US"/>
-      <display value="United States Minor Outlying Islands (the)"/>
     </coding>
   </jurisdiction>
   <kind value="requirements"/>
@@ -32,7 +31,7 @@
   <format value="xml"/>
   <format value="json"/>
   <profile>
-    <reference value="http://www.fhir.org/guides/ig-template/StructureDefinition/template-basic"/>
+    <reference value="http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-basic"/>
     <display value="StructureDefinition-template-basic"/>
   </profile>
   <rest>

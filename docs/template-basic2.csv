@@ -22,11 +22,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource
 "Basic.extension","","","",0,*,"","","","Extension
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"",""
-"Basic.extension","Simple_Extension","","",0,1,"Y","","","Extension {http://www.fhir.org/guides/ig-template/StructureDefinition/template-blah}
+"Basic.extension","Simple_Extension","","",0,1,"Y","","","Extension {http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-blah}
 ","Example extension","This is a simple extension applied to a Profile.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Basic.extension","Complex_Extension","","",0,1,"Y","","","Extension {http://www.fhir.org/guides/ig-template/StructureDefinition/template-complex}
+"Basic.extension","Complex_Extension","","",0,1,"Y","","","Extension {http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-complex}
 ","Example complex extension","This is a complex extension applied to a Profile.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -65,7 +65,7 @@ user content","",0,*,"","","","Extension
 ","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","","CD.codingRationale"
 "Basic.code.text","","","",0,1,"","","Y","string
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","","./originalText[mediaType/code=""text/plain""]/data"
-"Basic.subject","","","",1,1,"Y","","Y","Reference {http://www.fhir.org/guides/ig-template/StructureDefinition/ifr} {http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient}
+"Basic.subject","","","",1,1,"Y","","Y","Reference {http://www.fhir.org/guides/ig-sampler/StructureDefinition/ifr} {http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient}
 ","Identifies the focus of this resource","Identifies the patient, practitioner, device or any other resource that is the ""focus"" of this resource.","Optional as not all potential resources will have subjects.  Resources associated with multiple subjects can handle this via extension.","Needed for partitioning the resource by Patient.","","","","","","","",,,,,"",,,,"Basic.subject",0,1,"","","./participation[typeCode='SBJ'] (possibly through a ControlAct and Role)","who.focus"
 "Basic.created","","","",0,1,"","","Y","date
 ","When created","Identifies when the resource was first created.","","Allows ordering resource instances by time.","","","","","","","",,,,,"",,,,"Basic.created",0,1,"","","./participation[typeCode='AUT']/time (possibly through a ControlAct and Role)","when.recorded"

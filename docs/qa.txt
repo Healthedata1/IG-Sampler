@@ -1,13 +1,13 @@
-﻿IG-Template : Validation Results
+﻿IG-Sampler : Validation Results
 =========================================
 
-err = , warn = , info = 
-Generated Tue Oct 03 11:43:12 PDT 2017. FHIR version 3.1.0 for 3.0.1
+err = 22, warn = 10, info = 42
+Generated Mon Oct 16 17:00:03 PDT 2017. FHIR version 3.1.0 for 3.0.1
 
  Build Errors : 5 / 0
- /Users/ehaas/Documents/FHIR/IG-Sampler/examples/allergyintolerance-example : 1 / 11
+ /Users/ehaas/Documents/FHIR/IG-Sampler/examples/allergyintolerance-example : 2 / 11
  /Users/ehaas/Documents/FHIR/IG-Sampler/examples/diet : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Sampler/examples/obs : 4 / 0
+ /Users/ehaas/Documents/FHIR/IG-Sampler/examples/obs : 5 / 0
  /Users/ehaas/Documents/FHIR/IG-Sampler/examples/uscore-mo1 : 1 / 10
  /Users/ehaas/Documents/FHIR/IG-Sampler/resources/capabilitystatement-client : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Sampler/resources/capabilitystatement-server : 0 / 0
@@ -22,14 +22,15 @@ Generated Tue Oct 03 11:43:12 PDT 2017. FHIR version 3.1.0 for 3.0.1
 </table>
 == n/a ==
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/AllergyIntolerance-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 511: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/MedicationRequest-uscore-mo1.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 466: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 749: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 817: The link 'Encounter/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 928: The link 'Practitioner/practitioner-1' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/MedicationRequest-uscore-mo1.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 432: The link 'Patient/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 728: The link 'Patient/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 796: The link 'Encounter/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 907: The link 'Practitioner/practitioner-1' cannot be resolved
 == /Users/ehaas/Documents/FHIR/IG-Sampler/examples/allergyintolerance-example.xml ==
-WARNING: AllergyIntolerance/example: AllergyIntolerance.code: None of the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-substance (http://hl7.org/fhir/us/core/ValueSet/us-core-substance, and a code should come from this value set unless it has no suitable code) (codes = http://hl7.org/fhir/ndfrt#N0000175503)
+WARNING: AllergyIntolerance/example: AllergyIntolerance.code: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-substance and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
 WARNING: AllergyIntolerance/example: AllergyIntolerance.code.coding: Unknown Code System http://hl7.org/fhir/ndfrt
 ERROR: AllergyIntolerance/example: AllergyIntolerance.patient: Unable to resolve resource 'Patient/example'
+ERROR: AllergyIntolerance/example: AllergyIntolerance.reaction.manifestation.coding: null
 INFORMATION: AllergyIntolerance/example: AllergyIntolerance.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: AllergyIntolerance/example: AllergyIntolerance.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: AllergyIntolerance/example: AllergyIntolerance.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -42,11 +43,12 @@ INFORMATION: AllergyIntolerance/example: AllergyIntolerance.reaction[1].severity
 == /Users/ehaas/Documents/FHIR/IG-Sampler/examples/diet.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Sampler/examples/obs.xml ==
 ERROR: Observation/example: Observation: Profile http://hl7.org/fhir/StructureDefinition/Observation, Element 'Observation.status': minimum required = 1, but only found 0
+ERROR: Observation/example: Observation.code.coding[3]: null
 ERROR: Observation/example: Observation.subject: Unable to resolve resource 'Patient/example'
 ERROR: Observation/example: Observation.context: Unable to resolve resource 'Encounter/example'
 ERROR: Observation/example: Observation.performer: Unable to resolve resource 'Practitioner/practitioner-1'
 == /Users/ehaas/Documents/FHIR/IG-Sampler/examples/uscore-mo1.xml ==
-WARNING: MedicationRequest/uscore-mo1: MedicationRequest.medicationCodeableConcept: No Message returned
+WARNING: MedicationRequest/uscore-mo1: MedicationRequest.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
 ERROR: MedicationRequest/uscore-mo1: MedicationRequest.subject: Unable to resolve resource 'Patient/example'
 INFORMATION: MedicationRequest/uscore-mo1: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/uscore-mo1: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -60,18 +62,18 @@ INFORMATION: MedicationRequest/uscore-mo1: MedicationRequest.dispenseRequest[1].
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/capabilitystatement-client.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/capabilitystatement-server.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/identifier-free-reference-profile-spreadsheet.xml ==
-INFORMATION: /Users/ehaas/Documents/FHIR/IG-Sampler/resources/identifier-free-reference-profile-spreadsheet: Resources generated by processing /Users/ehaas/Documents/FHIR/IG-Sampler/resources/identifier-free-reference-profile-spreadsheet:  http://www.fhir.org/guides/ig-template/StructureDefinition/ifr ("Identifer Free Reference Data Type")
+INFORMATION: /Users/ehaas/Documents/FHIR/IG-Sampler/resources/identifier-free-reference-profile-spreadsheet: Resources generated by processing /Users/ehaas/Documents/FHIR/IG-Sampler/resources/identifier-free-reference-profile-spreadsheet:  http://www.fhir.org/guides/ig-sampler/StructureDefinition/ifr ("Identifer Free Reference Data Type")
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/ig.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/patient-on-usprofile-spreadsheet.xml ==
-INFORMATION: /Users/ehaas/Documents/FHIR/IG-Sampler/resources/patient-on-usprofile-spreadsheet: Resources generated by processing /Users/ehaas/Documents/FHIR/IG-Sampler/resources/patient-on-usprofile-spreadsheet:  http://www.fhir.org/guides/ig-template/StructureDefinition/template-profile-on-profile ("Template-Profile-on-Profile")
+INFORMATION: /Users/ehaas/Documents/FHIR/IG-Sampler/resources/patient-on-usprofile-spreadsheet: Resources generated by processing /Users/ehaas/Documents/FHIR/IG-Sampler/resources/patient-on-usprofile-spreadsheet:  http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-profile-on-profile ("Template-Profile-on-Profile")
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/searchparameter-blah.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/structuredefinition-template-basic2.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/structuredefinition-template-profile-on-profile2.xml ==
-WARNING: StructureDefinition/template-profile-on-profile2: StructureDefinition.jurisdiction: Display Name for US must be 'United States of America (the)'
+WARNING: StructureDefinition/template-profile-on-profile2: StructureDefinition.jurisdiction: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/structuremap-Foo.xml ==
-WARNING: StructureMap/Foo: StructureMap.jurisdiction: Display Name for US must be 'United States of America (the)'
+WARNING: StructureMap/Foo: StructureMap.jurisdiction: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet.xml ==
-INFORMATION: /Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet: Resources generated by processing /Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet:  http://www.fhir.org/guides/ig-template/ValueSet/blah-codes ("BlahCodes")  http://www.fhir.org/guides/ig-template/CodeSystem/blah-codes ("BlahCodes")  http://www.fhir.org/guides/ig-template/StructureDefinition/template-blah ("Example Extension")  http://www.fhir.org/guides/ig-template/StructureDefinition/template-complex ("Complex Extension")  http://www.fhir.org/guides/ig-template/StructureDefinition/template-basic ("Profile template-basic")
+INFORMATION: /Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet: Resources generated by processing /Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet:  http://www.fhir.org/guides/ig-sampler/ValueSet/blah-codes ("BlahCodes")  http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes ("BlahCodes")  http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-blah ("Example Extension")  http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-complex ("Complex Extension")  http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-basic ("Profile template-basic")
 ERROR: ValueSet/blah-codes: ValueSet: Profile http://hl7.org/fhir/StructureDefinition/shareablevalueset, Element 'ValueSet.version': minimum required = 1, but only found 0
 ERROR: ValueSet/blah-codes: ValueSet: Profile http://hl7.org/fhir/StructureDefinition/shareablevalueset, Element 'ValueSet.experimental': minimum required = 1, but only found 0
 ERROR: ValueSet/blah-codes: ValueSet: Profile http://hl7.org/fhir/StructureDefinition/shareablevalueset, Element 'ValueSet.publisher': minimum required = 1, but only found 0

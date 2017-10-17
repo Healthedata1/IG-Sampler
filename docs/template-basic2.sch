@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Basic</sch:title>
     <sch:rule context="f:Basic">
-      <sch:assert test="count(f:extension[@url = 'http://www.fhir.org/guides/ig-template/StructureDefinition/template-blah']) &lt;= 1">extension with URL = 'http://www.fhir.org/guides/ig-template/StructureDefinition/template-blah': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://www.fhir.org/guides/ig-template/StructureDefinition/template-complex']) &lt;= 1">extension with URL = 'http://www.fhir.org/guides/ig-template/StructureDefinition/template-complex': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-blah']) &lt;= 1">extension with URL = 'http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-blah': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-complex']) &lt;= 1">extension with URL = 'http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-complex': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>

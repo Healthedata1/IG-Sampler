@@ -1,7 +1,7 @@
 Configuration Parameter,Configuration Value ( use '|' for lists)
-igpublisher-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
+igtemplate-dir,/Users/ehaas/Documents/FHIR/IG-Template/
 working-dir,/Users/ehaas/Documents/FHIR/IG-Sampler/
-title,IG-Template
+title,IG-Sampler
 status,draft
 publisher,Health eData Inc
 extensions,template-blah|template-complex
@@ -25,7 +25,7 @@ no-inactive-codes,FALSE
 broken-links,warning
 gen-examples,FALSE
 do-transforms,FALSE
-canonicalBase,http://www.fhir.org/guides/ig-template
+canonicalBase,http://www.fhir.org/guides/ig-sampler
 dependencyList.name,uscore
 dependencyList.location,http://hl7.org/fhir/us/core/stu1/
 dependencyList.source,uscore

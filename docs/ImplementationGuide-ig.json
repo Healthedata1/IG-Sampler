@@ -3,10 +3,10 @@
   "id": "ig",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG-Template</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/ig-template/ImplementationGuide/ig</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG-Sampler</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/ig-sampler/ImplementationGuide/ig</pre></div>"
   },
-  "url": "http://www.fhir.org/guides/ig-template/ImplementationGuide/ig",
-  "name": "IG-Template",
+  "url": "http://www.fhir.org/guides/ig-sampler/ImplementationGuide/ig",
+  "name": "IG-Sampler",
   "status": "draft",
   "experimental": true,
   "publisher": "Health eData Inc",
@@ -245,7 +245,7 @@
   ],
   "page": {
     "source": "index.html",
-    "title": "IG-Template Homepage",
+    "title": "IG-Sampler Homepage",
     "kind": "page"
   }
 }

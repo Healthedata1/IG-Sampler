@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/ig-template/ValueSet/blah-codes> a fhir:ValueSet;
+<http://www.fhir.org/guides/ig-sampler/ValueSet/blah-codes> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "blah-codes"];
   fhir:Resource.meta [
@@ -16,13 +16,13 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BlahCodes</h2><div><p>A bunch of example codes</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/ig-template/CodeSystem/blah-codes</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BlahCodes</h2><div><p>A bunch of example codes</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://www.fhir.org/guides/ig-template/ValueSet/blah-codes"];
+  fhir:ValueSet.url [ fhir:value "http://www.fhir.org/guides/ig-sampler/ValueSet/blah-codes"];
   fhir:ValueSet.version [ fhir:value "0.0.0"];
   fhir:ValueSet.name [ fhir:value "BlahCodes"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2017-10-03T11:42:53-07:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2017-10-16T16:59:42-07:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [
@@ -39,21 +39,20 @@
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "US" ];
-       fhir:Coding.display [ fhir:value "United States Minor Outlying Islands (the)" ]
+       fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
   fhir:ValueSet.immutable [ fhir:value "true"^^xsd:boolean];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://www.fhir.org/guides/ig-template/CodeSystem/blah-codes" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://www.fhir.org/guides/ig-template/ValueSet/blah-codes.ttl> a owl:Ontology;
+<http://www.fhir.org/guides/ig-sampler/ValueSet/blah-codes.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
