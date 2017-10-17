@@ -1,0 +1,6 @@
+[submodule "IG-Template"]
+	path = IG-Template
+	url = https://github.com/Healthedata1/IG-Template.git
+[submodule "FHIR-IGPub-filebuilder"]
+	path = FHIR-IGPub-filebuilder
+	url = https://github.com/Healthedata1/FHIR-IGPub-filebuilder.git
