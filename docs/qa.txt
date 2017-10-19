@@ -1,13 +1,13 @@
 ﻿IG-Sampler : Validation Results
 =========================================
 
-err = 22, warn = 10, info = 42
-Generated Tue Oct 17 13:54:11 PDT 2017. FHIR version 3.1.0 for 3.0.1
+err = 18, warn = 14, info = 42
+Generated Thu Oct 19 09:36:30 PDT 2017. FHIR version 3.1.0 for 3.0.1
 
- Build Errors : 128 / 0
- /Users/ehaas/Documents/FHIR/IG-Sampler/examples/allergyintolerance-example : 2 / 11
+ Build Errors : 5 / 0
+ /Users/ehaas/Documents/FHIR/IG-Sampler/examples/allergyintolerance-example : 1 / 12
  /Users/ehaas/Documents/FHIR/IG-Sampler/examples/diet : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Sampler/examples/obs : 5 / 0
+ /Users/ehaas/Documents/FHIR/IG-Sampler/examples/obs : 4 / 1
  /Users/ehaas/Documents/FHIR/IG-Sampler/examples/uscore-mo1 : 1 / 10
  /Users/ehaas/Documents/FHIR/IG-Sampler/resources/capabilitystatement-client : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Sampler/resources/capabilitystatement-server : 0 / 0
@@ -22,138 +22,15 @@ Generated Tue Oct 17 13:54:11 PDT 2017. FHIR version 3.1.0 for 3.0.1
 </table>
 == n/a ==
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/AllergyIntolerance-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 511: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/MedicationRequest-uscore-mo1.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 432: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 728: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 796: The link 'Encounter/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 907: The link 'Practitioner/practitioner-1' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/index.html#/html/head/body/div/div/div/div/div/div/figure/img at Line 169, column 4: The image source 'assets/images/cat.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/ImplementationGuide-ig.ttl.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/ImplementationGuide-ig.ttl.html#/html/head/body/div/div/div/p/a at Line 356, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/downloads.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/downloads.html#/html/head/body/div/div/div/div/div/p/a at Line 143, column 349: The link 'http://build.fhir.org//validation.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/downloads.html#/html/head/body/div/div/div/p/a at Line 193, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/security.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/security.html#/html/head/body/div/div/div/p/a at Line 164, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/StructureDefinition-template-profile-on-profile-definitions.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/StructureDefinition-template-profile-on-profile-definitions.html#/html/head/body/div/div/div/p/a at Line 653, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/guidance.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/guidance.html#/html/head/body/div/div/div/p/a at Line 182, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-client.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-client.html#/html/head/body/div/div/div/p/a at Line 171, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/ImplementationGuide-ig.json.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/ImplementationGuide-ig.json.html#/html/head/body/div/div/div/p/a at Line 415, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/searchparams.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/searchparams.html#/html/head/body/div/div/div/p/a at Line 167, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 131, column 6: The link 'StructureDefinition-extension-on-behalf-of.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 132, column 6: The link 'StructureDefinition-extension-loc-relevance.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 133, column 6: The link 'StructureDefinition-extension-primary-agency.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 134, column 6: The link 'StructureDefinition-extension-manual-init.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 135, column 6: The link 'StructureDefinition-extension-manual-init-reason.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 136, column 6: The link 'StructureDefinition-extension-warning-reason.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 137, column 6: The link 'StructureDefinition-extension-inactive-code.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 138, column 6: The link 'StructureDefinition-extension-expected-version.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 139, column 6: The link 'StructureDefinition-extension-outdated-version.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 140, column 6: The link 'StructureDefinition-extension-topic-summary.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 141, column 6: The link 'StructureDefinition-extension-topic-dor.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 142, column 6: The link 'StructureDefinition-extension-topic-dor-reason.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 143, column 6: The link 'StructureDefinition-extension-topic-dor-rule.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 144, column 6: The link 'StructureDefinition-extension-publisher-code.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 145, column 6: The link 'StructureDefinition-extension-contact-address.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 146, column 6: The link 'StructureDefinition-extension-organization-description.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 147, column 6: The link 'StructureDefinition-extension-rel-artifact-category.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/div/div/li/a at Line 148, column 6: The link 'StructureDefinition-extension-rel-artifact-priority.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/extensions.html#/html/head/body/div/div/div/p/a at Line 185, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/profiles.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/profiles.html#/html/head/body/div/div/div/div/div/li/a at Line 134, column 6: The link 'StructureDefinition-cr-travel-location.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/profiles.html#/html/head/body/div/div/div/div/div/li/a at Line 135, column 6: The link 'StructureDefinition-eicr-occupationhistory.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/profiles.html#/html/head/body/div/div/div/div/div/li/a at Line 136, column 6: The link 'StructureDefinition-eicr-pregnancystatus.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/profiles.html#/html/head/body/div/div/div/div/div/li/a at Line 137, column 6: The link 'StructureDefinition-rr-communication.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/profiles.html#/html/head/body/div/div/div/div/div/li/a at Line 138, column 6: The link 'StructureDefinition-rr-plandefinition.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/profiles.html#/html/head/body/div/div/div/div/div/li/a at Line 145, column 6: The link 'StructureDefinition-PHCase.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/profiles.html#/html/head/body/div/div/div/div/div/li/a at Line 146, column 6: The link 'StructureDefinition-EICR.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/profiles.html#/html/head/body/div/div/div/div/div/li/a at Line 147, column 6: The link 'StructureDefinition-RR.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/profiles.html#/html/head/body/div/div/div/p/a at Line 185, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/StructureDefinition-template-profile-on-profile-mappings.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/StructureDefinition-template-profile-on-profile-mappings.html#/html/head/body/div/div/div/p/a at Line 288, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-server.ttl.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-server.ttl.html#/html/head/body/div/div/div/p/a at Line 256, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/operations.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/operations.html#/html/head/body/div/div/div/p/a at Line 170, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/StructureDefinition-template-profile-on-profile.xml.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/StructureDefinition-template-profile-on-profile.xml.html#/html/head/body/div/div/div/p/a at Line 2287, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/StructureDefinition-template-profile-on-profile.json.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/StructureDefinition-template-profile-on-profile.json.html#/html/head/body/div/div/div/p/a at Line 2536, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-server.xml.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-server.xml.html#/html/head/body/div/div/div/p/a at Line 237, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/p/a at Line 709, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/ImplementationGuide-ig.xml.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/ImplementationGuide-ig.xml.html#/html/head/body/div/div/div/p/a at Line 373, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/ImplementationGuide-ig.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/ImplementationGuide-ig.html#/html/head/body/div/div/div/p/a at Line 161, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/structuremaps.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/structuremaps.html#/html/head/body/div/div/div/p/a at Line 170, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/capstatements.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/capstatements.html#/html/head/body/div/div/div/p/a at Line 234, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/StructureDefinition-template-profile-on-profile.ttl.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/StructureDefinition-template-profile-on-profile.ttl.html#/html/head/body/div/div/div/p/a at Line 2058, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-client.xml.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-client.xml.html#/html/head/body/div/div/div/p/a at Line 237, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-client.ttl.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-client.ttl.html#/html/head/body/div/div/div/p/a at Line 256, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-server.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-server.html#/html/head/body/div/div/div/p/a at Line 171, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-server.json.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-server.json.html#/html/head/body/div/div/div/p/a at Line 262, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-client.json.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/CapabilityStatement-client.json.html#/html/head/body/div/div/div/p/a at Line 262, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 133, column 6: The link 'ValueSet-lr-codes.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 134, column 6: The link 'ValueSet-authoring-agency.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 135, column 6: The link 'ValueSet-reporting-timeframe.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 136, column 6: The link 'ValueSet-ext-resource-category.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 137, column 6: The link 'ValueSet-ext-resource-priority.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 138, column 6: The link 'ValueSet-warning-reason.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 139, column 6: The link 'ValueSet-rr-priority.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 140, column 6: The link 'ValueSet-error-reason.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 141, column 6: The link 'ValueSet-dor-reason.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 142, column 6: The link 'ValueSet-oes.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 143, column 6: The link 'ValueSet-inactive-rctc.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 144, column 6: The link 'ValueSet-rctc.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 145, column 6: The link 'ValueSet-case-status.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 146, column 6: The link 'ValueSet-case-code.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 147, column 6: The link 'ValueSet-case-cat.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 152, column 6: The link 'CodeSystem-lr-codes.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 153, column 6: The link 'CodeSystem-authoring-agency.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 154, column 6: The link 'CodeSystem-reporting-timeframe.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 155, column 6: The link 'CodeSystem-ext-resource-category.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 156, column 6: The link 'CodeSystem-ext-resource-priority.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 157, column 6: The link 'CodeSystem-oes.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/div/div/li/a at Line 158, column 6: The link 'CodeSystem-case-status.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/terminology.html#/html/head/body/div/div/div/p/a at Line 195, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/index.html#/html/head/body/div/div/nav/div/a at Line 68, column 8: The link 'http://build.fhir.org//index.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/index.html#/html/head/body/div/div/div/div/div/p/a at Line 129, column 203: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/index.html#/html/head/body/div/div/div/p/a at Line 269, column 50: The link 'http://build.fhir.org/' cannot be resolved
-ERROR: Implementation Guide: The link 'MedicationRequest-uscore-mo1.html' cannot be resolved
-ERROR: Implementation Guide: The link 'Observation-example.html' cannot be resolved
-ERROR: Implementation Guide: The link 'Basic-diet.html' cannot be resolved
-ERROR: Implementation Guide: The link 'AllergyIntolerance-example.html' cannot be resolved
-ERROR: Implementation Guide: The link 'StructureMap-Foo.html' cannot be resolved
-ERROR: Implementation Guide: The link 'StructureDefinition-template-profile-on-profile2.html' cannot be resolved
-ERROR: Implementation Guide: The link 'StructureDefinition-template-basic2.html' cannot be resolved
-ERROR: Implementation Guide: The link 'SearchParameter-blah.html' cannot be resolved
-ERROR: Implementation Guide: The link 'StructureDefinition-ifr.html' cannot be resolved
-ERROR: Implementation Guide: The link 'ValueSet-blah-codes.html' cannot be resolved
-ERROR: Implementation Guide: The link 'CodeSystem-blah-codes.html' cannot be resolved
-ERROR: Implementation Guide: The link 'StructureDefinition-template-blah.html' cannot be resolved
-ERROR: Implementation Guide: The link 'StructureDefinition-template-complex.html' cannot be resolved
-ERROR: Implementation Guide: The link 'StructureDefinition-template-basic.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/MedicationRequest-uscore-mo1.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 466: The link 'Patient/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 749: The link 'Patient/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 817: The link 'Encounter/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 928: The link 'Practitioner/practitioner-1' cannot be resolved
 == /Users/ehaas/Documents/FHIR/IG-Sampler/examples/allergyintolerance-example.xml ==
-WARNING: AllergyIntolerance/example: AllergyIntolerance.code: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-substance and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
+WARNING: AllergyIntolerance/example: AllergyIntolerance.code: None of the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-substance (http://hl7.org/fhir/us/core/ValueSet/us-core-substance, and a code should come from this value set unless it has no suitable code) (codes = http://hl7.org/fhir/ndfrt#N0000175503)
 WARNING: AllergyIntolerance/example: AllergyIntolerance.code.coding: Unknown Code System http://hl7.org/fhir/ndfrt
 ERROR: AllergyIntolerance/example: AllergyIntolerance.patient: Unable to resolve resource 'Patient/example'
-ERROR: AllergyIntolerance/example: AllergyIntolerance.reaction.manifestation.coding: null
+WARNING: AllergyIntolerance/example: AllergyIntolerance.reaction.manifestation.coding: No Message returned
 INFORMATION: AllergyIntolerance/example: AllergyIntolerance.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: AllergyIntolerance/example: AllergyIntolerance.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: AllergyIntolerance/example: AllergyIntolerance.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -166,12 +43,12 @@ INFORMATION: AllergyIntolerance/example: AllergyIntolerance.reaction[1].severity
 == /Users/ehaas/Documents/FHIR/IG-Sampler/examples/diet.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Sampler/examples/obs.xml ==
 ERROR: Observation/example: Observation: Profile http://hl7.org/fhir/StructureDefinition/Observation, Element 'Observation.status': minimum required = 1, but only found 0
-ERROR: Observation/example: Observation.code.coding[3]: null
+WARNING: Observation/example: Observation.code.coding[3]: No Message returned
 ERROR: Observation/example: Observation.subject: Unable to resolve resource 'Patient/example'
 ERROR: Observation/example: Observation.context: Unable to resolve resource 'Encounter/example'
 ERROR: Observation/example: Observation.performer: Unable to resolve resource 'Practitioner/practitioner-1'
 == /Users/ehaas/Documents/FHIR/IG-Sampler/examples/uscore-mo1.xml ==
-WARNING: MedicationRequest/uscore-mo1: MedicationRequest.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
+WARNING: MedicationRequest/uscore-mo1: MedicationRequest.medicationCodeableConcept: No Message returned
 ERROR: MedicationRequest/uscore-mo1: MedicationRequest.subject: Unable to resolve resource 'Patient/example'
 INFORMATION: MedicationRequest/uscore-mo1: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/uscore-mo1: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -192,9 +69,9 @@ INFORMATION: /Users/ehaas/Documents/FHIR/IG-Sampler/resources/patient-on-usprofi
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/searchparameter-blah.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/structuredefinition-template-basic2.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/structuredefinition-template-profile-on-profile2.xml ==
-WARNING: StructureDefinition/template-profile-on-profile2: StructureDefinition.jurisdiction: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
+WARNING: StructureDefinition/template-profile-on-profile2: StructureDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/structuremap-Foo.xml ==
-WARNING: StructureMap/Foo: StructureMap.jurisdiction: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
+WARNING: StructureMap/Foo: StructureMap.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet.xml ==
 INFORMATION: /Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet: Resources generated by processing /Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet:  http://www.fhir.org/guides/ig-sampler/ValueSet/blah-codes ("BlahCodes")  http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes ("BlahCodes")  http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-blah ("Example Extension")  http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-complex ("Complex Extension")  http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-basic ("Profile template-basic")
 ERROR: ValueSet/blah-codes: ValueSet: Profile http://hl7.org/fhir/StructureDefinition/shareablevalueset, Element 'ValueSet.version': minimum required = 1, but only found 0

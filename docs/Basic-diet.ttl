@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/ig-sampler/Basic/diet> a fhir:Basic;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "diet"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n			<p>\n				<b>Generated Narrative with Details</b>\n			</p>\n			<p>\n				<b>id</b>: diet</p>\n			<p>\n				<b>extension</b>: http://www.fhir.org/guides/ig-sampler/StuctureDefinition/template-blah<span style=\"background: LightGoldenRodYellow\">(Details : valueCode 'foo' = 'Foo')</span></p>\n			<p>\n				<b>identifier</b>: 19283746</p>\n			<p>\n				<b>code</b>: Diet <span style=\"background: LightGoldenRodYellow\">(Details : http://hl7.org/fhir/basic-resource-type code 'diet' = 'Diet)</span>\n			</p>\n			<p>\n				<b>subject</b>: Roel</p>\n			<p>szzzzzzzzzz\n				<b>created</b>: Feb 14, 2017</p>\n		</div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-blah" ];
+     fhir:Extension.valueCode [ fhir:value "foo" ]
+  ];
+  fhir:Basic.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://goodhealth.org/basic/identifiers" ];
+     fhir:Identifier.value [ fhir:value "19283746" ]
+  ];
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/basic-resource-type" ];
+       fhir:Coding.code [ fhir:value "diet" ]
+     ]
+  ];
+  fhir:Basic.subject [
+     fhir:Reference.display [ fhir:value "Roel" ]
+  ];
+  fhir:Basic.created [ fhir:value "2017-02-14"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.fhir.org/guides/ig-sampler/Basic/diet.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
