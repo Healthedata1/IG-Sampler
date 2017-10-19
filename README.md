@@ -17,7 +17,6 @@ Shows how to create:
 And the Jekyll templates and static pages to go with them...
 
 
-
 ### Rendered IG-Template at
 
 https://healthedata1.github.io/IG-Sampler/
@@ -39,3 +38,5 @@ The relative locations of the two modules above need to updated in:
 
 
 Some screenshots....
+
+## TODO how integrate with the [FHIR Implementation Guide Auto-Builder](https://github.com/Healthedata1/auto-ig-builder)
