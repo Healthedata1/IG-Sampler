@@ -1,13 +1,13 @@
 ﻿IG-Sampler : Validation Results
 =========================================
 
-err = 18, warn = 14, info = 42
-Generated Thu Oct 19 09:36:30 PDT 2017. FHIR version 3.1.0 for 3.0.1
+err = 18, warn = 10, info = 42
+Generated Thu Oct 19 18:33:17 PDT 2017. FHIR version 3.1.0 for 3.0.1
 
- Build Errors : 5 / 0
- /Users/ehaas/Documents/FHIR/IG-Sampler/examples/allergyintolerance-example : 1 / 12
+ Build Errors : 9 / 0
+ /Users/ehaas/Documents/FHIR/IG-Sampler/examples/allergyintolerance-example : 1 / 11
  /Users/ehaas/Documents/FHIR/IG-Sampler/examples/diet : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Sampler/examples/obs : 4 / 1
+ /Users/ehaas/Documents/FHIR/IG-Sampler/examples/obs : 4 / 0
  /Users/ehaas/Documents/FHIR/IG-Sampler/examples/uscore-mo1 : 1 / 10
  /Users/ehaas/Documents/FHIR/IG-Sampler/resources/capabilitystatement-client : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Sampler/resources/capabilitystatement-server : 0 / 0
@@ -21,16 +21,19 @@ Generated Thu Oct 19 09:36:30 PDT 2017. FHIR version 3.1.0 for 3.0.1
  /Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet : 3 / 1
 </table>
 == n/a ==
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/AllergyIntolerance-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 511: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/MedicationRequest-uscore-mo1.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 466: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 749: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 817: The link 'Encounter/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 133, column 928: The link 'Practitioner/practitioner-1' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/AllergyIntolerance-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 134, column 511: The link 'Patient/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/examples.html#/html/head/body/div/div/div/div/div/div/p/a at Line 135, column 510: The link 'Patient/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/examples.html#/html/head/body/div/div/div/div/div/div/p/a at Line 137, column 748: The link 'Patient/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/examples.html#/html/head/body/div/div/div/div/div/div/p/a at Line 137, column 816: The link 'Encounter/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/examples.html#/html/head/body/div/div/div/div/div/div/p/a at Line 137, column 927: The link 'Practitioner/practitioner-1' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/MedicationRequest-uscore-mo1.html#/html/head/body/div/div/div/div/div/div/p/a at Line 134, column 466: The link 'Patient/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 134, column 749: The link 'Patient/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 134, column 817: The link 'Encounter/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 134, column 928: The link 'Practitioner/practitioner-1' cannot be resolved
 == /Users/ehaas/Documents/FHIR/IG-Sampler/examples/allergyintolerance-example.xml ==
 WARNING: AllergyIntolerance/example: AllergyIntolerance.code: None of the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-substance (http://hl7.org/fhir/us/core/ValueSet/us-core-substance, and a code should come from this value set unless it has no suitable code) (codes = http://hl7.org/fhir/ndfrt#N0000175503)
 WARNING: AllergyIntolerance/example: AllergyIntolerance.code.coding: Unknown Code System http://hl7.org/fhir/ndfrt
 ERROR: AllergyIntolerance/example: AllergyIntolerance.patient: Unable to resolve resource 'Patient/example'
-WARNING: AllergyIntolerance/example: AllergyIntolerance.reaction.manifestation.coding: No Message returned
 INFORMATION: AllergyIntolerance/example: AllergyIntolerance.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: AllergyIntolerance/example: AllergyIntolerance.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: AllergyIntolerance/example: AllergyIntolerance.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -43,7 +46,6 @@ INFORMATION: AllergyIntolerance/example: AllergyIntolerance.reaction[1].severity
 == /Users/ehaas/Documents/FHIR/IG-Sampler/examples/diet.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Sampler/examples/obs.xml ==
 ERROR: Observation/example: Observation: Profile http://hl7.org/fhir/StructureDefinition/Observation, Element 'Observation.status': minimum required = 1, but only found 0
-WARNING: Observation/example: Observation.code.coding[3]: No Message returned
 ERROR: Observation/example: Observation.subject: Unable to resolve resource 'Patient/example'
 ERROR: Observation/example: Observation.context: Unable to resolve resource 'Encounter/example'
 ERROR: Observation/example: Observation.performer: Unable to resolve resource 'Practitioner/practitioner-1'

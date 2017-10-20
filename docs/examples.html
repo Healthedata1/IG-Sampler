@@ -91,6 +91,7 @@
 
 
 
+
 </div>  <!-- /container -->
 </div>  <!-- /segment-breadcrumb -->
 
@@ -108,12 +109,10 @@
 <nav class="breadcrumb">
   
     
-    
       <a class="breadcrumb-item" href="index.html">Home</a>
       /
-      <a class="breadcrumb-item" href="profiles.html">Profiles</a>
-      /
-      <span class="breadcrumb-item active">AllergyIntolerance-example.json</span>
+      <span class="breadcrumb-item active">Examples</span>
+    
     
     
     
@@ -122,72 +121,34 @@
 </nav>
 
 
+
   <!-- ============CONTENT CONTENT=============== -->
 
-<h2>Example: AllergyIntolerance-example</h2>
+<h1 id="examples">Examples</h1>
 
-<p>
-Formats: <a href="AllergyIntolerance-example.html">Narrative</a>, <a href="AllergyIntolerance-example.xml.html">XML</a>, <a href="AllergyIntolerance-example.json.html">JSON</a>, <a href="AllergyIntolerance-example.ttl.html">Turtle</a>
-</p>
-<p>
-Raw <a href="AllergyIntolerance-example.json" download>json</a>
-</p>
+<p>source pages/_include/examples.md  file</p>
 
-<pre class="json">
-{
-  "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance">resourceType</a>" : "AllergyIntolerance",
-  "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.id">id</a>" : "example",
-  "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.meta">meta</a>" : {
-    "<a href="http://build.fhir.org/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"
-    ]
-  },
-  "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.text">text</a>" : {
-    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: example&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: confirmed&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: medication&lt;/p&gt;&lt;p&gt;&lt;b&gt;criticality&lt;/b&gt;: high&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: sulfonamide antibacterial &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://hl7.org/fhir/ndfrt code 'N0000175503' = 'N0000175503', given as 'sulfonamide antibacterial'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=&quot;Patient/example&quot;&gt;Amy V. Shaw&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;assertedDate&lt;/b&gt;: Jan 1, 2000&lt;/p&gt;&lt;h3&gt;Reactions&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manifestation&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Severity&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;skin rash &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {SNOMED CT code '271807003' = 'Eruption of skin (disorder)', given as 'skin rash'})&lt;/span&gt;&lt;/td&gt;&lt;td&gt;mild&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
-  },
-  "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.clinicalStatus">clinicalStatus</a>" : "active",
-  "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.verificationStatus">verificationStatus</a>" : "confirmed",
-  "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.category">category</a>" : [
-    "medication"
-  ],
-  "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.criticality">criticality</a>" : "high",
-  "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.code">code</a>" : {
-    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-      {
-        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/ndfrt",
-        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "N0000175503",
-        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "sulfonamide antibacterial"
-      }
-    ],
-    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "sulfonamide antibacterial"
-  },
-  "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.patient">patient</a>" : {
-    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/example",
-    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">display</a>" : "Amy V. Shaw"
-  },
-  "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.assertedDate">assertedDate</a>" : "2000",
-  "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.reaction">reaction</a>" : [
-    {
-      "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.reaction.manifestation">manifestation</a>" : [
-        {
-          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-            {
-              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
-              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "271807003",
-              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "skin rash"
-            }
-          ],
-          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "skin rash"
-        }
-      ],
-      "<a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.reaction.severity">severity</a>" : "mild"
-    }
-  ]
-}</pre>
+<p><strong>Examples</strong></p>
+
+<p>Examples for this IG:</p>
+
+<li><a href="Observation-example.html">Observation example</a></li>
+
+<p><code class="highlighter-rouge">todo: generate an example list from preprocessor</code></p>
+
+<p><strong>Examples:</strong> all the examples that are used in this Implementation Guide available for download:</p>
+
+<ul>
+  <li><a href="examples.xml.zip">XML</a></li>
+  <li><a href="examples.json.zip">JSON</a></li>
+  <li><a href="examples.ttl.zip">TTl</a></li>
+</ul>
+
 
 
   <!-- ==============END CONTENT END CONTENT=================== -->
+
+
 
 </div>
 
@@ -197,6 +158,10 @@ Raw <a href="AllergyIntolerance-example.json" download>json</a>
 </div>  <!-- /container -->
 
 </div>  <!-- /segment-content -->
+
+
+
+
 
 
 
@@ -246,4 +211,5 @@ Raw <a href="AllergyIntolerance-example.json" download>json</a>
 
 </body>
 </html>
+
 
