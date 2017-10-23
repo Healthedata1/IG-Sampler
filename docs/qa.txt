@@ -2,9 +2,9 @@
 =========================================
 
 err = 18, warn = 10, info = 42
-Generated Thu Oct 19 18:33:17 PDT 2017. FHIR version 3.1.0 for 3.0.1
+Generated Mon Oct 23 14:44:29 PDT 2017. FHIR version 3.1.0 for 3.0.1
 
- Build Errors : 9 / 0
+ Build Errors : 5 / 0
  /Users/ehaas/Documents/FHIR/IG-Sampler/examples/allergyintolerance-example : 1 / 11
  /Users/ehaas/Documents/FHIR/IG-Sampler/examples/diet : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Sampler/examples/obs : 4 / 0
@@ -19,13 +19,10 @@ Generated Thu Oct 19 18:33:17 PDT 2017. FHIR version 3.1.0 for 3.0.1
  /Users/ehaas/Documents/FHIR/IG-Sampler/resources/structuredefinition-template-profile-on-profile2 : 0 / 1
  /Users/ehaas/Documents/FHIR/IG-Sampler/resources/structuremap-Foo : 0 / 1
  /Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet : 3 / 1
+ /Users/ehaas/Documents/FHIR/IG-Sampler/resources/valueset-obs-part : 0 / 0
 </table>
 == n/a ==
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/AllergyIntolerance-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 134, column 511: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/examples.html#/html/head/body/div/div/div/div/div/div/p/a at Line 135, column 510: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/examples.html#/html/head/body/div/div/div/div/div/div/p/a at Line 137, column 748: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/examples.html#/html/head/body/div/div/div/div/div/div/p/a at Line 137, column 816: The link 'Encounter/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/examples.html#/html/head/body/div/div/div/div/div/div/p/a at Line 137, column 927: The link 'Practitioner/practitioner-1' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/MedicationRequest-uscore-mo1.html#/html/head/body/div/div/div/div/div/div/p/a at Line 134, column 466: The link 'Patient/example' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 134, column 749: The link 'Patient/example' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 134, column 817: The link 'Encounter/example' cannot be resolved
@@ -71,7 +68,7 @@ INFORMATION: /Users/ehaas/Documents/FHIR/IG-Sampler/resources/patient-on-usprofi
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/searchparameter-blah.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/structuredefinition-template-basic2.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/structuredefinition-template-profile-on-profile2.xml ==
-WARNING: StructureDefinition/template-profile-on-profile2: StructureDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
+WARNING: StructureDefinition/template-profile-on-profile2: StructureDefinition.jurisdiction: Error org.hl7.fhir.r4.utils.client.EFhirClientException: Error sending Http Request: Read timed out validating CodeableConcept
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/structuremap-Foo.xml ==
 WARNING: StructureMap/Foo: StructureMap.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet.xml ==
@@ -79,3 +76,4 @@ INFORMATION: /Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-s
 ERROR: ValueSet/blah-codes: ValueSet: Profile http://hl7.org/fhir/StructureDefinition/shareablevalueset, Element 'ValueSet.version': minimum required = 1, but only found 0
 ERROR: ValueSet/blah-codes: ValueSet: Profile http://hl7.org/fhir/StructureDefinition/shareablevalueset, Element 'ValueSet.experimental': minimum required = 1, but only found 0
 ERROR: ValueSet/blah-codes: ValueSet: Profile http://hl7.org/fhir/StructureDefinition/shareablevalueset, Element 'ValueSet.publisher': minimum required = 1, but only found 0
+== /Users/ehaas/Documents/FHIR/IG-Sampler/resources/valueset-obs-part.xml ==
