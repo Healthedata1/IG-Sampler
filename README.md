@@ -46,7 +46,7 @@ where:
 - ${path1} = relative or absolute path to the jar file
 - ${path2} = relative or absolute path to the IG-Template folder
 
-####  To run the igpublisher using the bash scripts
+####  To run the igpublisher using the bash scripts (todo create bat files)
 
 - update the path and title in the script to local names and paths.  The scripts run from the source directory.
 - If using the bash scripts:  `publish2.sh` the relative locations of the two modules above need to updated in The `definitions.csv` file.
