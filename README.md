@@ -33,7 +33,7 @@ You will also need to import these modules
 
 - [IG-Template](https://github.com/Healthedata1/IG-Template): a module containing all the static template and pages and build files for FHIR IG Publishing
 
-- If using the bash scripts `publish2.sh` you will also need the file. [IG-FileBuilder](https://github.com/Healthedata1/FHIR-IGPub-filebuilder): A python script that will create the ig.json and ig.xnl file based on the content in the `resources` and `example` directories and the `definitions.csv`.  See the inline comments for how to use.
+- If using the bash scripts `publish2.sh` you will also need the file. [IG-FileBuilder](https://github.com/Healthedata1/FHIR-IGPub-filebuilder): A python 3.5 script that will create the ig.json and ig.xnl file based on the content in the `resources` and `example` directories and the `definitions.csv`.  See the inline comments for how to use and note the required python libraries you will need to run.
 
 #### To run the igpublisher from directly from the command line:
 
