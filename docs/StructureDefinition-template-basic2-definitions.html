@@ -1,4 +1,4 @@
-  <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
@@ -23,7 +23,7 @@
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet"/>
   <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-	<link href="jquery-ui.css" rel="stylesheet"/>
+	<link href="assets/css/jquery-ui.css" rel="stylesheet"/>
 
   <!-- Favicons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
@@ -34,26 +34,15 @@
 
 
 <body markdown="1">
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <div id="segment-header" class="segment">
   <!-- segment-header -->
   <div class="container">
-    <!-- container -->        <!--
-<?xml version="1.0" encoding="UTF-8"?>
-<a id="logo" no-external="true" href="http://hl7.org/fhir">
-  <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
-</a>
-
-
-
-[![fhir logo here](#.png)](#.html)
-{:#logo}
--->
-
-<p id="logo"><a href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="logo fhir" /></a></p>
-  <div id="your-nav">     <!--
+    <!-- container --> <a id="logo" no-external="true" href="http://hl7.org/fhir">
+      <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
+    </a>
+      <div id="project-nav">
+             <!--
 <a id="your-logo" no-external="true" href="http://www.hl7.org">
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
@@ -66,7 +55,8 @@ your logo here
 -->
 
 <p class="img-responsive" id="hl7-logo"><a href="http://www.hl7.org"><img src="assets/images/hl7-logo.png" alt="visit the our website" /></a></p>
-   </div>
+
+      </div>
     <div id="ig-status">
       <b>IG-Sampler Implementation Guide CI Build</b>
     </div>
@@ -76,6 +66,8 @@ your logo here
   </div>
 </div>
 <!-- /segment-header -->
+
+
 <div id="segment-navbar" class="segment">
   <!-- segment-navbar -->
   <div id="stripe">
@@ -94,7 +86,9 @@ your logo here
           </span>
         </button>
         <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
-        <div class="nav-collapse collapse navbar-inverse-collapse">        <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
+        <div class="nav-collapse collapse navbar-inverse-collapse">
+
+       <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
   <li><a href="guidance.html">General Guidance</a></li>
@@ -108,7 +102,9 @@ your logo here
   <li><a href="examples.html">Examples</a></li>
   <li><a href="downloads.html">Downloads</a></li>
 </ul>
-        <!--        <ul class="nav navbar-nav">
+
+
+             <!--        <ul class="nav navbar-nav">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -156,31 +152,82 @@ your logo here
 <!-- /segment-navbar -->
 
 
+</div>  <!-- /container -->
+</div>  <!-- /segment-breadcrumb -->
 
 
- <div id="segment-breadcrumb" class="segmnt">  <!-- segment-breadcrumb -->
-  <div class="container">  <!-- container -->
-   <ul class="breadcrumb">
-       <li title="home"><a href="index.html"><b>Home</b></a></li>
-     <li><b>Profile template-basic2 Details</b></li>
-   </ul>
-  </div>  <!-- /container -->
- </div>  <!-- /segment-breadcrumb -->
+<div id="page-content-wrapper">  <!-- page content wrapper -->
+  <div class="page-content">  <!--page content -->
+    <div class="container">  <!-- container -->
+      <div class="row">  <!-- row -->
+       <div class="inner-wrapper"> <!-- inner-wrapper -->
+         <div class="col-md-12">  <!--col -->
+            <!-- content of page -->
 
 
- <div id="segment-content" class="segment">  <!-- segment-content -->
- <div class="container">  <!-- container -->
-            <div class="row">
-             <div class="inner-wrapper">
-  <!-- CONTENT CONTENT -->
+<!-- ============BreadCrumb=============== -->
 
-<div class="col-9">
+<nav class="breadcrumb">
+  
+    
+    
+      <!-- default -->
+      <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a>/<a class="breadcrumb-item" href="index.html">Home</a>
+      /
+      <a class="breadcrumb-item" href="profiles.html">Profiles</a>
+      /
+      <span class="breadcrumb-item active">StructureDefinition-template-basic2-definitions</span>
+      
+      
+      
+      
+      
+      
+      
+    
 
-<ul class="nav nav-tabs"><li><a href="StructureDefinition-template-basic2.html">Content</a></li><li class="active"><a href="#">Detailed Descriptions</a></li><li><a href="StructureDefinition-template-basic2-mappings.html">Mappings</a></li><li><a href="StructureDefinition-template-basic2.xml.html">XML</a></li><li><a href="StructureDefinition-template-basic2.json.html">JSON</a></li></ul>
 
-<h4><span class="sectioncount">D.4.1.4<a name="D.4.1.4"> </a></span> StructureDefinition: - Detailed Descriptions <a title="link to here" class="self-link" href="StructureDefinition-template-basic2-definitions.html#D.4.1.4"><img src="target.png"/></a></h4>
+</nav>
 
-<p>Definitions for the StructureDefinition-template-basic2 Profile.</p>
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+<!--  - choose what you want  comment out or Change what you don't-->
+<ul class="nav nav-tabs">
+
+	<li class="active"><a href="#">Narrative Content</a></li>
+
+<!--
+{ % if StructureDefinition == "StructureDefinition"  % }
+	{ % if content == "definitions"  % }
+		<li class="active"><a href="#">Detailed Descriptions</a></li>
+	{ % else % }
+		<li><a href="StructureDefinition-template-basic2-definitions.html">Detailed Descriptions</a></li>
+	{ % endif % }
+	{ % if content == "mappings" % }
+		<li class="active"><a href="#">Mappings</a></li>
+	{ % else % }
+		<li><a href="StructureDefinition-template-basic2-mappings.html">Mappings</a></li>
+	{ % endif % }
+{ % Sendif % }
+-->
+
+<li><a href="StructureDefinition-template-basic2.xml.html">XML</a></li>
+
+
+	<li><a href="StructureDefinition-template-basic2.json.html">JSON</a></li>
+
+<!--
+{ % if content == "turtle" % }
+	<li class="active"><a href="#">Turtle</a></li>
+{ % else % }
+	<li><a href="StructureDefinition-template-basic2.ttl.html">Turtle</a></li>
+{ % endif % }
+-->
+</ul>
+
+
+<h3>Definitions for the StructureDefinition-template-basic2 Profile.</h3>
 
 <table class="dict">
   <tr><td colspan="2" class="structure"><a name="Basic"> </a><b>Basic</b></td></tr>
@@ -240,20 +287,18 @@ your logo here
 </td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a href="http://build.fhir.org/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Basic.extension:simple_extension"> </a><b>Basic.extension (<a href="StructureDefinition-template-blah.html">http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-blah</a>)</b></td></tr>
-  <tr><td>Definition</td><td><p>an example of a simple extension.</p>
+  <tr><td colspan="2" class="structure"><a name="Basic.extension:simple_extension"> </a><b>Basic.extension (http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-blah)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is a simple extension applied to a Profile.</p>
 </td></tr>
-  <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://build.fhir.org/datatypes.html#code">code</a>)</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Basic.extension:complex_extension"> </a><b>Basic.extension (<a href="StructureDefinition-template-complex.html">http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-complex</a>)</b></td></tr>
-  <tr><td>Definition</td><td><p>an example of a complex extension.</p>
+  <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a href="http://build.fhir.org/datatypes.html#Extension">Extension</a>(http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-blah)</td></tr>
+  <tr><td><a href="http://build.fhir.org/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Basic.extension:complex_extension"> </a><b>Basic.extension (http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-complex)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is a complex extension applied to a Profile.</p>
 </td></tr>
-  <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td>  (Extension Type: Choice of: <a href="http://build.fhir.org/datatypes.html#base64Binary">base64Binary</a>, <a href="http://build.fhir.org/datatypes.html#boolean">boolean</a>, <a href="http://build.fhir.org/datatypes.html#code">code</a>, <a href="http://build.fhir.org/datatypes.html#date">date</a>, <a href="http://build.fhir.org/datatypes.html#dateTime">dateTime</a>, <a href="http://build.fhir.org/datatypes.html#decimal">decimal</a>, <a href="http://build.fhir.org/datatypes.html#id">id</a>, <a href="http://build.fhir.org/datatypes.html#instant">instant</a>, <a href="http://build.fhir.org/datatypes.html#integer">integer</a>, <a href="http://build.fhir.org/datatypes.html#markdown">markdown</a>, <a href="http://build.fhir.org/datatypes.html#oid">oid</a>, <a href="http://build.fhir.org/datatypes.html#positiveInt">positiveInt</a>, <a href="http://build.fhir.org/datatypes.html#string">string</a>, <a href="http://build.fhir.org/datatypes.html#time">time</a>, <a href="http://build.fhir.org/datatypes.html#unsignedInt">unsignedInt</a>, <a href="http://build.fhir.org/datatypes.html#uri">uri</a>, <a href="http://build.fhir.org/datatypes.html#Address">Address</a>, <a href="http://build.fhir.org/datatypes.html#Age">Age</a>, <a href="http://build.fhir.org/datatypes.html#Annotation">Annotation</a>, <a href="http://build.fhir.org/datatypes.html#Attachment">Attachment</a>, <a href="http://build.fhir.org/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://build.fhir.org/datatypes.html#Coding">Coding</a>, <a href="http://build.fhir.org/datatypes.html#ContactPoint">ContactPoint</a>, <a href="http://build.fhir.org/datatypes.html#Count">Count</a>, <a href="http://build.fhir.org/datatypes.html#Distance">Distance</a>, <a href="http://build.fhir.org/datatypes.html#Duration">Duration</a>, <a href="http://build.fhir.org/datatypes.html#HumanName">HumanName</a>, <a href="http://build.fhir.org/datatypes.html#Identifier">Identifier</a>, <a href="http://build.fhir.org/datatypes.html#Money">Money</a>, <a href="http://build.fhir.org/datatypes.html#Period">Period</a>, <a href="http://build.fhir.org/datatypes.html#Quantity">Quantity</a>, <a href="http://build.fhir.org/datatypes.html#Range">Range</a>, <a href="http://build.fhir.org/datatypes.html#Ratio">Ratio</a>, <a href="http://build.fhir.org/datatypes.html#Reference">Reference</a>, <a href="http://build.fhir.org/datatypes.html#SampledData">SampledData</a>, <a href="http://build.fhir.org/datatypes.html#Signature">Signature</a>, <a href="http://build.fhir.org/datatypes.html#Timing">Timing</a>, <a href="http://build.fhir.org/datatypes.html#Meta">Meta</a>)</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
+  <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a href="http://build.fhir.org/datatypes.html#Extension">Extension</a>(http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-complex)</td></tr>
+  <tr><td><a href="http://build.fhir.org/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td colspan="2" class="structure"><a name="Basic.modifierExtension"> </a><b>Basic.modifierExtension</b></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
 </td></tr>
@@ -397,13 +442,17 @@ your logo here
 </table>
 
 
-</div>
+<!-- ============CONTENT CONTENT=============== -->
 
-    </div>  <!-- /inner-wrapper -->
-            </div>  <!-- /row -->
-        </div>  <!-- /container -->
 
-    </div>  <!-- /segment-content -->
+</div>  <!-- col -->
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /page content -->
+</div>  <!-- /page content wrapper -->
+
+
 
 </div>
 
@@ -418,7 +467,7 @@ your logo here
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            IG-Sampler Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://build.fhir.org">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Tue, Nov 14, 2017 18:08-0800. |
+            IG-Sampler Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://build.fhir.org">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Dec 13, 2017 23:40-0800. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://build.fhir.orglicense.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
@@ -442,15 +491,14 @@ your logo here
 <script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
 <script src="./assets/js/bootstrap.min.js"> </script>
 <script src="./assets/js/respond.min.js"> </script>
-
+<script src="./assets/js/anchor.min.js"> </script>
 <script src="./assets/js/fhir.js"> </script>
 
 <!-- Analytics Below
 ================================================== -->
 
-
+<!-- add acnhors before the closing body tag. -->
+<script> anchors.add()</script>
 </body>
 </html>
 
-</body>
-</html>

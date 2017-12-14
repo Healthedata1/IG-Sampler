@@ -3,7 +3,7 @@
   "id": "template-profile-on-profile",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Legend for this format\"><img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-template-profile-on-profile-definitions.html#Patient\" title=\"Template-Profile-on-Profile.\">Patient</a><a name=\"Patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.4\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Template-Profile-on-Profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-template-profile-on-profile-definitions.html#Patient.identifier\">identifier</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://build.fhir.org/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-template-profile-on-profile-definitions.html#Patient.identifier.system\">system</a><a name=\"Patient.identifier.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://build.fhir.org/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://Healthedata1/IG-Template/patient-ids</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://build.fhir.org/formats.html#table\" title=\"Legend for this format\"><img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Legend for this format\"><img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-template-profile-on-profile-definitions.html#Patient\" title=\"Template-Profile-on-Profile.\">Patient</a><a name=\"Patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.4\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Template-Profile-on-Profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-template-profile-on-profile-definitions.html#Patient.identifier\">identifier</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding: 3px; color: white; background-color: red; opacity: 0.4\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">1</span>..<span style=\"opacity: 0.4\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://build.fhir.org/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-template-profile-on-profile-definitions.html#Patient.identifier.system\">system</a><a name=\"Patient.identifier.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding: 3px; color: white; background-color: red; opacity: 0.4\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.4\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://build.fhir.org/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://Healthedata1/IG-Template/patient-ids</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://build.fhir.org/formats.html#table\" title=\"Legend for this format\"><img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   },
   "url": "http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-profile-on-profile",
   "version": "0.0.0",
@@ -57,13 +57,14 @@
   "kind": "resource",
   "abstract": false,
   "type": "Patient",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
   "derivation": "constraint",
   "snapshot": {
     "element": [
       {
-        "id": "Patient",
+        "id": "Patient:uscorepatient",
         "path": "Patient",
+        "sliceName": "USCorePatient",
         "short": "Template-Profile-on-Profile",
         "definition": "Template-Profile-on-Profile.",
         "alias": [
@@ -135,7 +136,7 @@
         ]
       },
       {
-        "id": "Patient.id",
+        "id": "Patient:uscorepatient.id",
         "path": "Patient.id",
         "short": "Logical id of this artifact",
         "definition": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -155,7 +156,7 @@
         "isSummary": true
       },
       {
-        "id": "Patient.meta",
+        "id": "Patient:uscorepatient.meta",
         "path": "Patient.meta",
         "short": "Metadata about the resource",
         "definition": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
@@ -174,7 +175,7 @@
         "isSummary": true
       },
       {
-        "id": "Patient.implicitRules",
+        "id": "Patient:uscorepatient.implicitRules",
         "path": "Patient.implicitRules",
         "short": "A set of rules under which this content was created",
         "definition": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.",
@@ -195,7 +196,7 @@
         "isSummary": true
       },
       {
-        "id": "Patient.language",
+        "id": "Patient:uscorepatient.language",
         "path": "Patient.language",
         "short": "Language of the resource content",
         "definition": "The base language in which the resource is written.",
@@ -237,7 +238,7 @@
         }
       },
       {
-        "id": "Patient.text",
+        "id": "Patient:uscorepatient.text",
         "path": "Patient.text",
         "short": "Text summary of the resource, for human interpretation",
         "definition": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
@@ -271,7 +272,7 @@
         ]
       },
       {
-        "id": "Patient.contained",
+        "id": "Patient:uscorepatient.contained",
         "path": "Patient.contained",
         "short": "Contained, inline Resources",
         "definition": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
@@ -301,15 +302,21 @@
         ]
       },
       {
-        "id": "Patient.extension",
+        "id": "Patient:uscorepatient.extension",
         "path": "Patient.extension",
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
         "min": 0,
         "max": "*",
         "base": {
@@ -321,16 +328,94 @@
           {
             "code": "Extension"
           }
+        ]
+      },
+      {
+        "id": "Patient:uscorepatient.extension:race",
+        "path": "Patient.extension",
+        "sliceName": "race",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+          }
         ],
+        "mustSupport": true,
+        "isModifier": false,
         "mapping": [
           {
-            "identity": "rim",
-            "map": "N/A"
+            "identity": "argonaut-dq-dstu2",
+            "map": "Patient.extension"
           }
         ]
       },
       {
-        "id": "Patient.modifierExtension",
+        "id": "Patient:uscorepatient.extension:ethnicity",
+        "path": "Patient.extension",
+        "sliceName": "ethnicity",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+          }
+        ],
+        "mustSupport": true,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Patient.extension"
+          }
+        ]
+      },
+      {
+        "id": "Patient:uscorepatient.extension:birthsex",
+        "path": "Patient.extension",
+        "sliceName": "birthsex",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
+          }
+        ],
+        "mustSupport": true,
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Patient.extension"
+          }
+        ]
+      },
+      {
+        "id": "Patient:uscorepatient.modifierExtension",
         "path": "Patient.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -360,7 +445,7 @@
         ]
       },
       {
-        "id": "Patient.identifier",
+        "id": "Patient:uscorepatient.identifier",
         "path": "Patient.identifier",
         "short": "An identifier for this patient",
         "definition": "An identifier for this patient.",
@@ -403,7 +488,7 @@
         ]
       },
       {
-        "id": "Patient.identifier.id",
+        "id": "Patient:uscorepatient.identifier.id",
         "path": "Patient.identifier.id",
         "representation": [
           "xmlAttr"
@@ -430,7 +515,7 @@
         ]
       },
       {
-        "id": "Patient.identifier.extension",
+        "id": "Patient:uscorepatient.identifier.extension",
         "path": "Patient.identifier.extension",
         "slicing": {
           "discriminator": [
@@ -469,7 +554,7 @@
         ]
       },
       {
-        "id": "Patient.identifier.use",
+        "id": "Patient:uscorepatient.identifier.use",
         "path": "Patient.identifier.use",
         "short": "usual | official | temp | secondary (If known)",
         "definition": "The purpose of this identifier.",
@@ -514,7 +599,7 @@
         ]
       },
       {
-        "id": "Patient.identifier.type",
+        "id": "Patient:uscorepatient.identifier.type",
         "path": "Patient.identifier.type",
         "short": "Description of identifier",
         "definition": "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.",
@@ -562,7 +647,7 @@
         ]
       },
       {
-        "id": "Patient.identifier.system",
+        "id": "Patient:uscorepatient.identifier.system",
         "path": "Patient.identifier.system",
         "short": "The namespace for the identifier value",
         "definition": "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
@@ -608,12 +693,12 @@
         ]
       },
       {
-        "id": "Patient.identifier.value",
+        "id": "Patient:uscorepatient.identifier.value",
         "path": "Patient.identifier.value",
-        "short": "The value that is unique",
+        "short": "The value that is unique within the system.",
         "definition": "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
         "comment": "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](extension-rendered-value.html).",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Identifier.value",
@@ -631,6 +716,7 @@
             "valueString": "123456"
           }
         ],
+        "mustSupport": true,
         "isSummary": true,
         "mapping": [
           {
@@ -644,11 +730,15 @@
           {
             "identity": "servd",
             "map": "./Value"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Patient.identifier.value"
           }
         ]
       },
       {
-        "id": "Patient.identifier.period",
+        "id": "Patient:uscorepatient.identifier.period",
         "path": "Patient.identifier.period",
         "short": "Time period when id is/was valid for use",
         "definition": "Time period during which identifier is/was valid for use.",
@@ -681,7 +771,7 @@
         ]
       },
       {
-        "id": "Patient.identifier.assigner",
+        "id": "Patient:uscorepatient.identifier.assigner",
         "path": "Patient.identifier.assigner",
         "short": "Organization that issued id (may be just text)",
         "definition": "Organization that issued/manages the identifier.",
@@ -716,7 +806,7 @@
         ]
       },
       {
-        "id": "Patient.active",
+        "id": "Patient:uscorepatient.active",
         "path": "Patient.active",
         "short": "Whether this patient's record is in active use",
         "definition": "Whether this patient record is in active use.",
@@ -753,13 +843,13 @@
         ]
       },
       {
-        "id": "Patient.name",
+        "id": "Patient:uscorepatient.name",
         "path": "Patient.name",
         "short": "A name associated with the patient",
         "definition": "A name associated with the individual.",
         "comment": "A patient may have multiple names with different uses or applicable periods. For animals, the name is a \"HumanName\" in the sense that is assigned and used by humans and has the same patterns.",
         "requirements": "Need to be able to track the patient by multiple names. Examples are your official name and a partner name.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Patient.name",
@@ -771,6 +861,7 @@
             "code": "HumanName"
           }
         ],
+        "mustSupport": true,
         "isSummary": true,
         "mapping": [
           {
@@ -784,11 +875,345 @@
           {
             "identity": "cda",
             "map": ".patient.name"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Patient.name"
           }
         ]
       },
       {
-        "id": "Patient.telecom",
+        "id": "Patient:uscorepatient.name.id",
+        "path": "Patient.name.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Patient:uscorepatient.name.extension",
+        "path": "Patient.name.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Patient:uscorepatient.name.use",
+        "path": "Patient.name.use",
+        "short": "usual | official | temp | nickname | anonymous | old | maiden",
+        "definition": "Identifies the purpose for this name.",
+        "comment": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old name etc.for a current/permanent one. Applications can assume that a name is current unless it explicitly says that it is temporary or old.",
+        "requirements": "Allows the appropriate name for a particular context of use to be selected from among a set of names.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "HumanName.use",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isModifier": true,
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "NameUse"
+            }
+          ],
+          "strength": "required",
+          "description": "The use of a human name",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/name-use"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.7, but often indicated by which field contains the name"
+          },
+          {
+            "identity": "rim",
+            "map": "unique(./use)"
+          },
+          {
+            "identity": "servd",
+            "map": "./NamePurpose"
+          }
+        ]
+      },
+      {
+        "id": "Patient:uscorepatient.name.text",
+        "path": "Patient.name.text",
+        "short": "Text representation of the full name",
+        "definition": "A full text representation of the name.",
+        "comment": "Can provide both a text representation and structured parts.",
+        "requirements": "A renderable, unencoded form.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "HumanName.text",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "implied by XPN.11"
+          },
+          {
+            "identity": "rim",
+            "map": "./formatted"
+          }
+        ]
+      },
+      {
+        "id": "Patient:uscorepatient.name.family",
+        "path": "Patient.name.family",
+        "short": "Family name (often called 'Surname')",
+        "definition": "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.",
+        "comment": "Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).",
+        "alias": [
+          "surname"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "HumanName.family",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.1/FN.1"
+          },
+          {
+            "identity": "rim",
+            "map": "./part[partType = FAM]"
+          },
+          {
+            "identity": "servd",
+            "map": "./FamilyName"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Patient.name.family"
+          }
+        ]
+      },
+      {
+        "id": "Patient:uscorepatient.name.given",
+        "path": "Patient.name.given",
+        "short": "Given names (not always 'first'). Includes middle names",
+        "definition": "Given name.",
+        "comment": "If only initials are recorded, they may be used in place of the full name.  Not called \"first name\" since given names do not always come first.",
+        "alias": [
+          "first name",
+          "middle name"
+        ],
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "HumanName.given",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "orderMeaning": "Given Names appear in the correct order for presenting the name",
+        "mustSupport": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.2 + XPN.3"
+          },
+          {
+            "identity": "rim",
+            "map": "./part[partType = GIV]"
+          },
+          {
+            "identity": "servd",
+            "map": "./GivenNames"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Patient.name.given"
+          }
+        ]
+      },
+      {
+        "id": "Patient:uscorepatient.name.prefix",
+        "path": "Patient.name.prefix",
+        "short": "Parts that come before the name",
+        "definition": "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "HumanName.prefix",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "orderMeaning": "Prefixes appear in the correct order for presenting the name",
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.5"
+          },
+          {
+            "identity": "rim",
+            "map": "./part[partType = PFX]"
+          },
+          {
+            "identity": "servd",
+            "map": "./TitleCode"
+          }
+        ]
+      },
+      {
+        "id": "Patient:uscorepatient.name.suffix",
+        "path": "Patient.name.suffix",
+        "short": "Parts that come after the name",
+        "definition": "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "HumanName.suffix",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "orderMeaning": "Suffixes appear in the correct order for presenting the name",
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN/4"
+          },
+          {
+            "identity": "rim",
+            "map": "./part[partType = SFX]"
+          }
+        ]
+      },
+      {
+        "id": "Patient:uscorepatient.name.period",
+        "path": "Patient.name.period",
+        "short": "Time period when name was/is in use",
+        "definition": "Indicates the period of time when this name was valid for the named person.",
+        "requirements": "Allows names to be placed in historical context.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "HumanName.period",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.13 + XPN.14"
+          },
+          {
+            "identity": "rim",
+            "map": "./usablePeriod[type=\"IVL<TS>\"]"
+          },
+          {
+            "identity": "servd",
+            "map": "./StartDate and ./EndDate"
+          }
+        ]
+      },
+      {
+        "id": "Patient:uscorepatient.telecom",
         "path": "Patient.telecom",
         "short": "A contact detail for the individual",
         "definition": "A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.",
@@ -823,13 +1248,13 @@
         ]
       },
       {
-        "id": "Patient.gender",
+        "id": "Patient:uscorepatient.gender",
         "path": "Patient.gender",
         "short": "male | female | other | unknown",
         "definition": "Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.",
         "comment": "The gender may not match the biological sex as determined by genetics, or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than M and F, though the vast majority of systems and contexts only support M and F.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific gender aspect of interest (anatomical, chromosonal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosonal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overrideable error, not a \"hard\" error.",
         "requirements": "Needed for identification of the individual, in combination with (at least) name and birth date. Gender of individual drives many clinical processes.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Patient.gender",
@@ -841,20 +1266,10 @@
             "code": "code"
           }
         ],
+        "mustSupport": true,
         "isSummary": true,
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "AdministrativeGender"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
           "strength": "required",
-          "description": "The gender of a person used for administrative purposes.",
           "valueSetReference": {
             "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
           }
@@ -871,11 +1286,15 @@
           {
             "identity": "cda",
             "map": ".patient.administrativeGenderCode"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Patient.gender"
           }
         ]
       },
       {
-        "id": "Patient.birthDate",
+        "id": "Patient:uscorepatient.birthDate",
         "path": "Patient.birthDate",
         "short": "The date of birth for the individual",
         "definition": "The date of birth for the individual.",
@@ -893,6 +1312,7 @@
             "code": "date"
           }
         ],
+        "mustSupport": true,
         "isSummary": true,
         "mapping": [
           {
@@ -910,11 +1330,15 @@
           {
             "identity": "loinc",
             "map": "21112-8"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Patient.birthDate"
           }
         ]
       },
       {
-        "id": "Patient.deceased[x]",
+        "id": "Patient:uscorepatient.deceased[x]",
         "path": "Patient.deceased[x]",
         "short": "Indicates if the individual is deceased or not",
         "definition": "Indicates if the individual is deceased or not.",
@@ -953,7 +1377,7 @@
         ]
       },
       {
-        "id": "Patient.address",
+        "id": "Patient:uscorepatient.address",
         "path": "Patient.address",
         "short": "Addresses for the individual",
         "definition": "Addresses for the individual.",
@@ -988,7 +1412,7 @@
         ]
       },
       {
-        "id": "Patient.maritalStatus",
+        "id": "Patient:uscorepatient.maritalStatus",
         "path": "Patient.maritalStatus",
         "short": "Marital (civil) status of a patient",
         "definition": "This field contains a patient's most recent marital (civil) status.",
@@ -1038,7 +1462,7 @@
         ]
       },
       {
-        "id": "Patient.multipleBirth[x]",
+        "id": "Patient:uscorepatient.multipleBirth[x]",
         "path": "Patient.multipleBirth[x]",
         "short": "Whether patient is part of a multiple birth",
         "definition": "Indicates whether the patient is part of a multiple (bool) or indicates the actual birth order (integer).",
@@ -1075,7 +1499,7 @@
         ]
       },
       {
-        "id": "Patient.photo",
+        "id": "Patient:uscorepatient.photo",
         "path": "Patient.photo",
         "short": "Image of the patient",
         "definition": "Image of the patient.",
@@ -1108,7 +1532,7 @@
         ]
       },
       {
-        "id": "Patient.contact",
+        "id": "Patient:uscorepatient.contact",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -1161,7 +1585,7 @@
         ]
       },
       {
-        "id": "Patient.contact.id",
+        "id": "Patient:uscorepatient.contact.id",
         "path": "Patient.contact.id",
         "representation": [
           "xmlAttr"
@@ -1188,7 +1612,7 @@
         ]
       },
       {
-        "id": "Patient.contact.extension",
+        "id": "Patient:uscorepatient.contact.extension",
         "path": "Patient.contact.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -1217,7 +1641,7 @@
         ]
       },
       {
-        "id": "Patient.contact.modifierExtension",
+        "id": "Patient:uscorepatient.contact.modifierExtension",
         "path": "Patient.contact.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -1249,7 +1673,7 @@
         ]
       },
       {
-        "id": "Patient.contact.relationship",
+        "id": "Patient:uscorepatient.contact.relationship",
         "path": "Patient.contact.relationship",
         "short": "The kind of relationship",
         "definition": "The nature of the relationship between the patient and the contact person.",
@@ -1295,7 +1719,7 @@
         ]
       },
       {
-        "id": "Patient.contact.name",
+        "id": "Patient:uscorepatient.contact.name",
         "path": "Patient.contact.name",
         "short": "A name associated with the contact person",
         "definition": "A name associated with the contact person.",
@@ -1328,7 +1752,7 @@
         ]
       },
       {
-        "id": "Patient.contact.telecom",
+        "id": "Patient:uscorepatient.contact.telecom",
         "path": "Patient.contact.telecom",
         "short": "A contact detail for the person",
         "definition": "A contact detail for the person, e.g. a telephone number or an email address.",
@@ -1362,7 +1786,7 @@
         ]
       },
       {
-        "id": "Patient.contact.address",
+        "id": "Patient:uscorepatient.contact.address",
         "path": "Patient.contact.address",
         "short": "Address for the contact person",
         "definition": "Address for the contact person.",
@@ -1395,7 +1819,7 @@
         ]
       },
       {
-        "id": "Patient.contact.gender",
+        "id": "Patient:uscorepatient.contact.gender",
         "path": "Patient.contact.gender",
         "short": "male | female | other | unknown",
         "definition": "Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes.",
@@ -1445,7 +1869,7 @@
         ]
       },
       {
-        "id": "Patient.contact.organization",
+        "id": "Patient:uscorepatient.contact.organization",
         "path": "Patient.contact.organization",
         "short": "Organization that is associated with the contact",
         "definition": "Organization on behalf of which the contact is acting or for which the contact is working.",
@@ -1482,7 +1906,7 @@
         ]
       },
       {
-        "id": "Patient.contact.period",
+        "id": "Patient:uscorepatient.contact.period",
         "path": "Patient.contact.period",
         "short": "The period during which this contact person or organization is valid to be contacted relating to this patient",
         "definition": "The period during which this contact person or organization is valid to be contacted relating to this patient.",
@@ -1510,7 +1934,7 @@
         ]
       },
       {
-        "id": "Patient.animal",
+        "id": "Patient:uscorepatient.animal",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -1523,7 +1947,7 @@
         "comment": "The animal element is labeled \"Is Modifier\" since patients may be non-human. Systems SHALL either handle patient details appropriately (e.g. inform users patient is not human) or reject declared animal records.   The absense of the animal element does not imply that the patient is a human. If a system requires such a positive assertion that the patient is human, an extension will be required.  (Do not use a species of homo-sapiens in animal species, as this would incorrectly infer that the patient is an animal).",
         "requirements": "Many clinical systems are extended to care for animal patients as well as human.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Patient.animal",
           "min": 0,
@@ -1544,6 +1968,7 @@
             "source": "Element"
           }
         ],
+        "mustSupport": false,
         "isModifier": true,
         "isSummary": true,
         "mapping": [
@@ -1554,11 +1979,15 @@
           {
             "identity": "cda",
             "map": "n/a"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Patient.animal"
           }
         ]
       },
       {
-        "id": "Patient.animal.id",
+        "id": "Patient:uscorepatient.animal.id",
         "path": "Patient.animal.id",
         "representation": [
           "xmlAttr"
@@ -1585,7 +2014,7 @@
         ]
       },
       {
-        "id": "Patient.animal.extension",
+        "id": "Patient:uscorepatient.animal.extension",
         "path": "Patient.animal.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -1614,7 +2043,7 @@
         ]
       },
       {
-        "id": "Patient.animal.modifierExtension",
+        "id": "Patient:uscorepatient.animal.modifierExtension",
         "path": "Patient.animal.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -1646,7 +2075,7 @@
         ]
       },
       {
-        "id": "Patient.animal.species",
+        "id": "Patient:uscorepatient.animal.species",
         "path": "Patient.animal.species",
         "short": "E.g. Dog, Cow",
         "definition": "Identifies the high level taxonomic categorization of the kind of animal.",
@@ -1694,7 +2123,7 @@
         ]
       },
       {
-        "id": "Patient.animal.breed",
+        "id": "Patient:uscorepatient.animal.breed",
         "path": "Patient.animal.breed",
         "short": "E.g. Poodle, Angus",
         "definition": "Identifies the detailed categorization of the kind of animal.",
@@ -1742,7 +2171,7 @@
         ]
       },
       {
-        "id": "Patient.animal.genderStatus",
+        "id": "Patient:uscorepatient.animal.genderStatus",
         "path": "Patient.animal.genderStatus",
         "short": "E.g. Neutered, Intact",
         "definition": "Indicates the current state of the animal's reproductive organs.",
@@ -1789,7 +2218,7 @@
         ]
       },
       {
-        "id": "Patient.communication",
+        "id": "Patient:uscorepatient.communication",
         "path": "Patient.communication",
         "short": "A list of Languages which may be used to communicate with the patient about his or her health",
         "definition": "Languages which may be used to communicate with the patient about his or her health.",
@@ -1817,6 +2246,7 @@
             "source": "Element"
           }
         ],
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "rim",
@@ -1825,11 +2255,15 @@
           {
             "identity": "cda",
             "map": "patient.languageCommunication"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Patient.communication"
           }
         ]
       },
       {
-        "id": "Patient.communication.id",
+        "id": "Patient:uscorepatient.communication.id",
         "path": "Patient.communication.id",
         "representation": [
           "xmlAttr"
@@ -1856,7 +2290,7 @@
         ]
       },
       {
-        "id": "Patient.communication.extension",
+        "id": "Patient:uscorepatient.communication.extension",
         "path": "Patient.communication.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -1885,7 +2319,7 @@
         ]
       },
       {
-        "id": "Patient.communication.modifierExtension",
+        "id": "Patient:uscorepatient.communication.modifierExtension",
         "path": "Patient.communication.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -1917,7 +2351,7 @@
         ]
       },
       {
-        "id": "Patient.communication.language",
+        "id": "Patient:uscorepatient.communication.language",
         "path": "Patient.communication.language",
         "short": "The language which can be used to communicate with the patient about his or her health",
         "definition": "The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case; e.g. \"en\" for English, or \"en-US\" for American English versus \"en-EN\" for England English.",
@@ -1935,27 +2369,19 @@
             "code": "CodeableConcept"
           }
         ],
+        "mustSupport": true,
         "binding": {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
               "valueReference": {
-                "reference": "http://hl7.org/fhir/ValueSet/all-languages"
+                "reference": "http://hl7.org/fhir/us/core/ValueSet/simple-language"
               }
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "Language"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
             }
           ],
           "strength": "extensible",
-          "description": "A human language.",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/languages"
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/simple-language"
           }
         },
         "mapping": [
@@ -1970,11 +2396,15 @@
           {
             "identity": "cda",
             "map": ".languageCode"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Patient.communication.language"
           }
         ]
       },
       {
-        "id": "Patient.communication.preferred",
+        "id": "Patient:uscorepatient.communication.preferred",
         "path": "Patient.communication.preferred",
         "short": "Language preference indicator",
         "definition": "Indicates whether or not the patient prefers this language (over other languages he masters up a certain level).",
@@ -2008,7 +2438,7 @@
         ]
       },
       {
-        "id": "Patient.generalPractitioner",
+        "id": "Patient:uscorepatient.generalPractitioner",
         "path": "Patient.generalPractitioner",
         "short": "Patient's nominated primary care provider",
         "definition": "Patient's nominated care provider.",
@@ -2049,7 +2479,7 @@
         ]
       },
       {
-        "id": "Patient.managingOrganization",
+        "id": "Patient:uscorepatient.managingOrganization",
         "path": "Patient.managingOrganization",
         "short": "Organization that is the custodian of the patient record",
         "definition": "Organization that is the custodian of the patient record.",
@@ -2081,7 +2511,7 @@
         ]
       },
       {
-        "id": "Patient.link",
+        "id": "Patient:uscorepatient.link",
         "path": "Patient.link",
         "short": "Link to another patient resource that concerns the same actual person",
         "definition": "Link to another patient resource that concerns the same actual patient.",
@@ -2123,7 +2553,7 @@
         ]
       },
       {
-        "id": "Patient.link.id",
+        "id": "Patient:uscorepatient.link.id",
         "path": "Patient.link.id",
         "representation": [
           "xmlAttr"
@@ -2150,7 +2580,7 @@
         ]
       },
       {
-        "id": "Patient.link.extension",
+        "id": "Patient:uscorepatient.link.extension",
         "path": "Patient.link.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -2179,7 +2609,7 @@
         ]
       },
       {
-        "id": "Patient.link.modifierExtension",
+        "id": "Patient:uscorepatient.link.modifierExtension",
         "path": "Patient.link.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -2211,7 +2641,7 @@
         ]
       },
       {
-        "id": "Patient.link.other",
+        "id": "Patient:uscorepatient.link.other",
         "path": "Patient.link.other",
         "short": "The other patient or related person resource that the link refers to",
         "definition": "The other patient resource that the link refers to.",
@@ -2250,7 +2680,7 @@
         ]
       },
       {
-        "id": "Patient.link.type",
+        "id": "Patient:uscorepatient.link.type",
         "path": "Patient.link.type",
         "short": "replaced-by | replaces | refer | seealso - type of link",
         "definition": "The type of link between this patient resource and another patient resource.",

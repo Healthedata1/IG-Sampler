@@ -1,3 +1,5 @@
+<!-- ig template for many conformance resource html pages  ('base' in definitions file)  can not be used for conformance resources that have more that a single base template. e.g.,  sd since there are mapping and definitions templates for it as well  they need to be split out into 3 separate templates -->
+
 <!DOCTYPE HTML>
 
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -23,7 +25,7 @@
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet"/>
   <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-	<link href="jquery-ui.css" rel="stylesheet"/>
+	<link href="assets/css/jquery-ui.css" rel="stylesheet"/>
 
   <!-- Favicons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
@@ -34,26 +36,15 @@
 
 
 <body markdown="1">
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <div id="segment-header" class="segment">
   <!-- segment-header -->
   <div class="container">
-    <!-- container -->        <!--
-<?xml version="1.0" encoding="UTF-8"?>
-<a id="logo" no-external="true" href="http://hl7.org/fhir">
-  <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
-</a>
-
-
-
-[![fhir logo here](#.png)](#.html)
-{:#logo}
--->
-
-<p id="logo"><a href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="logo fhir" /></a></p>
-  <div id="your-nav">     <!--
+    <!-- container --> <a id="logo" no-external="true" href="http://hl7.org/fhir">
+      <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
+    </a>
+      <div id="project-nav">
+             <!--
 <a id="your-logo" no-external="true" href="http://www.hl7.org">
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
@@ -66,7 +57,8 @@ your logo here
 -->
 
 <p class="img-responsive" id="hl7-logo"><a href="http://www.hl7.org"><img src="assets/images/hl7-logo.png" alt="visit the our website" /></a></p>
-   </div>
+
+      </div>
     <div id="ig-status">
       <b>IG-Sampler Implementation Guide CI Build</b>
     </div>
@@ -76,6 +68,8 @@ your logo here
   </div>
 </div>
 <!-- /segment-header -->
+
+
 <div id="segment-navbar" class="segment">
   <!-- segment-navbar -->
   <div id="stripe">
@@ -94,7 +88,9 @@ your logo here
           </span>
         </button>
         <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
-        <div class="nav-collapse collapse navbar-inverse-collapse">        <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
+        <div class="nav-collapse collapse navbar-inverse-collapse">
+
+       <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
   <li><a href="guidance.html">General Guidance</a></li>
@@ -108,7 +104,9 @@ your logo here
   <li><a href="examples.html">Examples</a></li>
   <li><a href="downloads.html">Downloads</a></li>
 </ul>
-        <!--        <ul class="nav navbar-nav">
+
+
+             <!--        <ul class="nav navbar-nav">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -156,17 +154,17 @@ your logo here
 <!-- /segment-navbar -->
 
 
-
 </div>  <!-- /container -->
 </div>  <!-- /segment-breadcrumb -->
 
-<div id="segment-content" class="segment">  <!-- segment-content -->
-<div class="container">  <!-- container -->
-<div class="row">
-<div class="inner-wrapper">
 
-
-<div class="col-12">
+<div id="page-content-wrapper">  <!-- page content wrapper -->
+  <div class="page-content">  <!--page content -->
+    <div class="container">  <!-- container -->
+      <div class="row">  <!-- row -->
+       <div class="inner-wrapper"> <!-- inner-wrapper -->
+         <div class="col-md-12">  <!--col -->
+            <!-- content of page -->
 
 
 <!-- ============BreadCrumb=============== -->
@@ -175,22 +173,65 @@ your logo here
   
     
     
+      
+      
+      
+      
+        <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a>/<a class="breadcrumb-item" href="index.html">Home</a>
+        /
+        <a class="breadcrumb-item" href="terminology.html">Terminology</a>
+        /
+        <span class="breadcrumb-item active">ValueSet-obs-perfomer-part</span>
+      
+      
+      
+      
     
-    
-      <a class="breadcrumb-item" href="index.html">Home</a>
-      /
-      <a class="breadcrumb-item" href="terminology.html">Terminology</a>
-      /
-      <span class="breadcrumb-item active">ValueSet-obs-perfomer-part</span>
-    
-    
+
 
 </nav>
 
 
-<!-- ============CONTENT CONTENT=============== -->
+<!--  - choose what you want  comment out or Change what you don't-->
+<ul class="nav nav-tabs">
 
-<table class="grid">
+	<li class="active"><a href="#">Narrative Content</a></li>
+
+<!--
+{ % if ValueSet == "StructureDefinition"  % }
+	{ % if content == "definitions"  % }
+		<li class="active"><a href="#">Detailed Descriptions</a></li>
+	{ % else % }
+		<li><a href="ValueSet-obs-perfomer-part-definitions.html">Detailed Descriptions</a></li>
+	{ % endif % }
+	{ % if content == "mappings" % }
+		<li class="active"><a href="#">Mappings</a></li>
+	{ % else % }
+		<li><a href="ValueSet-obs-perfomer-part-mappings.html">Mappings</a></li>
+	{ % endif % }
+{ % Sendif % }
+-->
+
+<li><a href="ValueSet-obs-perfomer-part.xml.html">XML</a></li>
+
+
+	<li><a href="ValueSet-obs-perfomer-part.json.html">JSON</a></li>
+
+<!--
+{ % if content == "turtle" % }
+	<li class="active"><a href="#">Turtle</a></li>
+{ % else % }
+	<li><a href="ValueSet-obs-perfomer-part.ttl.html">Turtle</a></li>
+{ % endif % }
+-->
+</ul>
+
+
+<!-- ============ CONTENT CONTENT=============== -->
+
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+  <table class="grid">
  <tbody><tr><td>Defining URL:</td><td>http://www.fhir.org/guides/ig-sampler/ValueSet/obs-perfomer-part</td></tr>
  <tr><td>Name:</td><td>Observer Performer Participation</td></tr>
  <tr><td>Definition:</td><td><p>The type of involvement of the performer in the Observation.</p>
@@ -199,10 +240,10 @@ your logo here
  <tr><td>Source Resource</td><td><a href="ValueSet-obs-perfomer-part.xml.html">XML</a> / <a href="ValueSet-obs-perfomer-part.json.html">JSON</a> / <a href="ValueSet-obs-perfomer-part.ttl.html">Turtle</a></td></tr>
 </tbody></table>
 
-
+  
 <p>This value set is not used</p>
 
-<div xmlns="http://www.w3.org/1999/xhtml"><h2>Observer Performer Participation</h2><div><p>The type of involvement of the performer in the Observation.</p>
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2>Observer Performer Participation</h2><div><p>The type of involvement of the performer in the Observation.</p>
 </div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="http://build.fhir.org/v3/ParticipationType/cs.html"><code>http://hl7.org/fhir/v3/ParticipationType</code></a><table class="none"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-TRANS">TRANS</a></td><td>Transcriber</td><td>An entity entering the data into the originating system. The data entry entity is collected optionally for internal quality control purposes. This includes the transcriptionist for dictated text transcribed into electronic form.</td></tr><tr><td><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-PART">PART</a></td><td>Participation</td><td>Indicates that the target of the participation is involved in some manner in the act, but does not qualify how.</td></tr><tr><td><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-ATND">ATND</a></td><td>attender</td><td>The practitioner that has responsibility for overseeing a patient's care during a patient encounter.</td></tr><tr><td><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-CON">CON</a></td><td>consultant</td><td>An advisor participating in the service by performing evaluations and making recommendations.</td></tr><tr><td><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-AUT">AUT</a></td><td>author (originator)</td><td>Definition: A party that originates the Act and therefore has responsibility for the information given in the Act and ownership of this Act.<br/>
                         
                            Example: the report writer, the person writing the act definition, the guideline author, the placer of an order, the EKG cart (device) creating a report etc. Every Act should have an author. Authorship is regardless of mood always actual authorship. <br/>
@@ -219,9 +260,9 @@ your logo here
                         
                            Example: A person who is the head of a biochemical laboratory; a sponsor for a policy or government program.</td></tr><tr><td><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-VRF">VRF</a></td><td>verifier</td><td>A person who verifies the correctness and appropriateness of the service (plan, order, event, etc.) and hence takes on accountability.</td></tr><tr><td><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-AUTHEN">AUTHEN</a></td><td>authenticator</td><td>A verifier who attests to the accuracy of an act, but who does not have privileges to legally authenticate the act. An example would be a resident physician who sees a patient and dictates a note, then later signs it. Their signature constitutes an authentication.</td></tr><tr><td><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-LA">LA</a></td><td>legal authenticator</td><td>A verifier who legally authenticates the accuracy of an act. An example would be a staff physician who sees a patient and dictates a note, then later signs it. Their signature constitutes a legal authentication.</td></tr></table></li></ul></div>
 
-<h3>Expansion</h3>
+  <h3>Expansion</h3>
 
-<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 14 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/v3/ParticipationType version 2016-11-11</p><p>All codes from system <a href="http://build.fhir.org/v3/ParticipationType/cs.html"><code>http://hl7.org/fhir/v3/ParticipationType</code></a></p><table class="codes"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a name="http---hl7.org-fhir-v3-ParticipationType-TRANS"> </a><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-TRANS">TRANS</a></td><td>Transcriber</td><td>An entity entering the data into the originating system. The data entry entity is collected optionally for internal quality control purposes. This includes the transcriptionist for dictated text transcribed into electronic form.</td></tr><tr><td><a name="http---hl7.org-fhir-v3-ParticipationType-PART"> </a><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-PART">PART</a></td><td>Participation</td><td>Indicates that the target of the participation is involved in some manner in the act, but does not qualify how.</td></tr><tr><td><a name="http---hl7.org-fhir-v3-ParticipationType-ATND"> </a><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-ATND">ATND</a></td><td>attender</td><td>The practitioner that has responsibility for overseeing a patient's care during a patient encounter.</td></tr><tr><td><a name="http---hl7.org-fhir-v3-ParticipationType-CON"> </a><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-CON">CON</a></td><td>consultant</td><td>An advisor participating in the service by performing evaluations and making recommendations.</td></tr><tr><td><a name="http---hl7.org-fhir-v3-ParticipationType-AUT"> </a><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-AUT">AUT</a></td><td>author (originator)</td><td>Definition: A party that originates the Act and therefore has responsibility for the information given in the Act and ownership of this Act.
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 14 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/v3/ParticipationType version 2016-11-11</p><p>All codes from system <a href="http://build.fhir.org/v3/ParticipationType/cs.html"><code>http://hl7.org/fhir/v3/ParticipationType</code></a></p><table class="codes"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a name="http---hl7.org-fhir-v3-ParticipationType-TRANS"> </a><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-TRANS">TRANS</a></td><td>Transcriber</td><td>An entity entering the data into the originating system. The data entry entity is collected optionally for internal quality control purposes. This includes the transcriptionist for dictated text transcribed into electronic form.</td></tr><tr><td><a name="http---hl7.org-fhir-v3-ParticipationType-PART"> </a><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-PART">PART</a></td><td>Participation</td><td>Indicates that the target of the participation is involved in some manner in the act, but does not qualify how.</td></tr><tr><td><a name="http---hl7.org-fhir-v3-ParticipationType-ATND"> </a><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-ATND">ATND</a></td><td>attender</td><td>The practitioner that has responsibility for overseeing a patient's care during a patient encounter.</td></tr><tr><td><a name="http---hl7.org-fhir-v3-ParticipationType-CON"> </a><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-CON">CON</a></td><td>consultant</td><td>An advisor participating in the service by performing evaluations and making recommendations.</td></tr><tr><td><a name="http---hl7.org-fhir-v3-ParticipationType-AUT"> </a><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-AUT">AUT</a></td><td>author (originator)</td><td>Definition: A party that originates the Act and therefore has responsibility for the information given in the Act and ownership of this Act.
 
                         
                            Example: the report writer, the person writing the act definition, the guideline author, the placer of an order, the EKG cart (device) creating a report etc. Every Act should have an author. Authorship is regardless of mood always actual authorship. 
@@ -242,17 +283,50 @@ your logo here
 
                         
                            Example: A person who is the head of a biochemical laboratory; a sponsor for a policy or government program.</td></tr><tr><td><a name="http---hl7.org-fhir-v3-ParticipationType-VRF"> </a><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-VRF">VRF</a></td><td>verifier</td><td>A person who verifies the correctness and appropriateness of the service (plan, order, event, etc.) and hence takes on accountability.</td></tr><tr><td><a name="http---hl7.org-fhir-v3-ParticipationType-AUTHEN"> </a><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-AUTHEN">AUTHEN</a></td><td>authenticator</td><td>A verifier who attests to the accuracy of an act, but who does not have privileges to legally authenticate the act. An example would be a resident physician who sees a patient and dictates a note, then later signs it. Their signature constitutes an authentication.</td></tr><tr><td><a name="http---hl7.org-fhir-v3-ParticipationType-LA"> </a><a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-LA">LA</a></td><td>legal authenticator</td><td>A verifier who legally authenticates the accuracy of an act. An example would be a staff physician who sees a patient and dictates a note, then later signs it. Their signature constitutes a legal authentication.</td></tr></table></div>
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+<!-- ( % when 'StructureMap' % }
+============StructureMap CONTENT CONTENT===============
+  ( % include nav-tabs.html type="ValueSet" id="obs-perfomer-part" active="content" % }
+
+  <p>
+  Thise is the mapping between FHIR resources and the Logical Model:
+  </p>
+
+  <a name="summary"> </a>
+  <h2>Summary</h2>
+  ( % include ValueSet-obs-perfomer-part-summary.xhtml % }
+  <br/>
+
+  <h2>Content</h2>
+  ( %  include ValueSet-obs-perfomer-part-content.xhtml % }
+  <br/>
+
+  <a name="script"> </a>
+  <h2>Script</h2>
+  <pre>
+  ( % include ValueSet-obs-perfomer-part-script.xhtml % }
+  </pre>
+============StructureMap CONTENT CONTENT=============== -->
+
+
+
+
+<!-- simple format links
+<p>
+Formats: <a href="ValueSet-obs-perfomer-part.html">Narrative</a>, <a href="ValueSet-obs-perfomer-part.xml.html">XML</a>, <a href="ValueSet-obs-perfomer-part.json.html">JSON</a>, <a href="ValueSet-obs-perfomer-part.ttl.html">Turtle</a>
+</p>
+-->
+
 
   <!-- ==============END CONTENT END CONTENT=================== -->
 
-</div>
-
-
+</div>  <!-- col -->
 </div>  <!-- /inner-wrapper -->
 </div>  <!-- /row -->
 </div>  <!-- /container -->
-
-</div>  <!-- /segment-content -->
+</div>  <!-- /page content -->
+</div>  <!-- /page content wrapper -->
 
 
 
@@ -269,7 +343,7 @@ your logo here
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            IG-Sampler Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://build.fhir.org">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Tue, Nov 14, 2017 18:08-0800. |
+            IG-Sampler Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://build.fhir.org">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Dec 13, 2017 23:40-0800. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://build.fhir.orglicense.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
@@ -293,13 +367,14 @@ your logo here
 <script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
 <script src="./assets/js/bootstrap.min.js"> </script>
 <script src="./assets/js/respond.min.js"> </script>
-
+<script src="./assets/js/anchor.min.js"> </script>
 <script src="./assets/js/fhir.js"> </script>
 
 <!-- Analytics Below
 ================================================== -->
 
-
+<!-- add acnhors before the closing body tag. -->
+<script> anchors.add()</script>
 </body>
 </html>
 

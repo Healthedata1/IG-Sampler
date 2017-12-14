@@ -4,8 +4,8 @@
   <id value="template-profile-on-profile"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://build.fhir.org/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://build.fhir.org/formats.html#table" title="Legend for this format"><img src="http://build.fhir.org/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-template-profile-on-profile-definitions.html#Patient" title="Template-Profile-on-Profile.">Patient</a><a name="Patient"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Template-Profile-on-Profile</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-template-profile-on-profile-definitions.html#Patient.identifier">identifier</a><a name="Patient.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://build.fhir.org/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-template-profile-on-profile-definitions.html#Patient.identifier.system">system</a><a name="Patient.identifier.system"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://build.fhir.org/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Fixed Value: </span><span style="color: darkgreen">http://Healthedata1/IG-Template/patient-ids</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-template-profile-on-profile-definitions.html#Patient.identifier">identifier</a><a name="Patient.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding: 3px; color: white; background-color: red; opacity: 0.4" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">1</span>..<span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://build.fhir.org/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-template-profile-on-profile-definitions.html#Patient.identifier.system">system</a><a name="Patient.identifier.system"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding: 3px; color: white; background-color: red; opacity: 0.4" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://build.fhir.org/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Fixed Value: </span><span style="color: darkgreen">http://Healthedata1/IG-Template/patient-ids</span></td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://build.fhir.org/formats.html#table" title="Legend for this format"><img src="http://build.fhir.org/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-profile-on-profile"/>
@@ -54,11 +54,12 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Patient"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
   <derivation value="constraint"/>
   <snapshot>
-    <element id="Patient">
+    <element id="Patient:uscorepatient">
       <path value="Patient"/>
+      <sliceName value="USCorePatient"/>
       <short value="Template-Profile-on-Profile"/>
       <definition value="Template-Profile-on-Profile."/>
       <alias value="SubjectOfCare Client Resident"/>
@@ -123,7 +124,7 @@
         <map value="Patient"/>
       </mapping>
     </element>
-    <element id="Patient.id">
+    <element id="Patient:uscorepatient.id">
       <path value="Patient.id"/>
       <short value="Logical id of this artifact"/>
       <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."/>
@@ -140,7 +141,7 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Patient.meta">
+    <element id="Patient:uscorepatient.meta">
       <path value="Patient.meta"/>
       <short value="Metadata about the resource"/>
       <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
@@ -156,7 +157,7 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Patient.implicitRules">
+    <element id="Patient:uscorepatient.implicitRules">
       <path value="Patient.implicitRules"/>
       <short value="A set of rules under which this content was created"/>
       <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
@@ -174,7 +175,7 @@
       <isModifier value="true"/>
       <isSummary value="true"/>
     </element>
-    <element id="Patient.language">
+    <element id="Patient:uscorepatient.language">
       <path value="Patient.language"/>
       <short value="Language of the resource content"/>
       <definition value="The base language in which the resource is written."/>
@@ -208,7 +209,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Patient.text">
+    <element id="Patient:uscorepatient.text">
       <path value="Patient.text"/>
       <short value="Text summary of the resource, for human interpretation"/>
       <definition value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
@@ -233,7 +234,7 @@
         <map value="Act.text?"/>
       </mapping>
     </element>
-    <element id="Patient.contained">
+    <element id="Patient:uscorepatient.contained">
       <path value="Patient.contained"/>
       <short value="Contained, inline Resources"/>
       <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
@@ -256,13 +257,18 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient.extension">
+    <element id="Patient:uscorepatient.extension">
       <path value="Patient.extension"/>
-      <short value="Additional Content defined by implementations"/>
-      <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
-      <alias value="extensions"/>
-      <alias value="user content"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -273,12 +279,77 @@
       <type>
         <code value="Extension"/>
       </type>
+    </element>
+    <element id="Patient:uscorepatient.extension:race">
+      <path value="Patient.extension"/>
+      <sliceName value="race"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
       <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.extension"/>
       </mapping>
     </element>
-    <element id="Patient.modifierExtension">
+    <element id="Patient:uscorepatient.extension:ethnicity">
+      <path value="Patient.extension"/>
+      <sliceName value="ethnicity"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.extension"/>
+      </mapping>
+    </element>
+    <element id="Patient:uscorepatient.extension:birthsex">
+      <path value="Patient.extension"/>
+      <sliceName value="birthsex"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.extension"/>
+      </mapping>
+    </element>
+    <element id="Patient:uscorepatient.modifierExtension">
       <path value="Patient.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -301,7 +372,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient.identifier">
+    <element id="Patient:uscorepatient.identifier">
       <path value="Patient.identifier"/>
       <short value="An identifier for this patient"/>
       <definition value="An identifier for this patient."/>
@@ -339,7 +410,7 @@
         <map value="Patient.identifier"/>
       </mapping>
     </element>
-    <element id="Patient.identifier.id">
+    <element id="Patient:uscorepatient.identifier.id">
       <path value="Patient.identifier.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -359,7 +430,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.identifier.extension">
+    <element id="Patient:uscorepatient.identifier.extension">
       <path value="Patient.identifier.extension"/>
       <slicing>
         <discriminator>
@@ -389,7 +460,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.identifier.use">
+    <element id="Patient:uscorepatient.identifier.use">
       <path value="Patient.identifier.use"/>
       <short value="usual | official | temp | secondary (If known)"/>
       <definition value="The purpose of this identifier."/>
@@ -426,7 +497,7 @@
         <map value="Role.code or implied by context"/>
       </mapping>
     </element>
-    <element id="Patient.identifier.type">
+    <element id="Patient:uscorepatient.identifier.type">
       <path value="Patient.identifier.type"/>
       <short value="Description of identifier"/>
       <definition value="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose."/>
@@ -465,7 +536,7 @@
         <map value="Role.code or implied by context"/>
       </mapping>
     </element>
-    <element id="Patient.identifier.system">
+    <element id="Patient:uscorepatient.identifier.system">
       <path value="Patient.identifier.system"/>
       <short value="The namespace for the identifier value"/>
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique."/>
@@ -504,12 +575,12 @@
         <map value="Patient.identifier.system"/>
       </mapping>
     </element>
-    <element id="Patient.identifier.value">
+    <element id="Patient:uscorepatient.identifier.value">
       <path value="Patient.identifier.value"/>
-      <short value="The value that is unique"/>
+      <short value="The value that is unique within the system."/>
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system."/>
       <comment value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value&#39;s primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](extension-rendered-value.html)."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="Identifier.value"/>
@@ -523,6 +594,7 @@
         <label value="General"/>
         <valueString value="123456"/>
       </example>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="v2"/>
@@ -536,8 +608,12 @@
         <identity value="servd"/>
         <map value="./Value"/>
       </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.identifier.value"/>
+      </mapping>
     </element>
-    <element id="Patient.identifier.period">
+    <element id="Patient:uscorepatient.identifier.period">
       <path value="Patient.identifier.period"/>
       <short value="Time period when id is/was valid for use"/>
       <definition value="Time period during which identifier is/was valid for use."/>
@@ -565,7 +641,7 @@
         <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
-    <element id="Patient.identifier.assigner">
+    <element id="Patient:uscorepatient.identifier.assigner">
       <path value="Patient.identifier.assigner"/>
       <short value="Organization that issued id (may be just text)"/>
       <definition value="Organization that issued/manages the identifier."/>
@@ -595,7 +671,7 @@
         <map value="./IdentifierIssuingAuthority"/>
       </mapping>
     </element>
-    <element id="Patient.active">
+    <element id="Patient:uscorepatient.active">
       <path value="Patient.active"/>
       <short value="Whether this patient&#39;s record is in active use"/>
       <definition value="Whether this patient record is in active use."/>
@@ -627,13 +703,13 @@
         <map value="status"/>
       </mapping>
     </element>
-    <element id="Patient.name">
+    <element id="Patient:uscorepatient.name">
       <path value="Patient.name"/>
       <short value="A name associated with the patient"/>
       <definition value="A name associated with the individual."/>
       <comment value="A patient may have multiple names with different uses or applicable periods. For animals, the name is a &quot;HumanName&quot; in the sense that is assigned and used by humans and has the same patterns."/>
       <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="*"/>
       <base>
         <path value="Patient.name"/>
@@ -643,6 +719,7 @@
       <type>
         <code value="HumanName"/>
       </type>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="v2"/>
@@ -656,8 +733,284 @@
         <identity value="cda"/>
         <map value=".patient.name"/>
       </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.name"/>
+      </mapping>
     </element>
-    <element id="Patient.telecom">
+    <element id="Patient:uscorepatient.name.id">
+      <path value="Patient.name.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Patient:uscorepatient.name.extension">
+      <path value="Patient.name.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Patient:uscorepatient.name.use">
+      <path value="Patient.name.use"/>
+      <short value="usual | official | temp | nickname | anonymous | old | maiden"/>
+      <definition value="Identifies the purpose for this name."/>
+      <comment value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old name etc.for a current/permanent one. Applications can assume that a name is current unless it explicitly says that it is temporary or old."/>
+      <requirements value="Allows the appropriate name for a particular context of use to be selected from among a set of names."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HumanName.use"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="NameUse"/>
+        </extension>
+        <strength value="required"/>
+        <description value="The use of a human name"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/name-use"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.7, but often indicated by which field contains the name"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="unique(./use)"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./NamePurpose"/>
+      </mapping>
+    </element>
+    <element id="Patient:uscorepatient.name.text">
+      <path value="Patient.name.text"/>
+      <short value="Text representation of the full name"/>
+      <definition value="A full text representation of the name."/>
+      <comment value="Can provide both a text representation and structured parts."/>
+      <requirements value="A renderable, unencoded form."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HumanName.text"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="implied by XPN.11"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./formatted"/>
+      </mapping>
+    </element>
+    <element id="Patient:uscorepatient.name.family">
+      <path value="Patient.name.family"/>
+      <short value="Family name (often called &#39;Surname&#39;)"/>
+      <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."/>
+      <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures)."/>
+      <alias value="surname"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="HumanName.family"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="true"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.1/FN.1"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./part[partType = FAM]"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./FamilyName"/>
+      </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.name.family"/>
+      </mapping>
+    </element>
+    <element id="Patient:uscorepatient.name.given">
+      <path value="Patient.name.given"/>
+      <short value="Given names (not always &#39;first&#39;). Includes middle names"/>
+      <definition value="Given name."/>
+      <comment value="If only initials are recorded, they may be used in place of the full name.  Not called &quot;first name&quot; since given names do not always come first."/>
+      <alias value="first name"/>
+      <alias value="middle name"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="HumanName.given"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <orderMeaning value="Given Names appear in the correct order for presenting the name"/>
+      <mustSupport value="true"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.2 + XPN.3"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./part[partType = GIV]"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./GivenNames"/>
+      </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.name.given"/>
+      </mapping>
+    </element>
+    <element id="Patient:uscorepatient.name.prefix">
+      <path value="Patient.name.prefix"/>
+      <short value="Parts that come before the name"/>
+      <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="HumanName.prefix"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <orderMeaning value="Prefixes appear in the correct order for presenting the name"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.5"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./part[partType = PFX]"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./TitleCode"/>
+      </mapping>
+    </element>
+    <element id="Patient:uscorepatient.name.suffix">
+      <path value="Patient.name.suffix"/>
+      <short value="Parts that come after the name"/>
+      <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="HumanName.suffix"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <orderMeaning value="Suffixes appear in the correct order for presenting the name"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN/4"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./part[partType = SFX]"/>
+      </mapping>
+    </element>
+    <element id="Patient:uscorepatient.name.period">
+      <path value="Patient.name.period"/>
+      <short value="Time period when name was/is in use"/>
+      <definition value="Indicates the period of time when this name was valid for the named person."/>
+      <requirements value="Allows names to be placed in historical context."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HumanName.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.13 + XPN.14"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./usablePeriod[type=&quot;IVL&lt;TS&gt;&quot;]"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./StartDate and ./EndDate"/>
+      </mapping>
+    </element>
+    <element id="Patient:uscorepatient.telecom">
       <path value="Patient.telecom"/>
       <short value="A contact detail for the individual"/>
       <definition value="A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted."/>
@@ -687,13 +1040,13 @@
         <map value=".telecom"/>
       </mapping>
     </element>
-    <element id="Patient.gender">
+    <element id="Patient:uscorepatient.gender">
       <path value="Patient.gender"/>
       <short value="male | female | other | unknown"/>
       <definition value="Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes."/>
       <comment value="The gender may not match the biological sex as determined by genetics, or the individual&#39;s preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than M and F, though the vast majority of systems and contexts only support M and F.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific gender aspect of interest (anatomical, chromosonal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosonal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overrideable error, not a &quot;hard&quot; error."/>
       <requirements value="Needed for identification of the individual, in combination with (at least) name and birth date. Gender of individual drives many clinical processes."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="Patient.gender"/>
@@ -703,16 +1056,10 @@
       <type>
         <code value="code"/>
       </type>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="AdministrativeGender"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
-        </extension>
         <strength value="required"/>
-        <description value="The gender of a person used for administrative purposes."/>
         <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
         </valueSetReference>
@@ -729,8 +1076,12 @@
         <identity value="cda"/>
         <map value=".patient.administrativeGenderCode"/>
       </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.gender"/>
+      </mapping>
     </element>
-    <element id="Patient.birthDate">
+    <element id="Patient:uscorepatient.birthDate">
       <path value="Patient.birthDate"/>
       <short value="The date of birth for the individual"/>
       <definition value="The date of birth for the individual."/>
@@ -746,6 +1097,7 @@
       <type>
         <code value="date"/>
       </type>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="v2"/>
@@ -763,8 +1115,12 @@
         <identity value="loinc"/>
         <map value="21112-8"/>
       </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.birthDate"/>
+      </mapping>
     </element>
-    <element id="Patient.deceased[x]">
+    <element id="Patient:uscorepatient.deceased[x]">
       <path value="Patient.deceased[x]"/>
       <short value="Indicates if the individual is deceased or not"/>
       <definition value="Indicates if the individual is deceased or not."/>
@@ -798,7 +1154,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.address">
+    <element id="Patient:uscorepatient.address">
       <path value="Patient.address"/>
       <short value="Addresses for the individual"/>
       <definition value="Addresses for the individual."/>
@@ -828,7 +1184,7 @@
         <map value=".addr"/>
       </mapping>
     </element>
-    <element id="Patient.maritalStatus">
+    <element id="Patient:uscorepatient.maritalStatus">
       <path value="Patient.maritalStatus"/>
       <short value="Marital (civil) status of a patient"/>
       <definition value="This field contains a patient&#39;s most recent marital (civil) status."/>
@@ -869,7 +1225,7 @@
         <map value=".patient.maritalStatusCode"/>
       </mapping>
     </element>
-    <element id="Patient.multipleBirth[x]">
+    <element id="Patient:uscorepatient.multipleBirth[x]">
       <path value="Patient.multipleBirth[x]"/>
       <short value="Whether patient is part of a multiple birth"/>
       <definition value="Indicates whether the patient is part of a multiple (bool) or indicates the actual birth order (integer)."/>
@@ -901,7 +1257,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.photo">
+    <element id="Patient:uscorepatient.photo">
       <path value="Patient.photo"/>
       <short value="Image of the patient"/>
       <definition value="Image of the patient."/>
@@ -929,7 +1285,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.contact">
+    <element id="Patient:uscorepatient.contact">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Contact"/>
       </extension>
@@ -972,7 +1328,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.contact.id">
+    <element id="Patient:uscorepatient.contact.id">
       <path value="Patient.contact.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -992,7 +1348,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.contact.extension">
+    <element id="Patient:uscorepatient.contact.extension">
       <path value="Patient.contact.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -1014,7 +1370,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.contact.modifierExtension">
+    <element id="Patient:uscorepatient.contact.modifierExtension">
       <path value="Patient.contact.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -1039,7 +1395,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient.contact.relationship">
+    <element id="Patient:uscorepatient.contact.relationship">
       <path value="Patient.contact.relationship"/>
       <short value="The kind of relationship"/>
       <definition value="The nature of the relationship between the patient and the contact person."/>
@@ -1077,7 +1433,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.contact.name">
+    <element id="Patient:uscorepatient.contact.name">
       <path value="Patient.contact.name"/>
       <short value="A name associated with the contact person"/>
       <definition value="A name associated with the contact person."/>
@@ -1105,7 +1461,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.contact.telecom">
+    <element id="Patient:uscorepatient.contact.telecom">
       <path value="Patient.contact.telecom"/>
       <short value="A contact detail for the person"/>
       <definition value="A contact detail for the person, e.g. a telephone number or an email address."/>
@@ -1134,7 +1490,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.contact.address">
+    <element id="Patient:uscorepatient.contact.address">
       <path value="Patient.contact.address"/>
       <short value="Address for the contact person"/>
       <definition value="Address for the contact person."/>
@@ -1162,7 +1518,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.contact.gender">
+    <element id="Patient:uscorepatient.contact.gender">
       <path value="Patient.contact.gender"/>
       <short value="male | female | other | unknown"/>
       <definition value="Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes."/>
@@ -1203,7 +1559,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.contact.organization">
+    <element id="Patient:uscorepatient.contact.organization">
       <path value="Patient.contact.organization"/>
       <short value="Organization that is associated with the contact"/>
       <definition value="Organization on behalf of which the contact is acting or for which the contact is working."/>
@@ -1233,7 +1589,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.contact.period">
+    <element id="Patient:uscorepatient.contact.period">
       <path value="Patient.contact.period"/>
       <short value="The period during which this contact person or organization is valid to be contacted relating to this patient"/>
       <definition value="The period during which this contact person or organization is valid to be contacted relating to this patient."/>
@@ -1256,7 +1612,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.animal">
+    <element id="Patient:uscorepatient.animal">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Animal"/>
       </extension>
@@ -1266,7 +1622,7 @@
       <comment value="The animal element is labeled &quot;Is Modifier&quot; since patients may be non-human. Systems SHALL either handle patient details appropriately (e.g. inform users patient is not human) or reject declared animal records.   The absense of the animal element does not imply that the patient is a human. If a system requires such a positive assertion that the patient is human, an extension will be required.  (Do not use a species of homo-sapiens in animal species, as this would incorrectly infer that the patient is an animal)."/>
       <requirements value="Many clinical systems are extended to care for animal patients as well as human."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="0"/>
       <base>
         <path value="Patient.animal"/>
         <min value="0"/>
@@ -1283,6 +1639,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="Element"/>
       </constraint>
+      <mustSupport value="false"/>
       <isModifier value="true"/>
       <isSummary value="true"/>
       <mapping>
@@ -1293,8 +1650,12 @@
         <identity value="cda"/>
         <map value="n/a"/>
       </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.animal"/>
+      </mapping>
     </element>
-    <element id="Patient.animal.id">
+    <element id="Patient:uscorepatient.animal.id">
       <path value="Patient.animal.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -1314,7 +1675,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.animal.extension">
+    <element id="Patient:uscorepatient.animal.extension">
       <path value="Patient.animal.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -1336,7 +1697,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.animal.modifierExtension">
+    <element id="Patient:uscorepatient.animal.modifierExtension">
       <path value="Patient.animal.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -1361,7 +1722,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient.animal.species">
+    <element id="Patient:uscorepatient.animal.species">
       <path value="Patient.animal.species"/>
       <short value="E.g. Dog, Cow"/>
       <definition value="Identifies the high level taxonomic categorization of the kind of animal."/>
@@ -1401,7 +1762,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.animal.breed">
+    <element id="Patient:uscorepatient.animal.breed">
       <path value="Patient.animal.breed"/>
       <short value="E.g. Poodle, Angus"/>
       <definition value="Identifies the detailed categorization of the kind of animal."/>
@@ -1441,7 +1802,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.animal.genderStatus">
+    <element id="Patient:uscorepatient.animal.genderStatus">
       <path value="Patient.animal.genderStatus"/>
       <short value="E.g. Neutered, Intact"/>
       <definition value="Indicates the current state of the animal&#39;s reproductive organs."/>
@@ -1480,7 +1841,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.communication">
+    <element id="Patient:uscorepatient.communication">
       <path value="Patient.communication"/>
       <short value="A list of Languages which may be used to communicate with the patient about his or her health"/>
       <definition value="Languages which may be used to communicate with the patient about his or her health."/>
@@ -1504,6 +1865,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="rim"/>
         <map value="LanguageCommunication"/>
@@ -1512,8 +1874,12 @@
         <identity value="cda"/>
         <map value="patient.languageCommunication"/>
       </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.communication"/>
+      </mapping>
     </element>
-    <element id="Patient.communication.id">
+    <element id="Patient:uscorepatient.communication.id">
       <path value="Patient.communication.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -1533,7 +1899,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.communication.extension">
+    <element id="Patient:uscorepatient.communication.extension">
       <path value="Patient.communication.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -1555,7 +1921,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.communication.modifierExtension">
+    <element id="Patient:uscorepatient.communication.modifierExtension">
       <path value="Patient.communication.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -1580,7 +1946,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient.communication.language">
+    <element id="Patient:uscorepatient.communication.language">
       <path value="Patient.communication.language"/>
       <short value="The language which can be used to communicate with the patient about his or her health"/>
       <definition value="The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case; e.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English."/>
@@ -1596,22 +1962,16 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
+      <mustSupport value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
+            <reference value="http://hl7.org/fhir/us/core/ValueSet/simple-language"/>
           </valueReference>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Language"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
-        </extension>
         <strength value="extensible"/>
-        <description value="A human language."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
+          <reference value="http://hl7.org/fhir/us/core/ValueSet/simple-language"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1626,8 +1986,12 @@
         <identity value="cda"/>
         <map value=".languageCode"/>
       </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.communication.language"/>
+      </mapping>
     </element>
-    <element id="Patient.communication.preferred">
+    <element id="Patient:uscorepatient.communication.preferred">
       <path value="Patient.communication.preferred"/>
       <short value="Language preference indicator"/>
       <definition value="Indicates whether or not the patient prefers this language (over other languages he masters up a certain level)."/>
@@ -1656,7 +2020,7 @@
         <map value=".preferenceInd"/>
       </mapping>
     </element>
-    <element id="Patient.generalPractitioner">
+    <element id="Patient:uscorepatient.generalPractitioner">
       <path value="Patient.generalPractitioner"/>
       <short value="Patient&#39;s nominated primary care provider"/>
       <definition value="Patient&#39;s nominated care provider."/>
@@ -1690,7 +2054,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.managingOrganization">
+    <element id="Patient:uscorepatient.managingOrganization">
       <path value="Patient.managingOrganization"/>
       <short value="Organization that is the custodian of the patient record"/>
       <definition value="Organization that is the custodian of the patient record."/>
@@ -1717,7 +2081,7 @@
         <map value=".providerOrganization"/>
       </mapping>
     </element>
-    <element id="Patient.link">
+    <element id="Patient:uscorepatient.link">
       <path value="Patient.link"/>
       <short value="Link to another patient resource that concerns the same actual person"/>
       <definition value="Link to another patient resource that concerns the same actual patient."/>
@@ -1752,7 +2116,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.link.id">
+    <element id="Patient:uscorepatient.link.id">
       <path value="Patient.link.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -1772,7 +2136,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.link.extension">
+    <element id="Patient:uscorepatient.link.extension">
       <path value="Patient.link.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -1794,7 +2158,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.link.modifierExtension">
+    <element id="Patient:uscorepatient.link.modifierExtension">
       <path value="Patient.link.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -1819,7 +2183,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient.link.other">
+    <element id="Patient:uscorepatient.link.other">
       <path value="Patient.link.other"/>
       <short value="The other patient or related person resource that the link refers to"/>
       <definition value="The other patient resource that the link refers to."/>
@@ -1853,7 +2217,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.link.type">
+    <element id="Patient:uscorepatient.link.type">
       <path value="Patient.link.type"/>
       <short value="replaced-by | replaces | refer | seealso - type of link"/>
       <definition value="The type of link between this patient resource and another patient resource."/>

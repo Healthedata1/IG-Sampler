@@ -1,14 +1,15 @@
 <!--
-<?xml version="1.0" encoding="UTF-8"?>
-<a id="logo" no-external="true" href="http://hl7.org/fhir">
-  <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
+<a id="your-logo" no-external="true" href="http://www.hl7.org">
+<img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
 
+your logo here
 
+[![visit the our website](your-logo.png)](your web site.html)
+{: .img-responsive #hl7-logo}
 
-[![fhir logo here](#.png)](#.html)
-{:#logo}
 -->
 
-[![logo fhir](assets/images/fhir-logo-www.png)](http://hl7.org/fhir)
-{:#logo}
+
+[![visit the our website](assets/images/hl7-logo.png)](http://www.hl7.org)
+{: .img-responsive #hl7-logo}

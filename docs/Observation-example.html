@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+﻿<!-- template typically for examples --><!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
@@ -22,7 +22,7 @@
     <!-- Project extras -->
   <link rel="stylesheet" href="assets/css/project.css"/>
   <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-	<link rel="stylesheet" href="jquery-ui.css"/>
+	<link rel="stylesheet" href="assets/css/jquery-ui.css"/>
 
     <!-- Favicons -->
   <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
@@ -33,24 +33,15 @@
 
 
 <body markdown="1">
-
-
   <!-- ?xml version="1.0" encoding="UTF-8"? -->
 <div id="segment-header" class="segment">
     <!-- segment-header -->
   <div class="container">
-      <!-- container -->          <!-- <?xml version="1.0" encoding="UTF-8"?>
-<a id="logo" no-external="true" href="http://hl7.org/fhir">
-  <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
-</a>
-
-
-
-[![fhir logo here](#.png)](#.html)
-{:#logo} -->
-
-<p id="logo"><a href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="logo fhir"/></a></p>
-  <div id="your-nav">       <!-- <a id="your-logo" no-external="true" href="http://www.hl7.org">
+      <!-- container --> <a no-external="true" id="logo" href="http://hl7.org/fhir">
+      <img src="assets/images/fhir-logo-www.png" alt="logo fhir"/>
+    </a>
+      <div id="project-nav">
+               <!-- <a id="your-logo" no-external="true" href="http://www.hl7.org">
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
 
@@ -60,7 +51,8 @@ your logo here
 {: .img-responsive #hl7-logo} -->
 
 <p id="hl7-logo" class="img-responsive"><a href="http://www.hl7.org"><img src="assets/images/hl7-logo.png" alt="visit the our website"/></a></p>
-   </div>
+
+      </div>
     <div id="ig-status">
       <b>IG-Sampler Implementation Guide CI Build</b>
     </div>
@@ -70,6 +62,8 @@ your logo here
   </div>
 </div>
   <!-- /segment-header -->
+
+
 <div id="segment-navbar" class="segment">
     <!-- segment-navbar -->
   <div id="stripe">
@@ -88,7 +82,9 @@ your logo here
           </span>
         </button>
         <a href="http://build.fhir.org/index.html" class="navbar-brand hidden">FHIR</a>
-        <div class="nav-collapse collapse navbar-inverse-collapse">          <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
+        <div class="nav-collapse collapse navbar-inverse-collapse">
+
+         <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
   <li><a href="guidance.html">General Guidance</a></li>
@@ -102,7 +98,9 @@ your logo here
   <li><a href="examples.html">Examples</a></li>
   <li><a href="downloads.html">Downloads</a></li>
 </ul>
-          <!-- <ul class="nav navbar-nav">
+
+
+               <!-- <ul class="nav navbar-nav">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -150,18 +148,17 @@ your logo here
   <!-- /segment-navbar -->
 
 
-
-
     <!-- /container -->
     <!-- /segment-breadcrumb -->
 
-<div id="segment-content" class="segment">    <!-- segment-content -->
-<div class="container">    <!-- container -->
-<div class="row">
-<div class="inner-wrapper">
 
-
-<div class="col-12">
+<div id="page-content-wrapper">    <!-- page content wrapper -->
+  <div class="page-content">    <!-- page content -->
+    <div class="container">    <!-- container -->
+      <div class="row">    <!-- row -->
+       <div class="inner-wrapper">   <!-- inner-wrapper -->
+         <div class="col-md-12">    <!-- col -->
+              <!-- content of page -->
 
 
   <!-- ============BreadCrumb=============== -->
@@ -170,39 +167,71 @@ your logo here
   
     
     
-      <a href="index.html" class="breadcrumb-item">Home</a>
+        <!-- default -->
+      <a href="toc.html" class="breadcrumb-item btn btn-link btn-sm">TOC</a>/<a href="index.html" class="breadcrumb-item">Home</a>
       /
       <a href="profiles.html" class="breadcrumb-item">Profiles</a>
       /
       <span class="breadcrumb-item active">Observation-example</span>
+      
+      
+      
+      
+      
+      
+      
     
-    
-    
-    
+
 
 </nav>
 
 
-    <!-- ============CONTENT CONTENT=============== -->
+  <!-- ============CONTENT CONTENT=============== -->
+  <!-- - choose what you want  comment out or Change what you don't -->
+<ul class="nav nav-tabs">
 
-<h2>Example: Observation-example</h2>
+	<li class="active"><a href="#">Narrative Content</a></li>
 
-<p>
-Formats: <a href="Observation-example.html">Narrative</a>, <a href="Observation-example.xml.html">XML</a>, <a href="Observation-example.json.html">JSON</a>, <a href="Observation-example.ttl.html">Turtle</a>
-</p>
+  <!-- { % if Observation == "StructureDefinition"  % }
+	{ % if content == "definitions"  % }
+		<li class="active"><a href="#">Detailed Descriptions</a></li>
+	{ % else % }
+		<li><a href="Observation-example-definitions.html">Detailed Descriptions</a></li>
+	{ % endif % }
+	{ % if content == "mappings" % }
+		<li class="active"><a href="#">Mappings</a></li>
+	{ % else % }
+		<li><a href="Observation-example-mappings.html">Mappings</a></li>
+	{ % endif % }
+{ % Sendif % } -->
 
-<div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Body Weight <span style="background: LightGoldenRodYellow">(Details : {LOINC code '29463-7' = 'Body weight', given as 'Body Weight'}; {LOINC code '3141-9' = 'Body weight Measured', given as 'Body weight Measured'}; {SNOMED CT code '27113001' = 'Body weight', given as 'Body weight'}; {http://acme.org/devices/clinical-codes code 'body-weight' = 'body-weight', given as 'Body Weight'})</span></p><p><a name="2a19a9eb-889a-40ce-aaf4-89f19268c0a6">​</a><b>subject</b>: <a href="Patient/example">Patient/example</a></p><p><a name="d43a1930-3116-4a8b-ad2c-6ada394a6751">​</a><b>context</b>: <a href="Encounter/example">Encounter/example</a></p><p><b>effective</b>: Mar 28, 2016</p><p><a name="73c52196-1cc2-409e-8754-401d1c0f8aa7">​</a><b>performer</b>: <a href="Practitioner/practitioner-1">Practitioner/practitioner-1</a></p><p><b>value</b>: 185 lbs<span style="background: LightGoldenRodYellow"> (Details: UCUM code [lb_av] = '[lb_av]')</span></p></div>
+<li><a href="Observation-example.xml.html">XML</a></li>
+
+
+	<li><a href="Observation-example.json.html">JSON</a></li>
+
+  <!-- { % if content == "turtle" % }
+	<li class="active"><a href="#">Turtle</a></li>
+{ % else % }
+	<li><a href="Observation-example.ttl.html">Turtle</a></li>
+{ % endif % } -->
+</ul>
+
+
+<h2>Observation example    <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Body Weight <span style="background: LightGoldenRodYellow">(Details : {LOINC code '29463-7' = 'Body weight', given as 'Body Weight'}; {LOINC code '3141-9' = 'Body weight Measured', given as 'Body weight Measured'}; {SNOMED CT code '27113001' = 'Body weight', given as 'Body weight'}; {http://acme.org/devices/clinical-codes code 'body-weight' = 'body-weight', given as 'Body Weight'})</span></p><p><a name="15dd64e3-659a-4571-aaf9-a5cdf494dc4e">​</a><b>subject</b>: <a href="Patient/example">Patient/example</a></p><p><a name="407e0b7c-4cea-47ec-9d8a-22449b8b081b">​</a><b>context</b>: <a href="Encounter/example">Encounter/example</a></p><p><b>effective</b>: Mar 28, 2016</p><p><a name="6881f0ce-4580-4b4d-b4e9-338ac4bbc4f9">​</a><b>performer</b>: <a href="Practitioner/practitioner-1">Practitioner/practitioner-1</a></p><p><b>value</b>: 185 lbs<span style="background: LightGoldenRodYellow"> (Details: UCUM code [lb_av] = '[lb_av]')</span></p></div></h2>
+  <!-- <p>
+Formats: <a href="Observation-example.xml.html">XML</a>, <a href="Observation-example.json.html">JSON</a>, <a href="Observation-example.ttl.html">Turtle</a>
+</p> -->
+<div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Body Weight <span style="background: LightGoldenRodYellow">(Details : {LOINC code '29463-7' = 'Body weight', given as 'Body Weight'}; {LOINC code '3141-9' = 'Body weight Measured', given as 'Body weight Measured'}; {SNOMED CT code '27113001' = 'Body weight', given as 'Body weight'}; {http://acme.org/devices/clinical-codes code 'body-weight' = 'body-weight', given as 'Body Weight'})</span></p><p><a name="1a0137a0-1ca1-4a40-9fd5-9e56c7905692">​</a><b>subject</b>: <a href="Patient/example">Patient/example</a></p><p><a name="f20798d4-fdb2-49ce-a2a9-0a7594ace16c">​</a><b>context</b>: <a href="Encounter/example">Encounter/example</a></p><p><b>effective</b>: Mar 28, 2016</p><p><a name="b30d8f89-1ac4-4f57-88bb-37eca1777550">​</a><b>performer</b>: <a href="Practitioner/practitioner-1">Practitioner/practitioner-1</a></p><p><b>value</b>: 185 lbs<span style="background: LightGoldenRodYellow"> (Details: UCUM code [lb_av] = '[lb_av]')</span></p></div>
 
     <!-- ==============END CONTENT END CONTENT=================== -->
 
-</div>
-
-
+</div>    <!-- col -->
 </div>    <!-- /inner-wrapper -->
 </div>    <!-- /row -->
 </div>    <!-- /container -->
-
-</div>    <!-- /segment-content -->
+</div>    <!-- /page content -->
+</div>    <!-- /page content wrapper -->
 
 
 
@@ -219,7 +248,7 @@ Formats: <a href="Observation-example.html">Narrative</a>, <a href="Observation-
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-            IG-Sampler Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://build.fhir.org">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Tue, Nov 14, 2017 18:08-0800. |
+            IG-Sampler Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://build.fhir.org">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Dec 13, 2017 23:40-0800. |
                <!-- <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a rel="license" style="color: #81BEF7" href="http://build.fhir.orglicense.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
         
@@ -243,13 +272,14 @@ Formats: <a href="Observation-example.html">Narrative</a>, <a href="Observation-
 <script src="./assets/js/jquery.js"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
 <script src="./assets/js/bootstrap.min.js"> </script>
 <script src="./assets/js/respond.min.js"> </script>
-
+<script src="./assets/js/anchor.min.js"> </script>
 <script src="./assets/js/fhir.js"> </script>
 
   <!-- Analytics Below
 ================================================== -->
 
-
+  <!-- add acnhors before the closing body tag. -->
+<script> anchors.add()</script>
 </body>
 
 

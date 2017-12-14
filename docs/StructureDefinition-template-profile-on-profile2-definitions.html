@@ -1,4 +1,4 @@
-  <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
@@ -23,7 +23,7 @@
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet"/>
   <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-	<link href="jquery-ui.css" rel="stylesheet"/>
+	<link href="assets/css/jquery-ui.css" rel="stylesheet"/>
 
   <!-- Favicons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
@@ -34,26 +34,15 @@
 
 
 <body markdown="1">
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <div id="segment-header" class="segment">
   <!-- segment-header -->
   <div class="container">
-    <!-- container -->        <!--
-<?xml version="1.0" encoding="UTF-8"?>
-<a id="logo" no-external="true" href="http://hl7.org/fhir">
-  <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
-</a>
-
-
-
-[![fhir logo here](#.png)](#.html)
-{:#logo}
--->
-
-<p id="logo"><a href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="logo fhir" /></a></p>
-  <div id="your-nav">     <!--
+    <!-- container --> <a id="logo" no-external="true" href="http://hl7.org/fhir">
+      <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
+    </a>
+      <div id="project-nav">
+             <!--
 <a id="your-logo" no-external="true" href="http://www.hl7.org">
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
@@ -66,7 +55,8 @@ your logo here
 -->
 
 <p class="img-responsive" id="hl7-logo"><a href="http://www.hl7.org"><img src="assets/images/hl7-logo.png" alt="visit the our website" /></a></p>
-   </div>
+
+      </div>
     <div id="ig-status">
       <b>IG-Sampler Implementation Guide CI Build</b>
     </div>
@@ -76,6 +66,8 @@ your logo here
   </div>
 </div>
 <!-- /segment-header -->
+
+
 <div id="segment-navbar" class="segment">
   <!-- segment-navbar -->
   <div id="stripe">
@@ -94,7 +86,9 @@ your logo here
           </span>
         </button>
         <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
-        <div class="nav-collapse collapse navbar-inverse-collapse">        <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
+        <div class="nav-collapse collapse navbar-inverse-collapse">
+
+       <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
   <li><a href="guidance.html">General Guidance</a></li>
@@ -108,7 +102,9 @@ your logo here
   <li><a href="examples.html">Examples</a></li>
   <li><a href="downloads.html">Downloads</a></li>
 </ul>
-        <!--        <ul class="nav navbar-nav">
+
+
+             <!--        <ul class="nav navbar-nav">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -156,31 +152,82 @@ your logo here
 <!-- /segment-navbar -->
 
 
+</div>  <!-- /container -->
+</div>  <!-- /segment-breadcrumb -->
 
 
- <div id="segment-breadcrumb" class="segmnt">  <!-- segment-breadcrumb -->
-  <div class="container">  <!-- container -->
-   <ul class="breadcrumb">
-       <li title="home"><a href="index.html"><b>Home</b></a></li>
-     <li><b>Template-Profile-on-Profile2 Details</b></li>
-   </ul>
-  </div>  <!-- /container -->
- </div>  <!-- /segment-breadcrumb -->
+<div id="page-content-wrapper">  <!-- page content wrapper -->
+  <div class="page-content">  <!--page content -->
+    <div class="container">  <!-- container -->
+      <div class="row">  <!-- row -->
+       <div class="inner-wrapper"> <!-- inner-wrapper -->
+         <div class="col-md-12">  <!--col -->
+            <!-- content of page -->
 
 
- <div id="segment-content" class="segment">  <!-- segment-content -->
- <div class="container">  <!-- container -->
-            <div class="row">
-             <div class="inner-wrapper">
-  <!-- CONTENT CONTENT -->
+<!-- ============BreadCrumb=============== -->
 
-<div class="col-9">
+<nav class="breadcrumb">
+  
+    
+    
+      <!-- default -->
+      <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a>/<a class="breadcrumb-item" href="index.html">Home</a>
+      /
+      <a class="breadcrumb-item" href="profiles.html">Profiles</a>
+      /
+      <span class="breadcrumb-item active">StructureDefinition-template-profile-on-profile2-definitions</span>
+      
+      
+      
+      
+      
+      
+      
+    
 
-<ul class="nav nav-tabs"><li><a href="StructureDefinition-template-profile-on-profile2.html">Content</a></li><li class="active"><a href="#">Detailed Descriptions</a></li><li><a href="StructureDefinition-template-profile-on-profile2-mappings.html">Mappings</a></li><li><a href="StructureDefinition-template-profile-on-profile2.xml.html">XML</a></li><li><a href="StructureDefinition-template-profile-on-profile2.json.html">JSON</a></li></ul>
 
-<h4><span class="sectioncount">D.4.1.4<a name="D.4.1.4"> </a></span> StructureDefinition: - Detailed Descriptions <a title="link to here" class="self-link" href="StructureDefinition-template-profile-on-profile2-definitions.html#D.4.1.4"><img src="target.png"/></a></h4>
+</nav>
 
-<p>Definitions for the StructureDefinition-template-profile-on-profile2 Profile.</p>
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+<!--  - choose what you want  comment out or Change what you don't-->
+<ul class="nav nav-tabs">
+
+	<li class="active"><a href="#">Narrative Content</a></li>
+
+<!--
+{ % if StructureDefinition == "StructureDefinition"  % }
+	{ % if content == "definitions"  % }
+		<li class="active"><a href="#">Detailed Descriptions</a></li>
+	{ % else % }
+		<li><a href="StructureDefinition-template-profile-on-profile2-definitions.html">Detailed Descriptions</a></li>
+	{ % endif % }
+	{ % if content == "mappings" % }
+		<li class="active"><a href="#">Mappings</a></li>
+	{ % else % }
+		<li><a href="StructureDefinition-template-profile-on-profile2-mappings.html">Mappings</a></li>
+	{ % endif % }
+{ % Sendif % }
+-->
+
+<li><a href="StructureDefinition-template-profile-on-profile2.xml.html">XML</a></li>
+
+
+	<li><a href="StructureDefinition-template-profile-on-profile2.json.html">JSON</a></li>
+
+<!--
+{ % if content == "turtle" % }
+	<li class="active"><a href="#">Turtle</a></li>
+{ % else % }
+	<li><a href="StructureDefinition-template-profile-on-profile2.ttl.html">Turtle</a></li>
+{ % endif % }
+-->
+</ul>
+
+
+<h3>Definitions for the StructureDefinition-template-profile-on-profile2 Profile.</h3>
 
 <table class="dict">
   <tr><td colspan="2" class="structure"><a name="Patient:uscorepatient"> </a><a name="Patient"> </a><b>Patient(USCorePatient)</b></td></tr>
@@ -790,13 +837,17 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
 </table>
 
 
-</div>
+<!-- ============CONTENT CONTENT=============== -->
 
-    </div>  <!-- /inner-wrapper -->
-            </div>  <!-- /row -->
-        </div>  <!-- /container -->
 
-    </div>  <!-- /segment-content -->
+</div>  <!-- col -->
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /page content -->
+</div>  <!-- /page content wrapper -->
+
+
 
 </div>
 
@@ -811,7 +862,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            IG-Sampler Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://build.fhir.org">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Tue, Nov 14, 2017 18:08-0800. |
+            IG-Sampler Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://build.fhir.org">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Dec 13, 2017 23:40-0800. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://build.fhir.orglicense.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
@@ -835,15 +886,14 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
 <script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
 <script src="./assets/js/bootstrap.min.js"> </script>
 <script src="./assets/js/respond.min.js"> </script>
-
+<script src="./assets/js/anchor.min.js"> </script>
 <script src="./assets/js/fhir.js"> </script>
 
 <!-- Analytics Below
 ================================================== -->
 
-
+<!-- add acnhors before the closing body tag. -->
+<script> anchors.add()</script>
 </body>
 </html>
 
-</body>
-</html>

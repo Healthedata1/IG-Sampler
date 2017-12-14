@@ -162,22 +162,22 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-template-blah.html"/>
+        <valueUri value="StructureDefinition-extension-blah.html"/>
       </extension>
       <example value="false"/>
       <name value="Example Extension"/>
       <sourceReference>
-        <reference value="StructureDefinition/template-blah"/>
+        <reference value="StructureDefinition/extension-blah"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-template-complex.html"/>
+        <valueUri value="StructureDefinition-extension-complex.html"/>
       </extension>
       <example value="false"/>
       <name value="Complex Extension"/>
       <sourceReference>
-        <reference value="StructureDefinition/template-complex"/>
+        <reference value="StructureDefinition/extension-complex"/>
       </sourceReference>
     </resource>
     <resource>
@@ -192,8 +192,8 @@
     </resource>
   </package>
   <page>
-    <source value="index.html"/>
-    <title value="IG-Sampler Homepage"/>
+    <source value="_includes/toc.xml"/>
+    <title value="IG-Sampler Table of Contents"/>
     <kind value="page"/>
   </page>
 </ImplementationGuide>

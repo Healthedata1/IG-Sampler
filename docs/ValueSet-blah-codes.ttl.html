@@ -23,7 +23,7 @@
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet"/>
   <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-	<link href="jquery-ui.css" rel="stylesheet"/>
+	<link href="assets/css/jquery-ui.css" rel="stylesheet"/>
 
   <!-- Favicons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
@@ -34,26 +34,15 @@
 
 
 <body markdown="1">
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <div id="segment-header" class="segment">
   <!-- segment-header -->
   <div class="container">
-    <!-- container -->        <!--
-<?xml version="1.0" encoding="UTF-8"?>
-<a id="logo" no-external="true" href="http://hl7.org/fhir">
-  <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
-</a>
-
-
-
-[![fhir logo here](#.png)](#.html)
-{:#logo}
--->
-
-<p id="logo"><a href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="logo fhir" /></a></p>
-  <div id="your-nav">     <!--
+    <!-- container --> <a id="logo" no-external="true" href="http://hl7.org/fhir">
+      <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
+    </a>
+      <div id="project-nav">
+             <!--
 <a id="your-logo" no-external="true" href="http://www.hl7.org">
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
@@ -66,7 +55,8 @@ your logo here
 -->
 
 <p class="img-responsive" id="hl7-logo"><a href="http://www.hl7.org"><img src="assets/images/hl7-logo.png" alt="visit the our website" /></a></p>
-   </div>
+
+      </div>
     <div id="ig-status">
       <b>IG-Sampler Implementation Guide CI Build</b>
     </div>
@@ -76,6 +66,8 @@ your logo here
   </div>
 </div>
 <!-- /segment-header -->
+
+
 <div id="segment-navbar" class="segment">
   <!-- segment-navbar -->
   <div id="stripe">
@@ -94,7 +86,9 @@ your logo here
           </span>
         </button>
         <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
-        <div class="nav-collapse collapse navbar-inverse-collapse">        <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
+        <div class="nav-collapse collapse navbar-inverse-collapse">
+
+       <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
   <li><a href="guidance.html">General Guidance</a></li>
@@ -108,7 +102,9 @@ your logo here
   <li><a href="examples.html">Examples</a></li>
   <li><a href="downloads.html">Downloads</a></li>
 </ul>
-        <!--        <ul class="nav navbar-nav">
+
+
+             <!--        <ul class="nav navbar-nav">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -156,17 +152,17 @@ your logo here
 <!-- /segment-navbar -->
 
 
-
 </div>  <!-- /container -->
 </div>  <!-- /segment-breadcrumb -->
 
-<div id="segment-content" class="segment">  <!-- segment-content -->
-<div class="container">  <!-- container -->
-<div class="row">
-<div class="inner-wrapper">
 
-
-<div class="col-12">
+<div id="page-content-wrapper">  <!-- page content wrapper -->
+  <div class="page-content">  <!--page content -->
+    <div class="container">  <!-- container -->
+      <div class="row">  <!-- row -->
+       <div class="inner-wrapper"> <!-- inner-wrapper -->
+         <div class="col-md-12">  <!--col -->
+            <!-- content of page -->
 
 
 <!-- ============BreadCrumb=============== -->
@@ -175,29 +171,68 @@ your logo here
   
     
     
-      <a class="breadcrumb-item" href="index.html">Home</a>
-      /
-      <a class="breadcrumb-item" href="profiles.html">Profiles</a>
-      /
-      <span class="breadcrumb-item active">ValueSet-blah-codes.ttl</span>
+      
+      
+      
+      
+        <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a>/<a class="breadcrumb-item" href="index.html">Home</a>
+        /
+        <a class="breadcrumb-item" href="terminology.html">Terminology</a>
+        /
+        <span class="breadcrumb-item active">ValueSet-blah-codes.ttl</span>
+      
+      
+      
+      
     
-    
-    
-    
+
 
 </nav>
 
 
-  <!-- ============CONTENT CONTENT=============== -->
+<!-- ============ CONTENT CONTENT=============== -->
 
-<h2>Example: ValueSet-blah-codes</h2>
+  <!-- ============ default xml or json content for structuredefinition CONTENT CONTENT=============== -->
+  
+    <!--  - choose what you want  comment out or Change what you don't-->
+<ul class="nav nav-tabs">
 
-<p>
-Formats: <a href="ValueSet-blah-codes.html">Narrative</a>, <a href="ValueSet-blah-codes.xml.html">XML</a>, <a href="ValueSet-blah-codes.json.html">JSON</a>, <a href="ValueSet-blah-codes.ttl.html">Turtle</a>
-</p>
-<p>
-Raw <a href="ValueSet-blah-codes.ttl" download>ttl</a>
-</p>
+	<li><a href="ValueSet-blah-codes.html">Narrative Content</a></li>
+
+<!--
+{ % if ValueSet == "StructureDefinition"  % }
+	{ % if turtle == "definitions"  % }
+		<li class="active"><a href="#">Detailed Descriptions</a></li>
+	{ % else % }
+		<li><a href="ValueSet-blah-codes-definitions.html">Detailed Descriptions</a></li>
+	{ % endif % }
+	{ % if turtle == "mappings" % }
+		<li class="active"><a href="#">Mappings</a></li>
+	{ % else % }
+		<li><a href="ValueSet-blah-codes-mappings.html">Mappings</a></li>
+	{ % endif % }
+{ % Sendif % }
+-->
+
+<li><a href="ValueSet-blah-codes.xml.html">XML</a></li>
+
+
+	<li><a href="ValueSet-blah-codes.json.html">JSON</a></li>
+
+<!--
+{ % if turtle == "turtle" % }
+	<li class="active"><a href="#">Turtle</a></li>
+{ % else % }
+	<li><a href="ValueSet-blah-codes.ttl.html">Turtle</a></li>
+{ % endif % }
+-->
+</ul>
+
+    <h2>Turtle Format: ValueSet-blah-codes</h2>
+  
+  <p>
+  Raw <a href="ValueSet-blah-codes.ttl" download>ttl</a>
+  </p>
 
 <pre class="rdf">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
@@ -223,7 +258,7 @@ Raw <a href="ValueSet-blah-codes.ttl" download>ttl</a>
   <a href="http://build.fhir.org/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;0.0.0&quot;];
   <a href="http://build.fhir.org/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;BlahCodes&quot;];
   <a href="http://build.fhir.org/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
-  <a href="http://build.fhir.org/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2017-11-14T18:01:32-08:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2017-12-13T23:39:51-08:00&quot;^^xsd:dateTime];
   <a href="http://build.fhir.org/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
      <a href="http://build.fhir.org/datatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
@@ -257,16 +292,24 @@ Raw <a href="ValueSet-blah-codes.ttl" download>ttl</a>
 
 
 
+<!-- ============ default xml or json content CONTENT CONTENT=============== -->
+
+
+<!-- simple format links
+<p>
+Formats: <a href="ValueSet-blah-codes.html">Narrative</a>, <a href="ValueSet-blah-codes.xml.html">XML</a>, <a href="ValueSet-blah-codes.json.html">JSON</a>, <a href="ValueSet-blah-codes.ttl.html">Turtle</a>
+</p>
+-->
+
+
   <!-- ==============END CONTENT END CONTENT=================== -->
 
-</div>
-
-
+</div>  <!-- col -->
 </div>  <!-- /inner-wrapper -->
 </div>  <!-- /row -->
 </div>  <!-- /container -->
-
-</div>  <!-- /segment-content -->
+</div>  <!-- /page content -->
+</div>  <!-- /page content wrapper -->
 
 
 
@@ -283,7 +326,7 @@ Raw <a href="ValueSet-blah-codes.ttl" download>ttl</a>
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            IG-Sampler Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://build.fhir.org">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Tue, Nov 14, 2017 18:08-0800. |
+            IG-Sampler Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://build.fhir.org">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Dec 13, 2017 23:40-0800. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://build.fhir.orglicense.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
@@ -307,13 +350,14 @@ Raw <a href="ValueSet-blah-codes.ttl" download>ttl</a>
 <script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
 <script src="./assets/js/bootstrap.min.js"> </script>
 <script src="./assets/js/respond.min.js"> </script>
-
+<script src="./assets/js/anchor.min.js"> </script>
 <script src="./assets/js/fhir.js"> </script>
 
 <!-- Analytics Below
 ================================================== -->
 
-
+<!-- add acnhors before the closing body tag. -->
+<script> anchors.add()</script>
 </body>
 </html>
 

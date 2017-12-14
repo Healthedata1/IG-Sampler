@@ -4,7 +4,7 @@ working-dir,/Users/ehaas/Documents/FHIR/IG-Sampler/
 title,IG-Sampler
 status,draft
 publisher,Health eData Inc
-extensions,template-blah|template-complex
+extensions,extension-blah|extension-complex
 searches,
 codesystems,blah-codes
 valuesets,
@@ -28,6 +28,6 @@ do-transforms,FALSE
 canonicalBase,http://www.fhir.org/guides/ig-sampler
 dependencyList.name,uscore
 dependencyList.location,http://hl7.org/fhir/us/core/stu1/
-dependencyList.source,uscore
+dependencyList.source,dependencies/uscore
 special-urls,
 tool,jekyll

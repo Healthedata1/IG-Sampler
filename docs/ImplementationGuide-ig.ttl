@@ -221,26 +221,26 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-template-blah.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-extension-blah.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.name [ fhir:value "Example Extension" ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-blah>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/template-blah" ]
+         fhir:link <http://www.fhir.org/guides/ig-sampler/StructureDefinition/extension-blah>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/extension-blah" ]
        ]
      ], [
        fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-template-complex.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-extension-complex.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.name [ fhir:value "Complex Extension" ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-complex>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/template-complex" ]
+         fhir:link <http://www.fhir.org/guides/ig-sampler/StructureDefinition/extension-complex>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/extension-complex" ]
        ]
      ], [
        fhir:index 4;
@@ -258,8 +258,8 @@
      ]
   ];
   fhir:ImplementationGuide.page [
-     fhir:ImplementationGuide.page.source [ fhir:value "index.html" ];
-     fhir:ImplementationGuide.page.title [ fhir:value "IG-Sampler Homepage" ];
+     fhir:ImplementationGuide.page.source [ fhir:value "_includes/toc.xml" ];
+     fhir:ImplementationGuide.page.title [ fhir:value "IG-Sampler Table of Contents" ];
      fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
   ] .
 

@@ -217,26 +217,26 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-template-blah.html"
+              "valueUri": "StructureDefinition-extension-blah.html"
             }
           ],
           "example": false,
           "name": "Example Extension",
           "sourceReference": {
-            "reference": "StructureDefinition/template-blah"
+            "reference": "StructureDefinition/extension-blah"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-template-complex.html"
+              "valueUri": "StructureDefinition-extension-complex.html"
             }
           ],
           "example": false,
           "name": "Complex Extension",
           "sourceReference": {
-            "reference": "StructureDefinition/template-complex"
+            "reference": "StructureDefinition/extension-complex"
           }
         },
         {
@@ -256,8 +256,8 @@
     }
   ],
   "page": {
-    "source": "index.html",
-    "title": "IG-Sampler Homepage",
+    "source": "_includes/toc.xml",
+    "title": "IG-Sampler Table of Contents",
     "kind": "page"
   }
 }
