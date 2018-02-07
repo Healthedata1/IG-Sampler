@@ -17,7 +17,7 @@ Shows how to create:
 - ValueSets
 - SearchParameters
 - Operations
-- Logical Models [todo]
+- Logical Models
 - ConformanceStatements
 
 And the Jekyll templates and static pages to go with them...
