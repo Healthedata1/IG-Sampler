@@ -6,12 +6,8 @@
 *.exe
 *.o
 *.so
-*.sh
 *.py
-!definitions.py
-!publish.sh
-!publish2.sh
-!push.sh
+
 
 # Packages #
 ############
