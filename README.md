@@ -4,7 +4,7 @@ A template for building IG based on the Argonaut and US-Core IG
 Author:  Eric Haas
 
 
-**THE ORIGINAL "FRAMEWORK" USING HTML 'WRAPPER' PAGES AND _INCLUDES FILES VS THE CURRENT IG-SAMPLER USING MARKDOWN PAGES AND _LAYOUT files FOR A SIMPLER FRAMEWORK.  IT ALSO USED MODULES FOR THE STATIC FILES WHICH HAs BEEN MOVED to the OLD-IG-TEMPLATE BRANCH**
+**THE ORIGINAL "FRAMEWORK" USING HTML 'WRAPPER' PAGES AND _INCLUDES FILES VS THE CURRENT IG-SAMPLER USING MARKDOWN PAGES AND  MODULES FOR THE STATIC FILES HAS BEEN MOVED to the OLD-IG-TEMPLATE BRANCH**
 
 
 A Sampler of the IG-publishing framework for building an FHIR Implemenation Guide(IG) using the IG publisher and profile spreadsheets.  This is based on the design of the [Argonaut](http://www.fhir.org/guides/argonaut/r2/) and [US-Core](http://hl7.org/fhir/us/core/) IGs.    See the [FHIR IG publisher documentation](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation)  for how to set up your local environment.
