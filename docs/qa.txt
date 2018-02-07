@@ -2,7 +2,7 @@
 =========================================
 
 err = 56, warn = 14, info = 42
-Generated Tue Feb 06 22:30:04 PST 2018. FHIR version 3.1.0 for 3.0.1
+Generated Tue Feb 06 22:34:34 PST 2018. FHIR version 3.1.0 for 3.0.1
 
  Build Errors : 84 / 0
  /Users/ehaas/Documents/FHIR/IG-Sampler/source/examples/allergyintolerance-example : 2 / 11
