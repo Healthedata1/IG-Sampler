@@ -43,8 +43,10 @@ Thumbs.db
 # FHIR IG Publisher local build directories #
 #############################################
 
-qa
-temp
+qa/*
+!qa/.gitignore
+temp/*
+!temp/.gitignore
 output
 archived
 validation
