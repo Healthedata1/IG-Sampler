@@ -1,0 +1,13 @@
+﻿<html>
+<head>
+  <title>OperationDefinition-example-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<div xmlns="http://www.w3.org/1999/xhtml"><h2>Populate Questionnaire</h2><p>OPERATION: Populate Questionnaire</p><p>The official URL for this operation definition is: </p><pre>http://www.fhir.org/guides/sampler2/OperationDefinition/example</pre><div><p>Limited implementation of the Populate Questionnaire implemenation</p>
+</div><p>URL: [base]/Questionnaire/[id]/$populate</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>subject</td><td>1..1</td><td>Reference</td><td/><td><div><p>The resource that is to be the <em>QuestionnaireResponse.subject</em>. The <a href="http://hl7.org/fhir/STU3/questionnaireresponse.html">QuestionnaireResponse</a>      instance will reference the provided subject.  In addition, if the <em>local</em> parameter is      set to true, server information about the specified subject will be used to populate the      instance.</p>
+</div></td></tr><tr><td>IN</td><td>local</td><td>0..1</td><td>Reference</td><td/><td><div><p>If the <em>local</em> parameter is set to true, server information about the specified subject will be used to populate the instance.</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td>QuestionnaireResponse</td><td/><td><div><p>The partially (or fully)-populated set of answers for the specified Questionnaire</p>
+</div></td></tr></table><div><p>Only implemented for Labs and Medications so far</p>
+</div></div></body>
+</html>

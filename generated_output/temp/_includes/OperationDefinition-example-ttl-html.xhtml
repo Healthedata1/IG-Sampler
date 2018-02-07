@@ -1,0 +1,110 @@
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:OperationDefinition;
+  <a href="http://hl7.org/fhir/STU3/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;example&quot;];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Populate Questionnaire&lt;/h2&gt;&lt;p&gt;OPERATION: Populate Questionnaire&lt;/p&gt;&lt;p&gt;The official URL for this operation definition is: &lt;/p&gt;&lt;pre&gt;http://www.fhir.org/guides/sampler2/OperationDefinition/example&lt;/pre&gt;&lt;div&gt;&lt;p&gt;Limited implementation of the Populate Questionnaire implemenation&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;URL: [base]/Questionnaire/[id]/$populate&lt;/p&gt;&lt;p&gt;Parameters&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;subject&lt;/td&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;Reference&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The resource that is to be the &lt;em&gt;QuestionnaireResponse.subject&lt;/em&gt;. The &lt;a href=\&quot;http://hl7.org/fhir/STU3/questionnaireresponse.html\&quot;&gt;QuestionnaireResponse&lt;/a&gt;      instance will reference the provided subject.  In addition, if the &lt;em&gt;local&lt;/em&gt; parameter is      set to true, server information about the specified subject will be used to populate the      instance.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;local&lt;/td&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;Reference&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;If the &lt;em&gt;local&lt;/em&gt; parameter is set to true, server information about the specified subject will be used to populate the instance.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;return&lt;/td&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;QuestionnaireResponse&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The partially (or fully)-populated set of answers for the specified Questionnaire&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div&gt;&lt;p&gt;Only implemented for Labs and Medications so far&lt;/p&gt;\n&lt;/div&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.url">fhir:OperationDefinition.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://www.fhir.org/guides/sampler2/OperationDefinition/example&quot;];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.version">fhir:OperationDefinition.version</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;0.0.0&quot;];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.name">fhir:OperationDefinition.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Populate Questionnaire&quot;];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.status">fhir:OperationDefinition.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.kind">fhir:OperationDefinition.kind</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;operation&quot;];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.date">fhir:OperationDefinition.date</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">fhir:value</a> &quot;2015-08-04T00:00:00-07:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.publisher">fhir:OperationDefinition.publisher</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Acme Healthcare Services&quot;];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.contact">fhir:OperationDefinition.contact</a> [
+     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;System Administrator&quot; ];
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;email&quot; ];
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;beep@coyote.acme.com&quot; ]     ]
+  ];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.description">fhir:OperationDefinition.description</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">fhir:value</a> &quot;Limited implementation of the Populate Questionnaire implemenation&quot;];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.useContext">fhir:OperationDefinition.useContext</a> [
+     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#UsageContext#UsageContext.code">fhir:UsageContext.code</a> [
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/codesystem-usage-context-type&quot; ];
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;venue&quot; ];
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Clinical Venue&quot; ]     ];
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#UsageContext#UsageContext.value[x]">fhir:UsageContext.valueCodeableConcept</a> [
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/v3/ActCode&quot; ];
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;IMP&quot; ];
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;inpatient encounter&quot; ]       ]     ]
+  ];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.jurisdiction">fhir:OperationDefinition.jurisdiction</a> [
+     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;urn:iso:std:iso:3166&quot; ];
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;US&quot; ]     ]
+  ];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.code">fhir:OperationDefinition.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;populate&quot;];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.comment">fhir:OperationDefinition.comment</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Only implemented for Labs and Medications so far&quot;];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.base">fhir:OperationDefinition.base</a> [
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;OperationDefinition/Questionnaire-populate&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.resource">fhir:OperationDefinition.resource</a> [
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;Questionnaire&quot;;
+     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0
+  ];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.system">fhir:OperationDefinition.system</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.type">fhir:OperationDefinition.type</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.instance">fhir:OperationDefinition.instance</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter">fhir:OperationDefinition.parameter</a> [
+     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.name">fhir:OperationDefinition.parameter.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;subject&quot; ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.use">fhir:OperationDefinition.parameter.use</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;in&quot; ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.min">fhir:OperationDefinition.parameter.min</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#integer">fhir:value</a> &quot;1&quot;^^xsd:integer ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.max">fhir:OperationDefinition.parameter.max</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;1&quot; ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:OperationDefinition.parameter.documentation</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;The resource that is to be the *QuestionnaireResponse.subject*. The [[[QuestionnaireResponse]]]      instance will reference the provided subject.  In addition, if the *local* parameter is      set to true, server information about the specified subject will be used to populate the      instance.&quot; ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.type">fhir:OperationDefinition.parameter.type</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;Reference&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.name">fhir:OperationDefinition.parameter.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;local&quot; ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.use">fhir:OperationDefinition.parameter.use</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;in&quot; ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.min">fhir:OperationDefinition.parameter.min</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#integer">fhir:value</a> &quot;0&quot;^^xsd:integer ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.max">fhir:OperationDefinition.parameter.max</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;1&quot; ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:OperationDefinition.parameter.documentation</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;If the *local* parameter is set to true, server information about the specified subject will be used to populate the instance.&quot; ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.type">fhir:OperationDefinition.parameter.type</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;Reference&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 2;
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.name">fhir:OperationDefinition.parameter.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;return&quot; ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.use">fhir:OperationDefinition.parameter.use</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;out&quot; ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.min">fhir:OperationDefinition.parameter.min</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#integer">fhir:value</a> &quot;1&quot;^^xsd:integer ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.max">fhir:OperationDefinition.parameter.max</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;1&quot; ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:OperationDefinition.parameter.documentation</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;The partially (or fully)-populated set of answers for the specified Questionnaire&quot; ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.parameter.type">fhir:OperationDefinition.parameter.type</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;QuestionnaireResponse&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.overload">fhir:OperationDefinition.overload</a> [
+     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.overload.parameterName">fhir:OperationDefinition.overload.parameterName</a> [
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;subject&quot;;
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0     ], [
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;local&quot;;
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1     ]
+  ], [
+     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.overload.parameterName">fhir:OperationDefinition.overload.parameterName</a> [
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;subject&quot;;
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0     ];
+     <a href="http://hl7.org/fhir/STU3/operationdefinition.html#OperationDefinition.overload.comment">fhir:OperationDefinition.overload.comment</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;local defaults to false when not passed as a parameter&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+

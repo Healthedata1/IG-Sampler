@@ -1,0 +1,103 @@
+﻿{
+  "ifr": {
+    "index": 0,
+    "url": "http://www.fhir.org/guides/sampler2/StructureDefinition/ifr",
+    "name": "Identifer Free Reference Data Type",
+    "path": "StructureDefinition-ifr.html",
+    "kind": "resource",
+    "type": "Reference",
+    "base": "http://hl7.org/fhir/StructureDefinition/Reference",
+    "basename": "Reference",
+    "basepath": "http://hl7.org/fhir/STU3/datatypes.html#Reference",
+    "status": "draft",
+    "date": "Fri Jun 02 00:00:00 PDT 2017"
+  },
+  "template-profile-on-profile": {
+    "index": 1,
+    "url": "http://www.fhir.org/guides/sampler2/StructureDefinition/template-profile-on-profile",
+    "name": "Template-Profile-on-Profile",
+    "path": "StructureDefinition-template-profile-on-profile.html",
+    "kind": "resource",
+    "type": "Patient",
+    "base": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+    "basename": "US Core Patient Profile",
+    "basepath": "http://build.fhir.org/ig/HL7/US-Core//StructureDefinition-us-core-patient.html",
+    "status": "draft",
+    "date": "Wed Feb 15 00:00:00 PST 2017"
+  },
+  "extension-blah": {
+    "index": 2,
+    "url": "http://www.fhir.org/guides/sampler2/StructureDefinition/extension-blah",
+    "name": "Example Extension",
+    "path": "StructureDefinition-extension-blah.html",
+    "kind": "complex-type",
+    "type": "Extension",
+    "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename": "Extension",
+    "basepath": "http://hl7.org/fhir/STU3/datatypes.html#Extension",
+    "status": "draft",
+    "date": "Wed Feb 15 00:00:00 PST 2017",
+    "description": "an example of a simple extension.",
+    "contextType": "Resource",
+    "contexts": [
+      "Basic"
+    ]
+  },
+  "extension-complex": {
+    "index": 3,
+    "url": "http://www.fhir.org/guides/sampler2/StructureDefinition/extension-complex",
+    "name": "Complex Extension",
+    "path": "StructureDefinition-extension-complex.html",
+    "kind": "complex-type",
+    "type": "Extension",
+    "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename": "Extension",
+    "basepath": "http://hl7.org/fhir/STU3/datatypes.html#Extension",
+    "status": "draft",
+    "date": "Wed Feb 15 00:00:00 PST 2017",
+    "description": "an example of a complex extension.",
+    "contextType": "Resource",
+    "contexts": [
+      "Basic"
+    ]
+  },
+  "template-basic": {
+    "index": 4,
+    "url": "http://www.fhir.org/guides/sampler2/StructureDefinition/template-basic",
+    "name": "Profile template-basic",
+    "path": "StructureDefinition-template-basic.html",
+    "kind": "resource",
+    "type": "Basic",
+    "base": "http://hl7.org/fhir/StructureDefinition/Basic",
+    "basename": "Basic",
+    "basepath": "http://hl7.org/fhir/STU3/basic.html",
+    "status": "draft",
+    "date": "Wed Feb 15 00:00:00 PST 2017"
+  },
+  "template-profile-on-profile2": {
+    "index": 5,
+    "url": "http://www.fhir.org/guides/sampler2/StructureDefinition/template-profile-on-profile2",
+    "name": "Template-Profile-on-Profile2",
+    "path": "StructureDefinition-template-profile-on-profile2.html",
+    "kind": "resource",
+    "type": "Patient",
+    "base": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+    "basename": "US Core Patient Profile",
+    "basepath": "http://build.fhir.org/ig/HL7/US-Core//StructureDefinition-us-core-patient.html",
+    "status": "draft",
+    "date": "Wed Feb 15 00:00:00 PST 2017"
+  },
+  "template-basic2": {
+    "index": 6,
+    "url": "http://www.fhir.org/guides/sampler2/StructureDefinition/template-basic2",
+    "name": "Profile template-basic2",
+    "path": "StructureDefinition-template-basic2.html",
+    "kind": "resource",
+    "type": "Basic",
+    "base": "http://hl7.org/fhir/StructureDefinition/Basic",
+    "basename": "Basic",
+    "basepath": "http://hl7.org/fhir/STU3/basic.html",
+    "status": "draft",
+    "date": "Wed Feb 15 00:00:00 PST 2017"
+  }
+}

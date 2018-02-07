@@ -1,0 +1,106 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Populate Questionnaire</h2><p>OPERATION: Populate Questionnaire</p><p>The official URL for this operation definition is: </p><pre>http://www.fhir.org/guides/sampler2/OperationDefinition/example</pre><div><p>Limited implementation of the Populate Questionnaire implemenation</p>\n</div><p>URL: [base]/Questionnaire/[id]/$populate</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>subject</td><td>1..1</td><td>Reference</td><td/><td><div><p>The resource that is to be the <em>QuestionnaireResponse.subject</em>. The <a href=\"http://hl7.org/fhir/STU3/questionnaireresponse.html\">QuestionnaireResponse</a>      instance will reference the provided subject.  In addition, if the <em>local</em> parameter is      set to true, server information about the specified subject will be used to populate the      instance.</p>\n</div></td></tr><tr><td>IN</td><td>local</td><td>0..1</td><td>Reference</td><td/><td><div><p>If the <em>local</em> parameter is set to true, server information about the specified subject will be used to populate the instance.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td>QuestionnaireResponse</td><td/><td><div><p>The partially (or fully)-populated set of answers for the specified Questionnaire</p>\n</div></td></tr></table><div><p>Only implemented for Labs and Medications so far</p>\n</div></div>"
+  },
+  "url": "http://www.fhir.org/guides/sampler2/OperationDefinition/example",
+  "version": "0.0.0",
+  "name": "Populate Questionnaire",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2015-08-04T00:00:00-07:00",
+  "publisher": "Acme Healthcare Services",
+  "contact": [
+    {
+      "name": "System Administrator",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "beep@coyote.acme.com"
+        }
+      ]
+    }
+  ],
+  "description": "Limited implementation of the Populate Questionnaire implemenation",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://hl7.org/fhir/codesystem-usage-context-type",
+        "code": "venue",
+        "display": "Clinical Venue"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v3/ActCode",
+            "code": "IMP",
+            "display": "inpatient encounter"
+          }
+        ]
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "code": "populate",
+  "comment": "Only implemented for Labs and Medications so far",
+  "base": {
+    "reference": "OperationDefinition/Questionnaire-populate"
+  },
+  "resource": [
+    "Questionnaire"
+  ],
+  "system": false,
+  "type": false,
+  "instance": true,
+  "parameter": [
+    {
+      "name": "subject",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "The resource that is to be the *QuestionnaireResponse.subject*. The [[[QuestionnaireResponse]]]      instance will reference the provided subject.  In addition, if the *local* parameter is      set to true, server information about the specified subject will be used to populate the      instance.",
+      "type": "Reference"
+    },
+    {
+      "name": "local",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "If the *local* parameter is set to true, server information about the specified subject will be used to populate the instance.",
+      "type": "Reference"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "The partially (or fully)-populated set of answers for the specified Questionnaire",
+      "type": "QuestionnaireResponse"
+    }
+  ],
+  "overload": [
+    {
+      "parameterName": [
+        "subject",
+        "local"
+      ]
+    },
+    {
+      "parameterName": [
+        "subject"
+      ],
+      "comment": "local defaults to false when not passed as a parameter"
+    }
+  ]
+}

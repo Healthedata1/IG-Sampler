@@ -1,0 +1,118 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/sampler2/OperationDefinition/example> a fhir:OperationDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Populate Questionnaire</h2><p>OPERATION: Populate Questionnaire</p><p>The official URL for this operation definition is: </p><pre>http://www.fhir.org/guides/sampler2/OperationDefinition/example</pre><div><p>Limited implementation of the Populate Questionnaire implemenation</p>\n</div><p>URL: [base]/Questionnaire/[id]/$populate</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>subject</td><td>1..1</td><td>Reference</td><td/><td><div><p>The resource that is to be the <em>QuestionnaireResponse.subject</em>. The <a href=\"http://hl7.org/fhir/STU3/questionnaireresponse.html\">QuestionnaireResponse</a>      instance will reference the provided subject.  In addition, if the <em>local</em> parameter is      set to true, server information about the specified subject will be used to populate the      instance.</p>\n</div></td></tr><tr><td>IN</td><td>local</td><td>0..1</td><td>Reference</td><td/><td><div><p>If the <em>local</em> parameter is set to true, server information about the specified subject will be used to populate the instance.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td>QuestionnaireResponse</td><td/><td><div><p>The partially (or fully)-populated set of answers for the specified Questionnaire</p>\n</div></td></tr></table><div><p>Only implemented for Labs and Medications so far</p>\n</div></div>"
+  ];
+  fhir:OperationDefinition.url [ fhir:value "http://www.fhir.org/guides/sampler2/OperationDefinition/example"];
+  fhir:OperationDefinition.version [ fhir:value "0.0.0"];
+  fhir:OperationDefinition.name [ fhir:value "Populate Questionnaire"];
+  fhir:OperationDefinition.status [ fhir:value "draft"];
+  fhir:OperationDefinition.kind [ fhir:value "operation"];
+  fhir:OperationDefinition.date [ fhir:value "2015-08-04T00:00:00-07:00"^^xsd:dateTime];
+  fhir:OperationDefinition.publisher [ fhir:value "Acme Healthcare Services"];
+  fhir:OperationDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "System Administrator" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "beep@coyote.acme.com" ]
+     ]
+  ];
+  fhir:OperationDefinition.description [ fhir:value "Limited implementation of the Populate Questionnaire implemenation"];
+  fhir:OperationDefinition.useContext [
+     fhir:index 0;
+     fhir:UsageContext.code [
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/codesystem-usage-context-type" ];
+       fhir:Coding.code [ fhir:value "venue" ];
+       fhir:Coding.display [ fhir:value "Clinical Venue" ]
+     ];
+     fhir:UsageContext.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/ActCode" ];
+         fhir:Coding.code [ fhir:value "IMP" ];
+         fhir:Coding.display [ fhir:value "inpatient encounter" ]
+       ]
+     ]
+  ];
+  fhir:OperationDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:OperationDefinition.code [ fhir:value "populate"];
+  fhir:OperationDefinition.comment [ fhir:value "Only implemented for Labs and Medications so far"];
+  fhir:OperationDefinition.base [
+     fhir:link <http://www.fhir.org/guides/sampler2/OperationDefinition/Questionnaire-populate>;
+     fhir:Reference.reference [ fhir:value "OperationDefinition/Questionnaire-populate" ]
+  ];
+  fhir:OperationDefinition.resource [
+     fhir:value "Questionnaire";
+     fhir:index 0
+  ];
+  fhir:OperationDefinition.system [ fhir:value "false"^^xsd:boolean];
+  fhir:OperationDefinition.type [ fhir:value "false"^^xsd:boolean];
+  fhir:OperationDefinition.instance [ fhir:value "true"^^xsd:boolean];
+  fhir:OperationDefinition.parameter [
+     fhir:index 0;
+     fhir:OperationDefinition.parameter.name [ fhir:value "subject" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The resource that is to be the *QuestionnaireResponse.subject*. The [[[QuestionnaireResponse]]]      instance will reference the provided subject.  In addition, if the *local* parameter is      set to true, server information about the specified subject will be used to populate the      instance." ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "Reference" ]
+  ], [
+     fhir:index 1;
+     fhir:OperationDefinition.parameter.name [ fhir:value "local" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "If the *local* parameter is set to true, server information about the specified subject will be used to populate the instance." ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "Reference" ]
+  ], [
+     fhir:index 2;
+     fhir:OperationDefinition.parameter.name [ fhir:value "return" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "out" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The partially (or fully)-populated set of answers for the specified Questionnaire" ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "QuestionnaireResponse" ]
+  ];
+  fhir:OperationDefinition.overload [
+     fhir:index 0;
+     fhir:OperationDefinition.overload.parameterName [
+       fhir:value "subject";
+       fhir:index 0
+     ], [
+       fhir:value "local";
+       fhir:index 1
+     ]
+  ], [
+     fhir:index 1;
+     fhir:OperationDefinition.overload.parameterName [
+       fhir:value "subject";
+       fhir:index 0
+     ];
+     fhir:OperationDefinition.overload.comment [ fhir:value "local defaults to false when not passed as a parameter" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.fhir.org/guides/sampler2/OperationDefinition/example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

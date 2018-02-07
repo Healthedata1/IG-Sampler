@@ -1,0 +1,78 @@
+---
+# jekyll header
+level: 2
+template: base
+active: format
+layout: fhir-artifact
+type: OperationDefinition
+id: example
+---
+
+<!-- ig template for many conformance resource html pages  ('base' in definitions file)  can not be used for conformance resources that have more that a single base template. e.g.,  sd since there are mapping and definitions templates for it as well  they need to be split out into 3 separate templates -->
+
+<!-- ============ CONTENT CONTENT=============== -->
+
+{% case 'OperationDefinition' %} <!-- content depends on type -->
+{% when 'ValueSet' %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+  {% include OperationDefinition-example-summary.xhtml %}
+  {% include OperationDefinition-example-xref.xhtml %}
+  {% include OperationDefinition-example-cld.xhtml %}
+
+  <h3>Expansion</h3>
+
+  {% include OperationDefinition-example-expansion.xhtml %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+<!-- ( % when 'StructureMap' % }
+============StructureMap CONTENT CONTENT===============
+  ( % include nav-tabs.html type="OperationDefinition" id="example" active="content" % }
+
+  <p>
+  Thise is the mapping between FHIR resources and the Logical Model:
+  </p>
+
+  <a name="summary"> </a>
+  <h2>Summary</h2>
+  ( % include OperationDefinition-example-summary.xhtml % }
+  <br/>
+
+  <h2>Content</h2>
+  ( %  include OperationDefinition-example-content.xhtml % }
+  <br/>
+
+  <a name="script"> </a>
+  <h2>Script</h2>
+  <pre>
+  ( % include OperationDefinition-example-script.xhtml % }
+  </pre>
+============StructureMap CONTENT CONTENT=============== -->
+
+{% when 'OperationDefinition' %}
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+  {% include OperationDefinition-example-html.xhtml %}
+
+  {% capture my-include %}{% include example.md %}{% endcapture %}{{ my-include | markdownify }}  <!--add inline examples here -->
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+{% else %}
+<!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+  <h2>OperationDefinition: example</h2>
+
+  {% include OperationDefinition-example-html.xhtml %}
+  <!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+{% endcase %}
+
+
+<!-- simple format links
+<p>
+Formats: <a href="OperationDefinition-example.html">Narrative</a>, <a href="OperationDefinition-example.xml.html">XML</a>, <a href="OperationDefinition-example.json.html">JSON</a>, <a href="OperationDefinition-example.ttl.html">Turtle</a>
+</p>
+-->
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->

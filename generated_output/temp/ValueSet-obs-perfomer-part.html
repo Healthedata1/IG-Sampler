@@ -1,0 +1,78 @@
+---
+# jekyll header
+level: 2
+template: base
+active: format
+layout: fhir-artifact
+type: ValueSet
+id: obs-perfomer-part
+---
+
+<!-- ig template for many conformance resource html pages  ('base' in definitions file)  can not be used for conformance resources that have more that a single base template. e.g.,  sd since there are mapping and definitions templates for it as well  they need to be split out into 3 separate templates -->
+
+<!-- ============ CONTENT CONTENT=============== -->
+
+{% case 'ValueSet' %} <!-- content depends on type -->
+{% when 'ValueSet' %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+  {% include ValueSet-obs-perfomer-part-summary.xhtml %}
+  {% include ValueSet-obs-perfomer-part-xref.xhtml %}
+  {% include ValueSet-obs-perfomer-part-cld.xhtml %}
+
+  <h3>Expansion</h3>
+
+  {% include ValueSet-obs-perfomer-part-expansion.xhtml %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+<!-- ( % when 'StructureMap' % }
+============StructureMap CONTENT CONTENT===============
+  ( % include nav-tabs.html type="ValueSet" id="obs-perfomer-part" active="content" % }
+
+  <p>
+  Thise is the mapping between FHIR resources and the Logical Model:
+  </p>
+
+  <a name="summary"> </a>
+  <h2>Summary</h2>
+  ( % include ValueSet-obs-perfomer-part-summary.xhtml % }
+  <br/>
+
+  <h2>Content</h2>
+  ( %  include ValueSet-obs-perfomer-part-content.xhtml % }
+  <br/>
+
+  <a name="script"> </a>
+  <h2>Script</h2>
+  <pre>
+  ( % include ValueSet-obs-perfomer-part-script.xhtml % }
+  </pre>
+============StructureMap CONTENT CONTENT=============== -->
+
+{% when 'OperationDefinition' %}
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+  {% include ValueSet-obs-perfomer-part-html.xhtml %}
+
+  {% capture my-include %}{% include obs-perfomer-part.md %}{% endcapture %}{{ my-include | markdownify }}  <!--add inline examples here -->
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+{% else %}
+<!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+  <h2>ValueSet: obs-perfomer-part</h2>
+
+  {% include ValueSet-obs-perfomer-part-html.xhtml %}
+  <!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+{% endcase %}
+
+
+<!-- simple format links
+<p>
+Formats: <a href="ValueSet-obs-perfomer-part.html">Narrative</a>, <a href="ValueSet-obs-perfomer-part.xml.html">XML</a>, <a href="ValueSet-obs-perfomer-part.json.html">JSON</a>, <a href="ValueSet-obs-perfomer-part.ttl.html">Turtle</a>
+</p>
+-->
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->

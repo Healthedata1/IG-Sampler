@@ -1,0 +1,60 @@
+﻿<html>
+<head>
+  <title>AllergyIntolerance-example-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance">resourceType</a>" : "AllergyIntolerance",
+  "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance.id">id</a>" : "example",
+  "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: example&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: confirmed&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: medication&lt;/p&gt;&lt;p&gt;&lt;b&gt;criticality&lt;/b&gt;: high&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: sulfonamide antibacterial &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://hl7.org/fhir/ndfrt code 'N0000175503' = 'N0000175503', given as 'sulfonamide antibacterial'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=&quot;Patient/example&quot;&gt;Amy V. Shaw&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;assertedDate&lt;/b&gt;: Jan 1, 2000&lt;/p&gt;&lt;h3&gt;Reactions&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manifestation&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Severity&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;skin rash &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {SNOMED CT code '271807003' = '271807003', given as 'skin rash'})&lt;/span&gt;&lt;/td&gt;&lt;td&gt;mild&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance.clinicalStatus">clinicalStatus</a>" : "active",
+  "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance.verificationStatus">verificationStatus</a>" : "confirmed",
+  "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance.category">category</a>" : [
+    "medication"
+  ],
+  "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance.criticality">criticality</a>" : "high",
+  "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance.code">code</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/ndfrt",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "N0000175503",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "sulfonamide antibacterial"
+      }
+    ],
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "sulfonamide antibacterial"
+  },
+  "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance.patient">patient</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/example",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Amy V. Shaw"
+  },
+  "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance.assertedDate">assertedDate</a>" : "2000",
+  "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance.reaction">reaction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance.reaction.manifestation">manifestation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "271807003",
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "skin rash"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "skin rash"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/allergyintolerance.html#AllergyIntolerance.reaction.severity">severity</a>" : "mild"
+    }
+  ]
+}</pre>
+</body>
+</html>
