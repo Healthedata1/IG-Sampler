@@ -5,16 +5,16 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/ig-sampler/Basic/diet> a fhir:Basic;
+<http://www.fhir.org/guides/sampler2/Basic/diet> a fhir:Basic;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "diet"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n			<p>\n				<b>Generated Narrative with Details</b>\n			</p>\n			<p>\n				<b>id</b>: diet</p>\n			<p>\n				<b>extension</b>: http://www.fhir.org/guides/ig-sampler/StuctureDefinition/template-blah<span style=\"background: LightGoldenRodYellow\">(Details : valueCode 'foo' = 'Foo')</span></p>\n			<p>\n				<b>identifier</b>: 19283746</p>\n			<p>\n				<b>code</b>: Diet <span style=\"background: LightGoldenRodYellow\">(Details : http://hl7.org/fhir/basic-resource-type code 'diet' = 'Diet)</span>\n			</p>\n			<p>\n				<b>subject</b>: Roel</p>\n			<p>szzzzzzzzzz\n				<b>created</b>: Feb 14, 2017</p>\n		</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n			<p>\n				<b>Generated Narrative with Details</b>\n			</p>\n			<p>\n				<b>id</b>: diet</p>\n			<p>\n				<b>extension</b>: http://www.fhir.org/guides/sampler2/StuctureDefinition/template-blah<span style=\"background: LightGoldenRodYellow\">(Details : valueCode 'foo' = 'Foo')</span></p>\n			<p>\n				<b>identifier</b>: 19283746</p>\n			<p>\n				<b>code</b>: Diet <span style=\"background: LightGoldenRodYellow\">(Details : http://hl7.org/fhir/basic-resource-type code 'diet' = 'Diet)</span>\n			</p>\n			<p>\n				<b>subject</b>: Roel</p>\n			<p>szzzzzzzzzz\n				<b>created</b>: Feb 14, 2017</p>\n		</div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://www.fhir.org/guides/ig-sampler/StructureDefinition/template-blah" ];
+     fhir:Extension.url [ fhir:value "http://www.fhir.org/guides/sampler2/StructureDefinition/template-blah" ];
      fhir:Extension.valueCode [ fhir:value "foo" ]
   ];
   fhir:Basic.identifier [
@@ -36,7 +36,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://www.fhir.org/guides/ig-sampler/Basic/diet.ttl> a owl:Ontology;
+<http://www.fhir.org/guides/sampler2/Basic/diet.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

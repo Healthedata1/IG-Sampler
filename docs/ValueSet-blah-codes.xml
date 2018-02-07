@@ -7,13 +7,13 @@
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>BlahCodes</h2><div><p>A bunch of example codes</p>
-</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href="CodeSystem-blah-codes.html"><code>http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes</code></a></li></ul></div>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href="CodeSystem-blah-codes.html"><code>http://www.fhir.org/guides/sampler2/CodeSystem/blah-codes</code></a></li></ul></div>
   </text>
-  <url value="http://www.fhir.org/guides/ig-sampler/ValueSet/blah-codes"/>
+  <url value="http://www.fhir.org/guides/sampler2/ValueSet/blah-codes"/>
   <version value="0.0.0"/>
   <name value="BlahCodes"/>
   <status value="draft"/>
-  <date value="2017-12-13T23:39:51-08:00"/>
+  <date value="2018-02-06T21:44:06-08:00"/>
   <contact>
     <telecom>
       <system value="url"/>
@@ -27,13 +27,12 @@
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="US"/>
-      <display value="United States Minor Outlying Islands (the)"/>
     </coding>
   </jurisdiction>
   <immutable value="true"/>
   <compose>
     <include>
-      <system value="http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes"/>
+      <system value="http://www.fhir.org/guides/sampler2/CodeSystem/blah-codes"/>
     </include>
   </compose>
 </ValueSet>

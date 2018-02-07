@@ -3,10 +3,10 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IG-Sampler</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/ig-sampler/ImplementationGuide/ig</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>sampler2</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/sampler2/ImplementationGuide/ig</pre></div>
   </text>
-  <url value="http://www.fhir.org/guides/ig-sampler/ImplementationGuide/ig"/>
-  <name value="IG-Sampler"/>
+  <url value="http://www.fhir.org/guides/sampler2/ImplementationGuide/ig"/>
+  <name value="sampler2"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Health eData Inc"/>
@@ -50,18 +50,40 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-complex.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-complex"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-blah.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-blah"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-obs-perfomer-part.html"/>
       </extension>
-      <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/obs-perfomer-part"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-basic.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureDefinition/template-basic"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureMap-Foo.html"/>
       </extension>
-      <example value="false"/>
       <sourceReference>
         <reference value="StructureMap/Foo"/>
       </sourceReference>
@@ -70,7 +92,6 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-template-profile-on-profile2.html"/>
       </extension>
-      <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/template-profile-on-profile2"/>
       </sourceReference>
@@ -79,7 +100,6 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-template-basic2.html"/>
       </extension>
-      <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/template-basic2"/>
       </sourceReference>
@@ -88,16 +108,38 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-blah.html"/>
       </extension>
-      <example value="false"/>
       <sourceReference>
         <reference value="SearchParameter/blah"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-profile-on-profile.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureDefinition/template-profile-on-profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="OperationDefinition-example.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="OperationDefinition/example"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-ifr.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureDefinition/ifr"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-server.html"/>
       </extension>
-      <example value="false"/>
       <sourceReference>
         <reference value="CapabilityStatement/server"/>
       </sourceReference>
@@ -106,7 +148,6 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-client.html"/>
       </extension>
-      <example value="false"/>
       <sourceReference>
         <reference value="CapabilityStatement/client"/>
       </sourceReference>
@@ -118,7 +159,6 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-ifr.html"/>
       </extension>
-      <example value="false"/>
       <name value="Identifer Free Reference Data Type"/>
       <sourceReference>
         <reference value="StructureDefinition/ifr"/>
@@ -126,12 +166,11 @@
     </resource>
   </package>
   <package>
-    <name value="/Users/ehaas/Documents/FHIR/IG-Sampler/resources/patient-on-usprofile-spreadsheet"/>
+    <name value="/Users/ehaas/Documents/FHIR/IG-Sampler/source/resources/patient-on-usprofile-spreadsheet"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-template-profile-on-profile.html"/>
       </extension>
-      <example value="false"/>
       <name value="Template-Profile-on-Profile"/>
       <sourceReference>
         <reference value="StructureDefinition/template-profile-on-profile"/>
@@ -139,12 +178,11 @@
     </resource>
   </package>
   <package>
-    <name value="/Users/ehaas/Documents/FHIR/IG-Sampler/resources/template-profile-spreadsheet"/>
+    <name value="/Users/ehaas/Documents/FHIR/IG-Sampler/source/resources/template-profile-spreadsheet"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-blah-codes.html"/>
       </extension>
-      <example value="false"/>
       <name value="BlahCodes"/>
       <sourceReference>
         <reference value="ValueSet/blah-codes"/>
@@ -154,7 +192,6 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-blah-codes.html"/>
       </extension>
-      <example value="false"/>
       <name value="BlahCodes"/>
       <sourceReference>
         <reference value="CodeSystem/blah-codes"/>
@@ -164,7 +201,6 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-extension-blah.html"/>
       </extension>
-      <example value="false"/>
       <name value="Example Extension"/>
       <sourceReference>
         <reference value="StructureDefinition/extension-blah"/>
@@ -174,7 +210,6 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-extension-complex.html"/>
       </extension>
-      <example value="false"/>
       <name value="Complex Extension"/>
       <sourceReference>
         <reference value="StructureDefinition/extension-complex"/>
@@ -184,7 +219,6 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-template-basic.html"/>
       </extension>
-      <example value="false"/>
       <name value="Profile template-basic"/>
       <sourceReference>
         <reference value="StructureDefinition/template-basic"/>
@@ -192,8 +226,13 @@
     </resource>
   </package>
   <page>
-    <source value="_includes/toc.xml"/>
-    <title value="IG-Sampler Table of Contents"/>
+    <source value="index.md"/>
+    <title value="sampler2 Homepage"/>
     <kind value="page"/>
+    <page>
+      <source value="_includes/toc.md"/>
+      <title value="sampler2 Table of Contents"/>
+      <kind value="page"/>
+    </page>
   </page>
 </ImplementationGuide>

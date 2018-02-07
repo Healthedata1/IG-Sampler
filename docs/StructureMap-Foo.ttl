@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/ig-sampler/StructureMap/Foo> a fhir:StructureMap;
+<http://www.fhir.org/guides/sampler2/StructureMap/Foo> a fhir:StructureMap;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Foo"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;http://www.fhir.org/guides/ig-sampler/StructureMap/Foo&quot; = &quot;LogicalModel --&gt; Foo Mapping&quot;\n\nuses &quot;http://www.fhir.org/guides/ig-sampler/StructureDefinition/LogicalModel&quot; as source\n\ngroup for types LogicalModel\n  input source : LogicalModel as source\n\n  LogicalModel : for source make create(&quot;Appointment&quot;) as appt then {\n    LogicalModel.UniqueID : for source.UniqueID : string 1..1 as v make  appt.identifier as t,  t.value = v\n    LogicalModel.foo : for source.foo : backboneelement 1..1 as bbe then {\n      LogicalModel.foo.bar : for bbe.bar : code 1..1 as v make appt.status = v\n      LogicalModel.foo.baz : for bbe.baz : string 0..1 as v make appt.description = v\n    }\n\n    LogicalModel.blah : for source.blah : string 0..1 as v make  appt.slot as t,  t.display = v\n  }\n\n\nendgroup\n</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;http://www.fhir.org/guides/sampler2/StructureMap/Foo&quot; = &quot;LogicalModel --&gt; Foo Mapping&quot;\n\nuses &quot;http://www.fhir.org/guides/sampler2/StructureDefinition/LogicalModel&quot; as source\n\ngroup for types LogicalModel\n  input source : LogicalModel as source\n\n  LogicalModel : for source make create(&quot;Appointment&quot;) as appt then {\n    LogicalModel.UniqueID : for source.UniqueID : string 1..1 as v make  appt.identifier as t,  t.value = v\n    LogicalModel.foo : for source.foo : backboneelement 1..1 as bbe then {\n      LogicalModel.foo.bar : for bbe.bar : code 1..1 as v make appt.status = v\n      LogicalModel.foo.baz : for bbe.baz : string 0..1 as v make appt.description = v\n    }\n\n    LogicalModel.blah : for source.blah : string 0..1 as v make  appt.slot as t,  t.display = v\n  }\n\n\nendgroup\n</pre></div>"
   ];
-  fhir:StructureMap.url [ fhir:value "http://www.fhir.org/guides/ig-sampler/StructureMap/Foo"];
+  fhir:StructureMap.url [ fhir:value "http://www.fhir.org/guides/sampler2/StructureMap/Foo"];
   fhir:StructureMap.version [ fhir:value "0.0.0"];
   fhir:StructureMap.name [ fhir:value "LogicalModel --> Foo Mapping"];
   fhir:StructureMap.status [ fhir:value "draft"];
@@ -22,13 +22,12 @@
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "US" ];
-       fhir:Coding.display [ fhir:value "United States Minor Outlying Islands (the)" ]
+       fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
   fhir:StructureMap.structure [
      fhir:index 0;
-     fhir:StructureMap.structure.url [ fhir:value "http://www.fhir.org/guides/ig-sampler/StructureDefinition/LogicalModel" ];
+     fhir:StructureMap.structure.url [ fhir:value "http://www.fhir.org/guides/sampler2/StructureDefinition/LogicalModel" ];
      fhir:StructureMap.structure.mode [ fhir:value "source" ]
   ];
   fhir:StructureMap.group [
@@ -180,7 +179,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://www.fhir.org/guides/ig-sampler/StructureMap/Foo.ttl> a owl:Ontology;
+<http://www.fhir.org/guides/sampler2/StructureMap/Foo.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

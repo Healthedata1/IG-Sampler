@@ -1,3 +1,0 @@
-- introduction
-  - foo
-     - bar

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="7588dd3c-a9ea-4f36-ada7-652b1b39f1c3"/>
+  <id value="128a4d9b-a798-4314-bcf2-99d85ece595e"/>
   <meta>
-    <lastUpdated value="2017-12-13T23:40:49.578-08:00"/>
+    <lastUpdated value="2018-02-06T21:44:06.368-08:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://www.fhir.org/guides/ig-sampler/ValueSet/blah-codes"/>
+    <fullUrl value="http://www.fhir.org/guides/sampler2/ValueSet/blah-codes"/>
     <resource>
       <ValueSet>
         <id value="blah-codes"/>
@@ -18,15 +18,15 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes version 0.0.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/sampler2/CodeSystem/blah-codes version 0.0.0</p>
             <p>All codes from system 
               <a href="CodeSystem-blah-codes.html">
-                <code>http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes</code>
+                <code>http://www.fhir.org/guides/sampler2/CodeSystem/blah-codes</code>
               </a>
             </p>
             <table class="codes">
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
@@ -37,24 +37,24 @@
                 </td>
               </tr>
               <tr>
-                <td>
-                  <a name="http---www.fhir.org-guides-ig-sampler-CodeSystem-blah-codes-blah"> </a>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-sampler2-CodeSystem-blah-codes-blah"> </a>
                   <a href="CodeSystem-blah-codes.html#blah-codes-blah">blah</a>
                 </td>
                 <td>Blah</td>
                 <td>example code 1</td>
               </tr>
               <tr>
-                <td>
-                  <a name="http---www.fhir.org-guides-ig-sampler-CodeSystem-blah-codes-foo"> </a>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-sampler2-CodeSystem-blah-codes-foo"> </a>
                   <a href="CodeSystem-blah-codes.html#blah-codes-foo">foo</a>
                 </td>
                 <td>Foo</td>
                 <td>example code 2</td>
               </tr>
               <tr>
-                <td>
-                  <a name="http---www.fhir.org-guides-ig-sampler-CodeSystem-blah-codes-bar"> </a>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-sampler2-CodeSystem-blah-codes-bar"> </a>
                   <a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a>
                 </td>
                 <td>Bar</td>
@@ -63,11 +63,11 @@
             </table>
           </div>
         </text>
-        <url value="http://www.fhir.org/guides/ig-sampler/ValueSet/blah-codes"/>
+        <url value="http://www.fhir.org/guides/sampler2/ValueSet/blah-codes"/>
         <version value="0.0.0"/>
         <name value="BlahCodes"/>
         <status value="draft"/>
-        <date value="2017-12-13T23:39:51-08:00"/>
+        <date value="2018-02-06T21:44:06-08:00"/>
         <contact>
           <telecom>
             <system value="url"/>
@@ -81,13 +81,12 @@
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
-            <display value="United States Minor Outlying Islands (the)"/>
           </coding>
         </jurisdiction>
         <immutable value="true"/>
         <expansion>
-          <identifier value="urn:uuid:c24d8763-2988-46a3-867c-db5cb2e1b4b2"/>
-          <timestamp value="2017-10-16T16:59:48-07:00"/>
+          <identifier value="urn:uuid:0ec334f8-7dc0-464f-930f-bda55e7be313"/>
+          <timestamp value="2018-02-03T10:32:37-08:00"/>
           <total value="3"/>
           <parameter>
             <name value="profile"/>
@@ -95,20 +94,20 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes|0.0.0"/>
+            <valueUri value="http://www.fhir.org/guides/sampler2/CodeSystem/blah-codes|0.0.0"/>
           </parameter>
           <contains>
-            <system value="http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes"/>
+            <system value="http://www.fhir.org/guides/sampler2/CodeSystem/blah-codes"/>
             <code value="blah"/>
             <display value="Blah"/>
           </contains>
           <contains>
-            <system value="http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes"/>
+            <system value="http://www.fhir.org/guides/sampler2/CodeSystem/blah-codes"/>
             <code value="foo"/>
             <display value="Foo"/>
           </contains>
           <contains>
-            <system value="http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes"/>
+            <system value="http://www.fhir.org/guides/sampler2/CodeSystem/blah-codes"/>
             <code value="bar"/>
             <display value="Bar"/>
           </contains>
@@ -117,7 +116,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://www.fhir.org/guides/ig-sampler/ValueSet/obs-perfomer-part"/>
+    <fullUrl value="http://www.fhir.org/guides/sampler2/ValueSet/obs-perfomer-part"/>
     <resource>
       <ValueSet>
         <id value="obs-perfomer-part"/>
@@ -127,13 +126,13 @@
             <p>This value set contains 14 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/v3/ParticipationType version 2016-11-11</p>
             <p>All codes from system 
-              <a href="http://build.fhir.org/v3/ParticipationType/cs.html">
+              <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html">
                 <code>http://hl7.org/fhir/v3/ParticipationType</code>
               </a>
             </p>
             <table class="codes">
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
@@ -144,41 +143,41 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-TRANS"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-TRANS">TRANS</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-TRANS">TRANS</a>
                 </td>
                 <td>Transcriber</td>
                 <td>An entity entering the data into the originating system. The data entry entity is collected optionally for internal quality control purposes. This includes the transcriptionist for dictated text transcribed into electronic form.</td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-PART"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-PART">PART</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-PART">PART</a>
                 </td>
                 <td>Participation</td>
                 <td>Indicates that the target of the participation is involved in some manner in the act, but does not qualify how.</td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-ATND"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-ATND">ATND</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-ATND">ATND</a>
                 </td>
                 <td>attender</td>
                 <td>The practitioner that has responsibility for overseeing a patient&#39;s care during a patient encounter.</td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-CON"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-CON">CON</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-CON">CON</a>
                 </td>
                 <td>consultant</td>
                 <td>An advisor participating in the service by performing evaluations and making recommendations.</td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-AUT"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-AUT">AUT</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-AUT">AUT</a>
                 </td>
                 <td>author (originator)</td>
                 <td>Definition: A party that originates the Act and therefore has responsibility for the information given in the Act and ownership of this Act.
@@ -201,49 +200,49 @@
                         A party that is neither an author nor a party who is extended authorship maintenance rights by policy, may only amend, reverse, override, replace, or follow up in other ways on this Act, whereby the Act remains intact and is linked to another Act authored by that other party.</td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-INF"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-INF">INF</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-INF">INF</a>
                 </td>
                 <td>informant</td>
                 <td>A source of reported information (e.g., a next of kin who answers questions about the patient&#39;s history).  For history questions, the patient is logically an informant, yet the informant of history questions is implicitly the subject.</td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-ENT"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-ENT">ENT</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-ENT">ENT</a>
                 </td>
                 <td>data entry person</td>
                 <td>A person entering the data into the originating system.  The data entry person is collected optionally for internal quality control purposes.  This includes the transcriptionist for dictated text.</td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-WIT"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-WIT">WIT</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-WIT">WIT</a>
                 </td>
                 <td>witness</td>
                 <td>Only with service events.  A person witnessing the action happening without doing anything.  A witness is not necessarily aware, much less approves of anything stated in the service event.  Example for a witness is students watching an operation or an advanced directive witness.</td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-PPRF"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-PPRF">PPRF</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-PPRF">PPRF</a>
                 </td>
                 <td>primary performer</td>
                 <td>The principal or primary performer of the act.</td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-SPRF"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-SPRF">SPRF</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-SPRF">SPRF</a>
                 </td>
                 <td>secondary performer</td>
                 <td>A person assisting in an act through his substantial presence and involvement   This includes: assistants, technicians, associates, or whatever the job titles may be.</td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-RESP"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-RESP">RESP</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-RESP">RESP</a>
                 </td>
                 <td>responsible party</td>
                 <td>The person or organization that has primary responsibility for the act.  The responsible party is not necessarily present in an action, but is accountable for the action through the power to delegate, and the duty to review actions with the performing actor after the fact.  This responsibility may be ethical, legal, contractual, fiscal, or fiduciary in nature.
@@ -252,25 +251,25 @@
                            Example: A person who is the head of a biochemical laboratory; a sponsor for a policy or government program.</td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-VRF"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-VRF">VRF</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-VRF">VRF</a>
                 </td>
                 <td>verifier</td>
                 <td>A person who verifies the correctness and appropriateness of the service (plan, order, event, etc.) and hence takes on accountability.</td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-AUTHEN"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-AUTHEN">AUTHEN</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-AUTHEN">AUTHEN</a>
                 </td>
                 <td>authenticator</td>
                 <td>A verifier who attests to the accuracy of an act, but who does not have privileges to legally authenticate the act. An example would be a resident physician who sees a patient and dictates a note, then later signs it. Their signature constitutes an authentication.</td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-v3-ParticipationType-LA"> </a>
-                  <a href="http://build.fhir.org/v3/ParticipationType/cs.html#v3-ParticipationType-LA">LA</a>
+                  <a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-LA">LA</a>
                 </td>
                 <td>legal authenticator</td>
                 <td>A verifier who legally authenticates the accuracy of an act. An example would be a staff physician who sees a patient and dictates a note, then later signs it. Their signature constitutes a legal authentication.</td>
@@ -278,11 +277,11 @@
             </table>
           </div>
         </text>
-        <url value="http://www.fhir.org/guides/ig-sampler/ValueSet/obs-perfomer-part"/>
+        <url value="http://www.fhir.org/guides/sampler2/ValueSet/obs-perfomer-part"/>
         <version value="0.0.0"/>
         <name value="Observer Performer Participation"/>
         <status value="draft"/>
-        <date value="2017-12-13T23:39:51-08:00"/>
+        <date value="2018-02-06T21:44:06-08:00"/>
         <publisher value="HL7 International - Orders and Observations WG"/>
         <contact>
           <telecom>
@@ -295,12 +294,11 @@
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
-            <display value="United States Minor Outlying Islands (the)"/>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9365e5a1-a31b-4782-8cfc-115214c3a06b"/>
-          <timestamp value="2017-10-23T14:44:21-07:00"/>
+          <identifier value="urn:uuid:48636c92-7d96-4398-aa61-f05703f7cd48"/>
+          <timestamp value="2018-02-06T21:02:01-08:00"/>
           <total value="14"/>
           <parameter>
             <name value="profile"/>

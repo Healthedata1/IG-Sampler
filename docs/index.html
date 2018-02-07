@@ -5,13 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>IG-Sampler</title>
+  <title>sampler2</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="IG-Sampler Implemenation Guide" />
-<meta name="author" content="http://argonautwiki.hl7.org"/>
-
-
+<meta name="description" content="sampler2 Implemenation Guide" />
+<meta name="author" content="Health eData Inc"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -21,11 +19,13 @@
 
   <link href="assets/css/bootstrap.css" rel="stylesheet"/>
   <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet">
 
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet"/>
   <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
 	<link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+
 
   <!-- Favicons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
@@ -39,11 +39,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div id="segment-header" class="segment">
   <!-- segment-header -->
-  <div class="container">
-    <!-- container --> <a id="logo" no-external="true" href="http://hl7.org/fhir">
-      <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
+  <div class="container"><!-- container -->
+
+<!-- hl7 logo -->
+    <a no-external="true" href="http://hl7.org/fhir">
+      <img alt="FHIR Homepage" class="img-responsive logo" src="assets/images/fhir-logo-www.png"/>
     </a>
-      <div id="project-nav">
+<!-- end hl7 logo -->
+
+
+ <!-- org logo -->
              <!--
 <a id="your-logo" no-external="true" href="http://www.hl7.org">
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
@@ -51,18 +56,30 @@
 
 your logo here
 
-[![visit the our website](your-logo.png)](your web site.html)
-{: .img-responsive #hl7-logo}
+[![visit our website](assets/images/org_logo.png)](your web site.html)
+{: .img-responsive #org_logo}
+
+can only resize using html  or css ;-(
 
 -->
 
-<p class="img-responsive" id="hl7-logo"><a href="http://www.hl7.org"><img src="assets/images/hl7-logo.png" alt="visit the our website" /></a></p>
 
-      </div>
-    <div id="ig-status">
-      <b>IG-Sampler Implementation Guide CI Build</b>
-    </div>
-  </div>
+<a no-external="true" href="http://www.openmhealth.org/">
+<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.jpg"/>
+</a>
+
+  <!-- end org logo -->
+
+
+      <div id="project-status" class="project-status"> <!-- ig title text -->
+
+      
+      <strong>sampler2 Implementation Guide CI Build</strong>
+      
+
+    </div><!-- end ig title text -->
+
+  </div><!-- end container -->
   <div class="container">
     <!-- container -->
   </div>
@@ -87,7 +104,7 @@ your logo here
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
        <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
@@ -97,6 +114,7 @@ your logo here
   <li><a href="profiles.html">Profiles and Logical Models</a></li>
   <li><a href="structuremaps.html">Mappings</a></li>
   <li><a href="extensions.html">Extensions</a></li>
+  <li><a href="operations.html">Operations</a></li>
   <li><a href="terminology.html">Terminology</a></li>
   <li><a href="searchparams.html">Search Parameters</a></li>
   <li><a href="capstatements.html">Capability Statements</a></li>
@@ -163,7 +181,7 @@ your logo here
     <div class="container">  <!-- container -->
       <div class="row">  <!-- row -->
        <div class="inner-wrapper"> <!-- inner-wrapper -->
-         <div class="col-md-12">  <!--col -->
+         <div class="col-12">  <!--col -->
             <!-- content of page -->
 
 
@@ -171,10 +189,8 @@ your logo here
 
 <nav class="breadcrumb">
   
+  <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a><span class="breadcrumb-item active" href="index.html">Home</span>
     
-      <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a>/<a class="breadcrumb-item" href="index.html">Home</a>
-      /
-      <span class="breadcrumb-item active">IG Starter Template Implementation Guide</span>
     
     
 
@@ -184,10 +200,12 @@ your logo here
 
   <!-- ============CONTENT CONTENT=============== -->
 
-<h2 class="no_toc" id="ig-sampler-implementation-guide">IG-Sampler Implementation Guide</h2>
+<h1>Test IG HomePage</h1>
+
+page source: index.md
 
 <p id="publish-box">
-This is the Continuous Integration Build <!-- Current officially released version --> of the IG-Sampler Implementation Guide, based on FHIR Version 3.0.0. See the Directory of published versions  based on <a href="http://build.fhir.org">FHIR Version 3.0.1</a>. See the <a href="#">Directory of published versions <img src="external.png" /></a>
+This is the Continuous Integration Build <!-- Current officially released version --> of the sampler2 Implementation Guide, based on FHIR Version 3.0.0. See the Directory of published versions  based on <a href="http://hl7.org/fhir/STU3">FHIR Version 3.0.1</a>. See the <a href="#">Directory of published versions <img src="external.png" /></a>
 </p>
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
@@ -203,8 +221,6 @@ This is the Continuous Integration Build <!-- Current officially released versio
 </ul>
 
 <!-- end TOC -->
-
-<p>source pages/_include/intro.md  file</p>
 
 <h3 id="cat-facts-to-show-how-the-text-wraps-around-the-contents-block">Cat Facts (To Show How the Text Wraps around the Contents Block)</h3>
 
@@ -251,19 +267,19 @@ This is the Continuous Integration Build <!-- Current officially released versio
     <p>IG Publisher name (defined in ig.xml) - {{site.data.fhir.ig.publisher}}  = Health eData Inc</p>
   </li>
   <li>
-    <p>dependency url - e.g. “uscore” : Base url of a dependency implementation Guide (defined in ig.json) -   {{site.data.fhir.uscore}} = http://hl7.org/fhir/us/core/stu1/</p>
+    <p>dependency url - e.g. “uscore” : Base url of a dependency implementation Guide (defined in ig.json) -   {{site.data.fhir.uscore}} = http://build.fhir.org/ig/HL7/US-Core/</p>
   </li>
   <li>
-    <p>igName : Title of the implementation Guide (defined in ig.xml) -   {{site.data.fhir.igName}} = IG-Sampler</p>
+    <p>igName : Title of the implementation Guide (defined in ig.xml) -   {{site.data.fhir.igName}} = sampler2</p>
   </li>
   <li>
-    <p>path : path to the main FHIR specification (defined in ig.json)-   {{site.data.fhir.path}} = http://build.fhir.org</p>
+    <p>path : path to the main FHIR specification (defined in ig.json)-   {{site.data.fhir.path}} = http://hl7.org/fhir/STU3</p>
   </li>
   <li>
-    <p>canonical : canonical path to this specification (defined in ig.json)-   {{site.data.fhir.canonical}}  = http://www.fhir.org/guides/ig-sampler</p>
+    <p>canonical : canonical path to this specification (defined in ig.json)-   {{site.data.fhir.canonical}}  = http://www.fhir.org/guides/sampler2</p>
   </li>
   <li>
-    <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 24</p>
+    <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 30</p>
   </li>
   <li>
     <p>version : version of FHIR -   {{site.data.fhir.version}}  = 3.0.1</p>
@@ -275,13 +291,13 @@ This is the Continuous Integration Build <!-- Current officially released versio
     <p>versionFull : version-revision -   {{site.data.fhir.versionFull}}  = 3.0.1-11917</p>
   </li>
   <li>
-    <p>totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 15</p>
+    <p>totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 16</p>
   </li>
   <li>
-    <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 1</p>
+    <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 150</p>
   </li>
   <li>
-    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Wed, Dec 13, 2017 23:40-0800</p>
+    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Tue, Feb 6, 2018 21:44-0800</p>
   </li>
 </ul>
 
@@ -321,9 +337,9 @@ This is the Continuous Integration Build <!-- Current officially released versio
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            IG-Sampler Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://build.fhir.org">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Dec 13, 2017 23:40-0800. |
+            sampler2 Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Tue, Feb 6, 2018 21:44-0800. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
-                <a style="color: #81BEF7" rel="license" href="http://build.fhir.orglicense.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
         </p>
    </div>  <!-- /inner-wrapper -->
@@ -355,5 +371,4 @@ This is the Continuous Integration Build <!-- Current officially released versio
 <script> anchors.add()</script>
 </body>
 </html>
-
 

@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes> a fhir:CodeSystem;
+<http://www.fhir.org/guides/sampler2/CodeSystem/blah-codes> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "blah-codes"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BlahCodes</h2><div><p>A bunch of example codes</p>\n</div><p>This code system http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>blah<a name=\"blah-codes-blah\"> </a></td><td>Blah</td><td>example code 1</td></tr><tr><td>foo<a name=\"blah-codes-foo\"> </a></td><td>Foo</td><td>example code 2</td></tr><tr><td>bar<a name=\"blah-codes-bar\"> </a></td><td>Bar</td><td>example code 3</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BlahCodes</h2><div><p>A bunch of example codes</p>\n</div><p>This code system http://www.fhir.org/guides/sampler2/CodeSystem/blah-codes defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">blah<a name=\"blah-codes-blah\"> </a></td><td>Blah</td><td>example code 1</td></tr><tr><td style=\"white-space:nowrap\">foo<a name=\"blah-codes-foo\"> </a></td><td>Foo</td><td>example code 2</td></tr><tr><td style=\"white-space:nowrap\">bar<a name=\"blah-codes-bar\"> </a></td><td>Bar</td><td>example code 3</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes"];
+  fhir:CodeSystem.url [ fhir:value "http://www.fhir.org/guides/sampler2/CodeSystem/blah-codes"];
   fhir:CodeSystem.version [ fhir:value "0.0.0"];
   fhir:CodeSystem.name [ fhir:value "BlahCodes"];
   fhir:CodeSystem.status [ fhir:value "draft"];
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2017-12-13T23:39:51-08:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2018-02-06T21:44:06-08:00"^^xsd:dateTime];
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [
@@ -34,12 +34,11 @@
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "US" ];
-       fhir:Coding.display [ fhir:value "United States Minor Outlying Islands (the)" ]
+       fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
   fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
-  fhir:CodeSystem.valueSet [ fhir:value "http://www.fhir.org/guides/ig-sampler/ValueSet/blah-codes"];
+  fhir:CodeSystem.valueSet [ fhir:value "http://www.fhir.org/guides/sampler2/ValueSet/blah-codes"];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.concept [
      fhir:index 0;
@@ -60,7 +59,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://www.fhir.org/guides/ig-sampler/CodeSystem/blah-codes.ttl> a owl:Ontology;
+<http://www.fhir.org/guides/sampler2/CodeSystem/blah-codes.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
