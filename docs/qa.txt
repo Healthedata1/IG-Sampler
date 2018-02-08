@@ -2,9 +2,9 @@
 =========================================
 
 err = 56, warn = 14, info = 42
-Generated Tue Feb 06 22:34:34 PST 2018. FHIR version 3.1.0 for 3.0.1
+Generated Thu Feb 08 07:07:24 PST 2018. FHIR version 3.1.0 for 3.0.1
 
- Build Errors : 84 / 0
+ Build Errors : 12 / 0
  /Users/ehaas/Documents/FHIR/IG-Sampler/source/examples/allergyintolerance-example : 2 / 11
  /Users/ehaas/Documents/FHIR/IG-Sampler/source/examples/diet : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Sampler/source/examples/obs : 5 / 0
@@ -27,86 +27,14 @@ ERROR: ??: The reference http://www.fhir.org/guides/sampler2/StructureDefinition
 ERROR: ??: The reference http://www.fhir.org/guides/sampler2/StructureDefinition/template-complex could not be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/AllergyIntolerance-example.html#/html/head/link/body/div/div/div/div/div/div/h2/div/p/a at Line 252, column 545: The link 'Patient/example' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/AllergyIntolerance-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 258, column 511: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/extensions.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/extensions.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/extensions.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 210, column 6: The link 'StructureDefinition-extension-blah.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/extensions.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 211, column 6: The link 'StructureDefinition-extension-complex.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/extensions.html#/html/head/link/body/div/div/div/p/a/img at Line 244, column 103: The image source 'cc0.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/profiles.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/profiles.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/profiles.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 213, column 6: The link 'StructureDefinition-ifr.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/profiles.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 214, column 6: The link 'StructureDefinition-template-basic.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/profiles.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 215, column 6: The link 'StructureDefinition-template-basic2.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/profiles.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 216, column 6: The link 'StructureDefinition-template-profile-on-profile.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/profiles.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 217, column 6: The link 'StructureDefinition-template-profile-on-profile2.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/profiles.html#/html/head/link/body/div/div/div/p/a/img at Line 255, column 103: The image source 'cc0.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/searchparams.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/searchparams.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/searchparams.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 210, column 6: The link 'SearchParameter-blah.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/searchparams.html#/html/head/link/body/div/div/div/p/a/img at Line 243, column 103: The image source 'cc0.png' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/MedicationRequest-uscore-mo1.html#/html/head/link/body/div/div/div/div/div/div/h2/div/p/a at Line 252, column 468: The link 'Patient/example' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/MedicationRequest-uscore-mo1.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 258, column 432: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/toc.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/toc.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/toc.html#/html/head/link/body/div/div/div/p/a/img at Line 264, column 103: The image source 'cc0.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/capstatements.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/capstatements.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/capstatements.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 222, column 5: The link 'CapabilityStatement-server.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/capstatements.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 235, column 5: The link 'CapabilityStatement-client.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/capstatements.html#/html/head/link/body/div/div/div/p/a/img at Line 306, column 103: The image source 'cc0.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/todo.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/todo.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/todo.html#/html/head/link/body/div/div/div/p/a/img at Line 243, column 103: The image source 'cc0.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/security.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/security.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/security.html#/html/head/link/body/div/div/div/p/a/img at Line 241, column 103: The image source 'cc0.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/guidance.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/guidance.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/guidance.html#/html/head/link/body/div/div/div/p/a/img at Line 258, column 103: The image source 'cc0.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/structuremaps.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/structuremaps.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/structuremaps.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 213, column 6: The link 'StructureMap-Foo.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/structuremaps.html#/html/head/link/body/div/div/div/p/a/img at Line 247, column 103: The image source 'cc0.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/examples.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/examples.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/examples.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 213, column 6: The link 'Observation-example.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/examples.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 220, column 8: The link 'examples.xml.zip' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/examples.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 221, column 8: The link 'examples.json.zip' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/examples.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 222, column 8: The link 'examples.ttl.zip' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/examples.html#/html/head/link/body/div/div/div/p/a/img at Line 255, column 103: The image source 'cc0.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/operations.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/operations.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/operations.html#/html/head/link/body/div/div/div/p/a/img at Line 245, column 103: The image source 'cc0.png' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/h2/div/p/a at Line 252, column 755: The link 'Patient/example' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/h2/div/p/a at Line 252, column 823: The link 'Encounter/example' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/h2/div/p/a at Line 252, column 934: The link 'Practitioner/practitioner-1' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 258, column 728: The link 'Patient/example' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 258, column 796: The link 'Encounter/example' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 258, column 907: The link 'Practitioner/practitioner-1' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/downloads.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/downloads.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/downloads.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 214, column 8: The link 'validator.pack' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/downloads.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 218, column 4: The link 'definitions.xml.zip' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/downloads.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 219, column 4: The link 'definitions.json.zip' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/downloads.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 220, column 4: The link 'definitions.ttl.zip' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/downloads.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 233, column 8: The link 'examples.xml.zip' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/downloads.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 234, column 8: The link 'examples.json.zip' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/downloads.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 235, column 8: The link 'examples.ttl.zip' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/downloads.html#/html/head/link/body/div/div/div/p/a/img at Line 268, column 103: The image source 'cc0.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/index.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/index.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/index.html#/html/head/link/body/div/div/div/div/div/div/p/a/img at Line 208, column 316: The image source 'external.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/index.html#/html/head/link/body/div/div/div/div/div/div/div/figure/img at Line 246, column 4: The image source 'assets/images/cat.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/index.html#/html/head/link/body/div/div/div/p/a/img at Line 342, column 103: The image source 'cc0.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/history.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/history.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/history.html#/html/head/link/body/div/div/div/p/a/img at Line 280, column 103: The image source 'cc0.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/terminology.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/terminology.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/terminology.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 212, column 6: The link 'ValueSet-blah-codes.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/terminology.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 213, column 6: The link 'ValueSet-obs-perfomer-part.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/terminology.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 218, column 6: The link 'CodeSystem-blah-codes.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/page_template_library/terminology.html#/html/head/link/body/div/div/div/p/a/img at Line 251, column 103: The image source 'cc0.png' cannot be resolved
 == /Users/ehaas/Documents/FHIR/IG-Sampler/source/examples/allergyintolerance-example.xml ==
 WARNING: AllergyIntolerance/example: AllergyIntolerance.code: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-substance and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
 WARNING: AllergyIntolerance/example: AllergyIntolerance.code.coding: Unknown Code System http://hl7.org/fhir/ndfrt
