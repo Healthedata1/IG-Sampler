@@ -250,7 +250,13 @@ can only resize using html  or css ;-(
 
     <h2>XML Format: OperationDefinition-example</h2>
   
-
+<!--
+   { % elsif page.template == 'definitions'% }
+    { % include nav-tabs.html type=page.type id=page.id active="definitions" % }
+  { % elsif page.template == 'mappings' %} 
+    { % include nav-tabs.html type=page.type id=page.id active="mappings" % }
+ -->
+  
 
   <!-- ============CONTENT CONTENT=============== -->
 
@@ -399,7 +405,7 @@ Formats: <a href="OperationDefinition-example.html">Narrative</a>, <a href="Oper
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            sampler2 Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Thu, Feb 8, 2018 07:06-0800. |
+            sampler2 Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Feb 14, 2018 23:41-0800. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

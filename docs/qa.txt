@@ -2,9 +2,9 @@
 =========================================
 
 err = 56, warn = 14, info = 42
-Generated Thu Feb 08 07:07:24 PST 2018. FHIR version 3.1.0 for 3.0.1
+Generated Wed Feb 14 23:41:44 PST 2018. FHIR version 3.1.0 for 3.0.1
 
- Build Errors : 12 / 0
+ Build Errors : 7 / 0
  /Users/ehaas/Documents/FHIR/IG-Sampler/source/examples/allergyintolerance-example : 2 / 11
  /Users/ehaas/Documents/FHIR/IG-Sampler/source/examples/diet : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Sampler/source/examples/obs : 5 / 0
@@ -25,13 +25,8 @@ Generated Thu Feb 08 07:07:24 PST 2018. FHIR version 3.1.0 for 3.0.1
 == n/a ==
 ERROR: ??: The reference http://www.fhir.org/guides/sampler2/StructureDefinition/template-blah could not be resolved
 ERROR: ??: The reference http://www.fhir.org/guides/sampler2/StructureDefinition/template-complex could not be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/AllergyIntolerance-example.html#/html/head/link/body/div/div/div/div/div/div/h2/div/p/a at Line 252, column 545: The link 'Patient/example' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/AllergyIntolerance-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 258, column 511: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/MedicationRequest-uscore-mo1.html#/html/head/link/body/div/div/div/div/div/div/h2/div/p/a at Line 252, column 468: The link 'Patient/example' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/MedicationRequest-uscore-mo1.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 258, column 432: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/h2/div/p/a at Line 252, column 755: The link 'Patient/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/h2/div/p/a at Line 252, column 823: The link 'Encounter/example' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/h2/div/p/a at Line 252, column 934: The link 'Practitioner/practitioner-1' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 258, column 728: The link 'Patient/example' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 258, column 796: The link 'Encounter/example' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Sampler/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 258, column 907: The link 'Practitioner/practitioner-1' cannot be resolved
